@@ -46,7 +46,7 @@ my_list = [1,2,3,4]
 
 ## Dictionaries
 
-This is essential Python's version of a Hash Table  
+This is essentially Python's version of a Hash Table.
 
 To iterate over a dictionary:
 
@@ -58,13 +58,13 @@ for k, v in my_dict.items():
 ```
 
 ## Sorting
-A simple ascending sort is very easy: just call the sorted() function. It returns a new sorted list.  The original list is not changed.
+A simple ascending sort is very easy: just call the `sorted()` function. It returns a new sorted list.  The original list is not changed.
 
 ```python
 sorted([5, 2, 3, 1, 4])         ## [1, 2, 3, 4, 5]
 ```
 
-You can also use the list.sort() method. It modifies the list in-place (and **returns None** to avoid confusion). Usually it’s less convenient than sorted() - but if you don’t need the original list, it’s slightly more efficient.
+You can also use the `list.sort()` method. It modifies the list in-place (and **returns None** to avoid confusion). Usually it’s less convenient than sorted() - but if you don’t need the original list, it’s slightly more efficient.
 
 ```python
 a = [5, 2, 3, 1, 4]
@@ -72,9 +72,9 @@ a.sort()
 a           ## [1, 2, 3, 4, 5]
 ```
 
-The sorted() function can be customized through optional arguments. The sorted() optional argument reverse=True, e.g. sorted(my_list, reverse=True), makes it sort backwards.
+The sorted() function can be customized through optional arguments. The `sorted()` optional argument reverse=True, e.g. `sorted(my_list, reverse=True)`, makes it sort backwards.
 
-For more complex custom sorting, sorted() takes an optional "key=" specifying a "key" function that transforms each element before comparison. The key function takes in 1 value and returns 1 value, and the returned "proxy" value is used for the comparisons within the sort.
+For more complex custom sorting, `sorted()` takes an optional "key=" specifying a "key" function that transforms each element before comparison. The key function takes in 1 value and returns 1 value, and the returned "proxy" value is used for the comparisons within the sort.
 
 
 
@@ -82,7 +82,7 @@ For more complex custom sorting, sorted() takes an optional "key=" specifying a 
 
 ### Time complexity of built-ins
 
-The [complexity](https://stackoverflow.com/questions/13884177/complexity-of-in-operator-in-python) of in depends entirely on what L is. e in L will become L.__contains__(e).
+The [complexity](https://stackoverflow.com/questions/13884177/complexity-of-in-operator-in-python) of `in` depends entirely on what `L` is. `e in L` will become `L.__contains__(e)`.
 
 See this time [complexity document](https://wiki.python.org/moin/TimeComplexity) for the complexity of several built-in types.
 
@@ -91,7 +91,7 @@ Here is the summary for in:
 * list - Average: O(n)
 * set/dict - Average: O(1), Worst: O(n)
 
-The O(n) worst case for sets and dicts is very uncommon, but it can happen if __hash__ is implemented poorly. This only happens if everything in your set has the same hash value.
+The O(n) worst case for sets and dicts is very uncommon, but it can happen if `__hash__` is implemented poorly. This only happens if everything in your set has the same hash value.
 
 
 ## Notes/Sources

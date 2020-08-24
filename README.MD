@@ -46,7 +46,7 @@ my_list = [1,2,3,4]
 
 ## Dictionaries
 
-*This is essential a Hash Table  
+This is essential Python's version of a Hash Table  
 
 To iterate over a dictionary:
 
@@ -79,8 +79,20 @@ For more complex custom sorting, sorted() takes an optional "key=" specifying a 
 
 
 ## Time complexity
-* https://stackoverflow.com/questions/13884177/complexity-of-in-operator-in-python
-* https://wiki.python.org/moin/TimeComplexity
+
+### Time complexity of built-ins
+
+The [complexity](https://stackoverflow.com/questions/13884177/complexity-of-in-operator-in-python) of in depends entirely on what L is. e in L will become L.__contains__(e).
+
+See this time [complexity document](https://wiki.python.org/moin/TimeComplexity) for the complexity of several built-in types.
+
+Here is the summary for in:  
+
+* list - Average: O(n)
+* set/dict - Average: O(1), Worst: O(n)
+
+The O(n) worst case for sets and dicts is very uncommon, but it can happen if __hash__ is implemented poorly. This only happens if everything in your set has the same hash value.
+
 
 ## Notes/Sources
 * [Google for Education > Python](https://developers.google.com/edu/python)

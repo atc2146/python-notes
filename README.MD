@@ -31,7 +31,7 @@ To iterate over a list with an index and value:
 my_list = ['Team A', 'Team Bobcats', 'Team XYZ']
 
 for ind, val in enumerate(my_list):
-	print(ind, val)
+    print(ind, val)
 ```
 
 ### List Comprehension
@@ -54,14 +54,14 @@ To iterate over a dictionary:
 my_dict = {'bob': 20, 'james': 33, 'mary': 18}
 
 for k, v in my_dict.items():
-	print(k, v)
+    print(k, v)
 ```
 
 ## Sorting
 A simple ascending sort is very easy: just call the sorted() function. It returns a new sorted list.  The original list is not changed.
 
 ```python
-sorted([5, 2, 3, 1, 4])			## [1, 2, 3, 4, 5]
+sorted([5, 2, 3, 1, 4])         ## [1, 2, 3, 4, 5]
 ```
 
 You can also use the list.sort() method. It modifies the list in-place (and **returns None** to avoid confusion). Usually it’s less convenient than sorted() - but if you don’t need the original list, it’s slightly more efficient.
@@ -69,7 +69,7 @@ You can also use the list.sort() method. It modifies the list in-place (and **re
 ```python
 a = [5, 2, 3, 1, 4]
 a.sort()
-a			## [1, 2, 3, 4, 5]
+a           ## [1, 2, 3, 4, 5]
 ```
 
 The sorted() function can be customized through optional arguments. The sorted() optional argument reverse=True, e.g. sorted(my_list, reverse=True), makes it sort backwards.

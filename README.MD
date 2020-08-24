@@ -1,13 +1,13 @@
 # Python Notes
 
-Notes on Python.
+Notes and references on Python. Taken from various places on the internet.
 
 ## Table of Contents
 
 
 
 ## Strings
-* A "raw" string literal is prefixed by an 'r' and passes all the chars through without special treatment of backslashes, so r'x\nx' evaluates to the length-4 string 'x\nx'.
+A "raw" string literal is prefixed by an 'r' and passes all the chars through without special treatment of backslashes, so r'x\nx' evaluates to the length-4 string 'x\nx'.
 
 ### Methods
 * s.split('delim') -- returns a list of substrings separated by the given delimiter. The delimiter is not a regular expression, it's just text. 'aaa,bbb,ccc'.split(',') -> ['aaa', 'bbb', 'ccc']. As a convenient special case s.split() (with no arguments) splits on all whitespace chars.
@@ -51,7 +51,7 @@ my_list = [1,2,3,4]
 To iterate over a dictionary:
 
 ```python
-my_dict = { 'bob': 20, 'james': 33, 'mary': 18}
+my_dict = {'bob': 20, 'james': 33, 'mary': 18}
 
 for k, v in my_dict.items():
 	print(k, v)
@@ -61,7 +61,7 @@ for k, v in my_dict.items():
 A simple ascending sort is very easy: just call the sorted() function. It returns a new sorted list.  The original list is not changed.
 
 ```python
-sorted([5, 2, 3, 1, 4]) 	## [1, 2, 3, 4, 5]
+sorted([5, 2, 3, 1, 4])			## [1, 2, 3, 4, 5]
 ```
 
 You can also use the list.sort() method. It modifies the list in-place (and **returns None** to avoid confusion). Usually it’s less convenient than sorted() - but if you don’t need the original list, it’s slightly more efficient.
@@ -69,7 +69,7 @@ You can also use the list.sort() method. It modifies the list in-place (and **re
 ```python
 a = [5, 2, 3, 1, 4]
 a.sort()
-a						## [1, 2, 3, 4, 5]
+a			## [1, 2, 3, 4, 5]
 ```
 
 The sorted() function can be customized through optional arguments. The sorted() optional argument reverse=True, e.g. sorted(my_list, reverse=True), makes it sort backwards.
@@ -82,5 +82,5 @@ For more complex custom sorting, sorted() takes an optional "key=" specifying a 
 * https://stackoverflow.com/questions/13884177/complexity-of-in-operator-in-python
 * https://wiki.python.org/moin/TimeComplexity
 
-## Notes
+## Notes/Sources
 * [Google for Education > Python](https://developers.google.com/edu/python)

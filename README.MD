@@ -72,6 +72,9 @@ Searching for a key:
 if key in my_dict: 
 ```
 
+The `setdefault()` method returns the value of the item with the specified key.
+
+If the key does not exist, insert the key, with the specified value: `dictionary.setdefault(keyname, value)`
 
 ## Regex
 For Python regular expressions, you need to import the `re` module.  

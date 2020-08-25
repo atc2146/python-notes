@@ -12,6 +12,7 @@ A "raw" string literal is prefixed by an 'r' and passes all the chars through wi
 ### Methods
 * s.split('delim'): returns a list of substrings separated by the given delimiter. The delimiter is not a regular expression, it's just text. 'aaa,bbb,ccc'.split(',') -> ['aaa', 'bbb', 'ccc']. As a convenient special case s.split() (with no arguments) splits on all whitespace chars.
 * s.join(list): opposite of split(), joins the elements in the given list together using the string as the delimiter. e.g. '---'.join(['aaa', 'bbb', 'ccc']) -> aaa---bbb---ccc
+* s.count(): In simple words, `count()` method searches the substring in the given string and returns how many times the substring is present in it.  The syntax is: `string.count(substring, start=..., end=...)`
 
 ### String Slices
 The "slice" syntax is a handy way to refer to sub-parts of sequences -- typically strings and lists. The slice s[start:end] is the elements beginning at start and extending up to but not including end.
@@ -26,7 +27,7 @@ my_string[::-1]
 A way to format strings with variables.
 
 ```python
-name = "Eric"
+name = 'Eric'
 age = 74
 
 print(f'Hello, {name}. You are {age}.') ## Hello, Eric. You are 74.
@@ -55,7 +56,7 @@ my_list = [1,2,3,4]
 
 ## Dictionaries
 
-This is essentially Python's version of a Hash Table.
+This is essentially Python's version of a Hash Table.  Dictionaries have key value pairs.
 
 To iterate over a dictionary:
 
@@ -65,6 +66,27 @@ my_dict = {'bob': 20, 'james': 33, 'mary': 18}
 for k, v in my_dict.items():
     print(k, v)
 ```
+
+Searching for a key:
+```python
+if key in my_dict: 
+```
+
+
+## Regex
+For Python regular expressions, you need to import the `re` module.  
+
+```python
+pattern = r'some string'
+string = 'this is some string'
+re.search(pattern, string)
+re.findall(pattern, string)
+
+```
+
+## map(), filter(), and reduce()
+
+
 
 ## Sorting
 A simple ascending sort is very easy: just call the `sorted()` function. It returns a new sorted list.  The original list is not changed.
@@ -102,6 +124,7 @@ Here is the summary for `in`:
 
 The O(n) worst case for sets and dicts is very uncommon, but it can happen if `__hash__` is implemented poorly. This only happens if everything in your set has the same hash value.
 
+Python's built-in `sorted' has a time complexity of O(nlogn)
 
 ## Notes/Sources
 * [Google for Education > Python](https://developers.google.com/edu/python)

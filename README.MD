@@ -69,12 +69,13 @@ for k, v in my_dict.items():
 
 Searching for a key:
 ```python
-if key in my_dict: 
+if key in my_dict:
+    print(str(key) + ' exists')
+    
+
 ```
 
-The `setdefault()` method returns the value of the item with the specified key.
-
-If the key does not exist, insert the key, with the specified value: `dictionary.setdefault(keyname, value)`
+The `setdefault()` method returns the value of the item with the specified key. If the key does not exist, insert the key, with the specified value: `dictionary.setdefault(keyname, value)`
 
 ## Regex
 For Python regular expressions, you need to import the `re` module.  
@@ -127,7 +128,7 @@ Here is the summary for `in`:
 
 The O(n) worst case for sets and dicts is very uncommon, but it can happen if `__hash__` is implemented poorly. This only happens if everything in your set has the same hash value.
 
-Python's built-in `sorted' has a time complexity of O(nlogn)
+Python's built-in `sorted()` has a time complexity of O(nlogn)
 
 ## Notes/Sources
 * [Google for Education > Python](https://developers.google.com/edu/python)

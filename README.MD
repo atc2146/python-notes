@@ -10,8 +10,8 @@ Notes and references on Python. Taken from various places on the internet.
 A "raw" string literal is prefixed by an 'r' and passes all the chars through without special treatment of backslashes, so r'x\nx' evaluates to the length-4 string 'x\nx'.
 
 ### Methods
-* s.split('delim') -- returns a list of substrings separated by the given delimiter. The delimiter is not a regular expression, it's just text. 'aaa,bbb,ccc'.split(',') -> ['aaa', 'bbb', 'ccc']. As a convenient special case s.split() (with no arguments) splits on all whitespace chars.
-* s.join(list) -- opposite of split(), joins the elements in the given list together using the string as the delimiter. e.g. '---'.join(['aaa', 'bbb', 'ccc']) -> aaa---bbb---ccc
+* s.split('delim'): returns a list of substrings separated by the given delimiter. The delimiter is not a regular expression, it's just text. 'aaa,bbb,ccc'.split(',') -> ['aaa', 'bbb', 'ccc']. As a convenient special case s.split() (with no arguments) splits on all whitespace chars.
+* s.join(list): opposite of split(), joins the elements in the given list together using the string as the delimiter. e.g. '---'.join(['aaa', 'bbb', 'ccc']) -> aaa---bbb---ccc
 
 ### String Slices
 The "slice" syntax is a handy way to refer to sub-parts of sequences -- typically strings and lists. The slice s[start:end] is the elements beginning at start and extending up to but not including end.
@@ -22,6 +22,15 @@ my_string = 'a string'
 
 my_string[::-1]
 ```
+### f-Strings
+A way to format strings with variables.
+
+```python
+name = "Eric"
+age = 74
+
+print(f'Hello, {name}. You are {age}.') ## Hello, Eric. You are 74.
+``` 
 
 
 ## Lists
@@ -64,7 +73,7 @@ A simple ascending sort is very easy: just call the `sorted()` function. It retu
 sorted([5, 2, 3, 1, 4])         ## [1, 2, 3, 4, 5]
 ```
 
-You can also use the `list.sort()` method. It modifies the list in-place (and **returns None** to avoid confusion). Usually it’s less convenient than sorted() - but if you don’t need the original list, it’s slightly more efficient.
+You can also use the `list.sort()` method. It modifies the list in-place (and **returns None** to avoid confusion). Usually it’s less convenient than `sorted()` - but if you don’t need the original list, it’s slightly more efficient.
 
 ```python
 a = [5, 2, 3, 1, 4]
@@ -86,7 +95,7 @@ The [complexity](https://stackoverflow.com/questions/13884177/complexity-of-in-o
 
 See this time [complexity document](https://wiki.python.org/moin/TimeComplexity) for the complexity of several built-in types.
 
-Here is the summary for in:  
+Here is the summary for `in`:  
 
 * list - Average: O(n)
 * set/dict - Average: O(1), Worst: O(n)

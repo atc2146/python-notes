@@ -90,6 +90,10 @@ re.findall(pattern, string)
 
 ## map(), filter(), and reduce()
 
+Functional programming that is helpful with lambda functions.
+
+## Lambda Functions
+Lambda functions are anonymous functions.
 
 
 ## Sorting

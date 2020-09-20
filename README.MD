@@ -3,7 +3,7 @@
 Notes and references on Python. Taken from various places on the internet.
 
 ## Table of Contents
-
+* [Strings](#strings)
 
 
 ## Strings
@@ -115,7 +115,9 @@ The sorted() function can be customized through optional arguments. The `sorted(
 
 For more complex custom sorting, `sorted()` takes an optional "key=" specifying a "key" function that transforms each element before comparison. The key function takes in 1 value and returns 1 value, and the returned "proxy" value is used for the comparisons within the sort.
 
-
+## Algorithms
+### Hash table
+See dictionary
 
 ## Time complexity
 

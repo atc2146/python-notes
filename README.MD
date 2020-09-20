@@ -3,8 +3,11 @@
 Notes and references on Python. Taken from various places on the internet.
 
 ## Table of Contents
-* [Strings](#strings)
-
+* [Strings](#Strings)
+    * [Methods](#Methods)
+    * [String Slices](#String-Slices)
+    * [f-Strings](#f-Strings)
+* [Lists](#Lists)
 
 ## Strings
 A "raw" string literal is prefixed by an 'r' and passes all the chars through without special treatment of backslashes, so r'x\nx' evaluates to the length-4 string 'x\nx'.
@@ -69,11 +72,21 @@ for k, v in my_dict.items():
 
 Searching for a key:
 ```python
+my_dict = {'bob': 20, 'james': 33, 'mary': 18}
+key = 'bob'
+
 if key in my_dict:
     print(str(key) + ' exists')
-    
-
 ```
+
+There is also the .get() method.  This method return a value for the given key. If key is not available, then returns default value None.
+```python
+my_dict = {'bob': 20, 'james': 33, 'mary': 18}
+key = 'bob'
+
+my_dict.get(key):
+```
+
 
 The `setdefault()` method returns the value of the item with the specified key. If the key does not exist, insert the key, with the specified value: `dictionary.setdefault(keyname, value)`
 
@@ -116,8 +129,11 @@ The sorted() function can be customized through optional arguments. The `sorted(
 For more complex custom sorting, `sorted()` takes an optional "key=" specifying a "key" function that transforms each element before comparison. The key function takes in 1 value and returns 1 value, and the returned "proxy" value is used for the comparisons within the sort.
 
 ## Algorithms
+
 ### Hash table
-See dictionary
+See [dictionary](#dictionary) section of notes.
+
+
 
 ## Time complexity
 

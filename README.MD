@@ -4,15 +4,18 @@ Notes and references on Python. Taken from various places on the internet.
 
 ## Table of Contents
 * [Strings](#Strings)
-    * [Methods](#Methods)
+    * [String Methods](#String-Methods)
     * [String Slices](#String-Slices)
     * [f-Strings](#f-Strings)
 * [Lists](#Lists)
-
+    * [List Comprehension](#List-Comprehension)
+    * [List Methods](#List-Comprehension)
+    * [Creating Lists](#Creating-Lists)
+    
 ## Strings
 A "raw" string literal is prefixed by an 'r' and passes all the chars through without special treatment of backslashes, so r'x\nx' evaluates to the length-4 string 'x\nx'.
 
-### Methods
+### String Methods
 * s.split('delim'): returns a list of substrings separated by the given delimiter. The delimiter is not a regular expression, it's just text. 'aaa,bbb,ccc'.split(',') -> ['aaa', 'bbb', 'ccc']. As a convenient special case s.split() (with no arguments) splits on all whitespace chars.
 * s.join(list): opposite of split(), joins the elements in the given list together using the string as the delimiter. e.g. '---'.join(['aaa', 'bbb', 'ccc']) -> aaa---bbb---ccc
 * s.count(): In simple words, `count()` method searches the substring in the given string and returns how many times the substring is present in it.  The syntax is: `string.count(substring, start=..., end=...)`
@@ -56,7 +59,7 @@ my_list = [1,2,3,4]
 [i*i for i in my_list if i%2==0]
 ```
 
-### List Functions  
+### List Methods  
 
 * The list insert() method inserts an element to the list at the specified index.
 * The pop() method removes the item at the given index from the list and returns the removed item.
@@ -64,6 +67,9 @@ my_list = [1,2,3,4]
     * Pop without an index removes the last element of the list.
 * The remove() method removes the first matching element (which is passed as an argument) from the list.
     * Returns None
+    * If the element doesn't exist, it throws a ValueError.
+* The count() method returns the number of times the specified element appears in the list.
+* The index() method returns the index of the specified element in the list.
 
 ```python
 my_list = [1,2,3,4]
@@ -73,10 +79,14 @@ my_list.insert(index, element)
 popped_item = my_list.pop(index)
 
 my_list.remove(element)
+
+my_list.count(element)
+
+my_list.index(element, [start], [end])
 ```
 
 
-### Syntatic Sugar
+### Creating Lists
 If you want to create a list.
 
 ```python

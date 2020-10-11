@@ -11,17 +11,21 @@ Notes and references on Python. Taken from various places on the internet.
     * [List Comprehension](#List-Comprehension)
     * [List Methods](#List-Comprehension)
     * [Creating Lists](#Creating-Lists)
+* [Dictionaries](#Dictionaries)
+    * [Iterating](#Iterating)
+    * [Searching for a key](#Searching-for-a-key)
+    * [The setdefault() method](#The-setdefault()-method)
     
 ## Strings
-A "raw" string literal is prefixed by an 'r' and passes all the chars through without special treatment of backslashes, so r'x\nx' evaluates to the length-4 string 'x\nx'.
+A "raw" string literal is prefixed by an 'r' and passes all the chars through without special treatment of backslashes, so `r'x\nx'` evaluates to the length-4 string 'x\nx'.
 
 ### String Methods
-* `s.split('delim')`: returns a list of substrings separated by the given delimiter. The delimiter is not a regular expression, it's just text. 'aaa,bbb,ccc'.split(',') -> ['aaa', 'bbb', 'ccc']. As a convenient special case `s.split()` (with no arguments) splits on all whitespace chars.
+* `s.split('delim')`: returns a list of substrings separated by the given delimiter. The delimiter is not a regular expression, it's just text. `'aaa,bbb,ccc'.split(',')` -> ['aaa', 'bbb', 'ccc']. As a convenient special case `s.split()` (with no arguments) splits on all whitespace chars.
 * `s.join(list)`: opposite of `split()`, joins the elements in the given list together using the string as the delimiter. e.g. `'---'.join(['aaa', 'bbb', 'ccc'])` -> aaa---bbb---ccc
-* `s.count()`: In simple words, `count()` method searches the substring in the given string and returns how many times the substring is present in it.  The syntax is: `string.count(substring, start=..., end=...)`
+* `s.count()`: In simple words, `count()` method searches the substring in the given string and returns how many times the substring is present in it.  The syntax is: `string.count(substring, [start=...], [end=...])`
 
 ### String Slices
-The "slice" syntax is a handy way to refer to sub-parts of sequences -- typically strings and lists. The slice s[start:end] is the elements beginning at start and extending up to but not including end.
+The "slice" syntax is a handy way to refer to sub-parts of sequences -- typically strings and lists. The slice `s[start:end]` is the elements beginning at start and extending up to but not including end.
 
 You can reverse a string (or list) with the following slice:
 ```python
@@ -30,7 +34,7 @@ my_string = 'a string'
 my_string[::-1]
 ```
 ### f-Strings
-A way to format strings with variables.
+A convenient way to format strings with variables.
 
 ```python
 name = 'Eric'
@@ -61,7 +65,7 @@ my_list = [1,2,3,4]
 
 ### List Methods  
 
-* The list `insert()` method inserts an element to the list at the specified index.
+* The `insert()` method inserts an element to the list at the specified index.
 * The `pop()` method removes the item at the given index from the list and returns the removed item.
     * You can also have an index at a negative value. This will count backwards from the list.
     * Pop without an index removes the last element of the list.
@@ -100,6 +104,7 @@ my_list = list(range(2,20,3))
 
 This is essentially Python's version of a Hash Table.  Dictionaries have key value pairs.
 
+### Iterating
 To iterate over a dictionary:
 
 ```python
@@ -108,7 +113,7 @@ my_dict = {'bob': 20, 'james': 33, 'mary': 18}
 for k, v in my_dict.items():
     print(k, v)
 ```
-
+### Searching for a key
 Searching for a key:
 ```python
 my_dict = {'bob': 20, 'james': 33, 'mary': 18}
@@ -118,7 +123,7 @@ if key in my_dict:
     print(str(key) + ' exists')
 ```
 
-There is also the .get() method.  This method return a value for the given key. If key is not available, then returns default value None.
+There is also the `get()` method.  This method returns a value for the given key. If the key is not available, then returns default value None.
 ```python
 my_dict = {'bob': 20, 'james': 33, 'mary': 18}
 key = 'bob'
@@ -126,7 +131,7 @@ key = 'bob'
 my_dict.get(key):
 ```
 
-
+### The setdefault() method
 The `setdefault()` method returns the value of the item with the specified key. If the key does not exist, insert the key, with the specified value: `dictionary.setdefault(keyname, value)`
 
 ## Regex

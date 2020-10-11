@@ -62,16 +62,17 @@ my_list = [1,2,3,4]
 * The pop() method removes the item at the given index from the list and returns the removed item.
     * You can also have an index at a negative value. This will count backwards from the list.
     * Pop without an index removes the last element of the list.
-* The list insert() method inserts an element to the list at the specified index.
+* The remove() method removes the first matching element (which is passed as an argument) from the list.
+    * Returns None
 
 ```python
 my_list = [1,2,3,4]
 
 my_list.insert(index, element)
 
-my_list.pop(index)
+popped_item = my_list.pop(index)
 
-
+my_list.remove(element)
 ```
 
 

@@ -56,6 +56,33 @@ my_list = [1,2,3,4]
 [i*i for i in my_list if i%2==0]
 ```
 
+### List Functions
+*The list insert() method inserts an element to the list at the specified index.
+*The pop() method removes the item at the given index from the list and returns the removed item.
+  * You can also have an index at a negative value. This will count backwards from the list.
+  * Pop without an index removes the last element of the list.
+*The list insert() method inserts an element to the list at the specified index.
+
+```python
+my_list = [1,2,3,4]
+
+my_list.insert(index, element)
+
+my_list.pop(index)
+
+
+```
+
+
+### Syntatic Sugar
+If you want to create a list.
+
+```python
+my_list = ['bob']*3
+
+my_list = list(range(2,20,3))
+```
+
 
 ## Dictionaries
 

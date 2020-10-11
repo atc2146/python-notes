@@ -14,7 +14,8 @@ Notes and references on Python. Taken from various places on the internet.
 * [Dictionaries](#Dictionaries)
     * [Iterating](#Iterating)
     * [Searching for a key](#Searching-for-a-key)
-    * [The setdefault() method](#The-setdefault()-method)
+    * [The setdefault() method](#The-setdefault-method)
+* [Regex](#Regex)
     
 ## Strings
 A "raw" string literal is prefixed by an 'r' and passes all the chars through without special treatment of backslashes, so `r'x\nx'` evaluates to the length-4 string 'x\nx'.
@@ -140,6 +141,7 @@ For Python regular expressions, you need to import the `re` module.
 ```python
 pattern = r'some string'
 string = 'this is some string'
+
 re.search(pattern, string)
 re.findall(pattern, string)
 

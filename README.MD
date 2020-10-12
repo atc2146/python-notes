@@ -17,7 +17,7 @@ Notes and references on Python. Taken from various places on the internet.
     * [The setdefault() method](#The-setdefault-method)
 * [Regex](#Regex)
 * [Lambda Functions](#Lambda-Functions)
-    * [Map, Filter, and Reduce](#map-filter-and-reduce)
+    * [map(), filter(), and reduce()](#map-filter-and-reduce)
         * [reduce()](#reduce)
     
 ## Strings
@@ -152,12 +152,12 @@ re.findall(pattern, string)
 
 
 ## Lambda Functions
-Lambda functions are anonymous functions.
+Lambda functions are known as anonymous functions.
 
 
 ### map(), filter(), and reduce()
 
-Functional programming that is helpful with lambda functions.
+Functional programming that is commonly used with lambda functions. In Python 3, you need to `import functools`.
 
 
 #### reduce()

@@ -16,6 +16,7 @@ Notes and references on Python. Taken from various places on the internet.
     * [Searching for a key](#Searching-for-a-key)
     * [The setdefault() method](#The-setdefault-method)
 * [Regex](#Regex)
+* [Lambda Functions](#Lambda-Functions)
     
 ## Strings
 A "raw" string literal is prefixed by an 'r' and passes all the chars through without special treatment of backslashes, so `r'x\nx'` evaluates to the length-4 string 'x\nx'.
@@ -147,16 +148,30 @@ re.findall(pattern, string)
 
 ```
 
-## map(), filter(), and reduce()
-
-Functional programming that is helpful with lambda functions.
 
 ## Lambda Functions
 Lambda functions are anonymous functions.
 
 
+### map(), filter(), and reduce()
+
+Functional programming that is helpful with lambda functions.
+
+
+#### reduce()
+
+`reduce()` implements a mathematical technique commonly known as folding or reduction. You’re doing a fold or reduction when you reduce a list of items to a single cumulative value. Python’s reduce() operates on any iterable. Code outline: `functools.reduce(function, iterable[, initializer])`
+
+```python
+import functools 
+
+print(reduce(lambda x, y: x + y, [1, 2, 3, 4]))
+# 1 + 2 + 3 + 4 = 10
+```
+
+
 ## Sorting
-A simple ascending sort is very easy: just call the `sorted()` function. It returns a new sorted list.  The original list is not changed.
+A simple ascending sort is very easy: just call the `sorted()` function. It returns a new sorted list.  The original list is not changed. 
 
 ```python
 sorted([5, 2, 3, 1, 4])         ## [1, 2, 3, 4, 5]
@@ -201,3 +216,4 @@ Python's built-in `sorted()` has a time complexity of O(nlogn)
 ## Notes/Sources
 * [Google for Education > Python](https://developers.google.com/edu/python)
 * [Progamiz](https://www.programiz.com/)
+* [Real Python](https://realpython.com/)

@@ -224,7 +224,36 @@ The O(n) worst case for sets and dicts is very uncommon, but it can happen if `_
 
 Python's built-in `sorted()` has a time complexity of O(nlogn)
 
-## Notes/Sources
+## Object Oriented Programming
+
+### Classes
+
+
+## Pandas
+
+Remember to `import pandas as pd`
+
+### Creating DataFrames
+```python
+# From a dict
+d = {'col1': [1, 2], 'col2': [3, 4]}
+df = pd.DataFrame(data=d)
+
+# From a list
+lst = [['tom', 25], ['krish', 30], 
+       ['nick', 26], ['juli', 22]] 
+df = pd.DataFrame(lst, columns =['Name', 'Age']) 
+
+```
+
+
+## Numpy
+
+
+
+## References
+
 * [Google for Education > Python](https://developers.google.com/edu/python)
 * [Progamiz](https://www.programiz.com/)
 * [Real Python](https://realpython.com/)
+* [Geeks For Geeks](https://www.geeksforgeeks.org/)

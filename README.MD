@@ -17,8 +17,13 @@ Notes and references on Python. Taken from various places on the internet.
     * [The setdefault() method](#The-setdefault-method)
 * [Regex](#Regex)
 * [Lambda Functions](#Lambda-Functions)
-    * [map(), filter(), and reduce()](#map-filter-and-reduce)
+    * [reduce(), map(), filter()](#reduce-filter-map)
         * [reduce()](#reduce)
+        * [filter()](#filter)
+        * [map()](#map)
+
+
+
     
 ## Strings
 A "raw" string literal is prefixed by an 'r' and passes all the chars through without special treatment of backslashes, so `r'x\nx'` evaluates to the length-4 string 'x\nx'.
@@ -155,7 +160,7 @@ re.findall(pattern, string)
 Lambda functions are known as anonymous functions.
 
 
-### map(), filter(), and reduce()
+### reduce(), map(), filter()
 
 Functional programming that is commonly used with lambda functions. In Python 3, you need to `import functools`.
 
@@ -171,6 +176,10 @@ print(reduce(lambda x, y: x + y, [1, 2, 3, 4]))
 # 1 + 2 + 3 + 4 = 10
 ```
 
+#### filter()
+
+
+#### map()
 
 ## Sorting
 A simple ascending sort is very easy: just call the `sorted()` function. It returns a new sorted list.  The original list is not changed. 

@@ -246,6 +246,9 @@ df = pd.DataFrame(lst, columns =['Name', 'Age'])
 
 ```
 
+### Selecting
+
+
 
 ## Numpy
 

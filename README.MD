@@ -17,7 +17,7 @@ Notes and references on Python. Taken from various places on the internet.
     * [The setdefault() method](#The-setdefault-method)
 * [Regex](#Regex)
 * [Lambda Functions](#Lambda-Functions)
-    * [reduce(), map(), filter()](#reduce-filter-map)
+    * [reduce(), filter(), map()](#reduce-filter-map)
         * [reduce()](#reduce)
         * [filter()](#filter)
         * [map()](#map)
@@ -160,7 +160,7 @@ re.findall(pattern, string)
 Lambda functions are known as anonymous functions.
 
 
-### reduce(), map(), filter()
+### reduce(), filter(), map()
 
 Functional programming that is commonly used with lambda functions. In Python 3, you need to `import functools`.
 

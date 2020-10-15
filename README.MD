@@ -111,7 +111,17 @@ my_list = list(range(2,20,3))
 
 ## Dictionaries
 
-This is essentially Python's version of a Hash Table.  Dictionaries have key value pairs.
+This is essentially Python's version of a Hash Table.  Dictionaries have key value pairs.  The keys in the dictionary need to be hashable.
+
+```python
+my_dict = {'bob': 20, 'james': 33, 'mary': 18}
+
+# delete a key
+del my_dict['bob]
+
+# clear dictionary
+my_dict.clear()
+```
 
 ### Iterating
 To iterate over a dictionary:

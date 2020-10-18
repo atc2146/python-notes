@@ -21,7 +21,7 @@ Notes and references on Python. Taken from various places on the internet.
         * [reduce()](#reduce)
         * [filter()](#filter)
         * [map()](#map)
-
+* [Sorting](#Sorting)
 
 
     
@@ -208,7 +208,7 @@ a           ## [1, 2, 3, 4, 5]
 
 The sorted() function can be customized through optional arguments. The `sorted()` optional argument reverse=True, e.g. `sorted(my_list, reverse=True)`, makes it sort backwards.
 
-For more complex custom sorting, `sorted()` takes an optional "key=" specifying a "key" function that transforms each element before comparison. The key function takes in 1 value and returns 1 value, and the returned "proxy" value is used for the comparisons within the sort.
+For more complex custom sorting, `sorted()` takes an optional "key=" specifying a "key" function that transforms each element before comparison. The key function takes in 1 value and returns 1 value, and the returned "proxy" value is used for the comparisons within the sort.  For example, you can sort elements of the list by length by passing in `key=len`.
 
 ## Algorithms
 

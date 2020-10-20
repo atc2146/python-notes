@@ -237,7 +237,20 @@ Python's built-in `sorted()` has a time complexity of O(nlogn)
 ## Object Oriented Programming
 
 ### Classes
+Self explanatory
 
+```python
+class Person:
+  def __init__(self, name, age):
+    self.name = name
+    self.age = age
+
+  def myfunc(self):
+    print("Hello my name is " + self.name)
+
+p1 = Person("John", 36)
+p1.myfunc()
+```
 
 ## Pandas
 
@@ -270,3 +283,4 @@ df = pd.DataFrame(lst, columns =['Name', 'Age'])
 * [Progamiz](https://www.programiz.com/)
 * [Real Python](https://realpython.com/)
 * [Geeks For Geeks](https://www.geeksforgeeks.org/)
+* [W3Schools](https://www.w3schools.com/python)

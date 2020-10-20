@@ -237,7 +237,7 @@ Python's built-in `sorted()` has a time complexity of O(nlogn)
 ## Object Oriented Programming
 
 ### Classes
-Self explanatory
+There are also functions like `repr()` or `str()' that you can override.
 
 ```python
 class Person:
@@ -250,6 +250,8 @@ class Person:
 
 p1 = Person("John", 36)
 p1.myfunc()
+print(p1.age)
+
 ```
 
 ## Pandas

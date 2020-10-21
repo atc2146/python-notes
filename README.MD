@@ -232,7 +232,10 @@ Here is the summary for `in`:
 
 The O(n) worst case for sets and dicts is very uncommon, but it can happen if `__hash__` is implemented poorly. This only happens if everything in your set has the same hash value.
 
-Python's built-in `sorted()` has a time complexity of O(nlogn)
+* Python's built-in `sorted()` has a time complexity of O(nlogn)
+* Python's built-in `.count()` on lists has a time complexity of O(n)
+
+## Space complexity
 
 ## Object Oriented Programming
 

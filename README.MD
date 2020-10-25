@@ -22,7 +22,10 @@ Notes and references on Python. Taken from various places on the internet.
         * [filter()](#filter)
         * [map()](#map)
 * [Sorting](#Sorting)
-
+* [Algorithms](#Algorithms)
+    * [Hash Tables](#Hash-tables)
+* [Time complexity](#Time-complexity)
+    * [Time complexity of built-ins](#time-complexity-of-built-ins)
 
     
 ## Strings
@@ -212,7 +215,7 @@ For more complex custom sorting, `sorted()` takes an optional "key=" specifying 
 
 ## Algorithms
 
-### Hash table
+### Hash tables
 See [dictionary](#dictionary) section of notes.
 
 

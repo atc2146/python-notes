@@ -26,7 +26,7 @@ Notes and references on Python. Taken from various places on the internet.
     * [Hash Tables](#Hash-tables)
 * [Time complexity](#Time-complexity)
     * [Time complexity of built-ins](#time-complexity-of-built-ins)
-
+* [Space complexity](#Space-complexity)
     
 ## Strings
 A "raw" string literal is prefixed by an 'r' and passes all the chars through without special treatment of backslashes, so `r'x\nx'` evaluates to the length-4 string 'x\nx'.
@@ -239,6 +239,9 @@ The O(n) worst case for sets and dicts is very uncommon, but it can happen if `_
 * Python's built-in `.count()` on lists has a time complexity of O(n)
 
 ## Space complexity
+
+The space complexity of an algorithm or a computer program is the amount of memory space required to solve an instance of the computational problem as a function of characteristics of the input. It is the memory required by an algorithm to execute a program and produce output [Source](https://en.wikipedia.org/wiki/Space_complexity).
+
 
 ## Object Oriented Programming
 

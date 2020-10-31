@@ -7,6 +7,7 @@ Notes and references on Python. Taken from various places on the internet.
     * [String Methods](#String-Methods)
     * [String Slices](#String-Slices)
     * [f-Strings](#f-Strings)
+* [Data Structures](#data-structures)
 * [Lists](#Lists)
     * [List Comprehension](#List-Comprehension)
     * [List Methods](#List-Comprehension)
@@ -56,7 +57,8 @@ age = 74
 
 print(f'Hello, {name}. You are {age}.') ## Hello, Eric. You are 74.
 ``` 
-
+## Data Structures
+The [official](https://docs.python.org/3/tutorial/datastructures.html) Python documentation has good notes on this. A brief summary is provided below.
 
 ## Lists
 To iterate over a list with an index and value:  

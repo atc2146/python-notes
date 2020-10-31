@@ -16,6 +16,8 @@ Notes and references on Python. Taken from various places on the internet.
     * [Iterating](#Iterating)
     * [Searching for a key](#Searching-for-a-key)
     * [The setdefault() method](#The-setdefault-method)
+* [Tuples](#tuples)
+* [Sets](#sets)
 * [Regex](#Regex)
 * [Lambda Functions](#Lambda-Functions)
     * [reduce(), filter(), map()](#reduce-filter-map)
@@ -161,6 +163,15 @@ my_dict.get(key):
 The `setdefault()` method returns the value of the item with the specified key. If the key does not exist, insert the key, with the specified value: `dictionary.setdefault(keyname, value)`
 
 ## Tuples
+A tuple is a collection of objects which are ordered and **immutable**.
+
+```python
+some_tuple = (1, )
+another_tuple = ('a', 'b', 2)
+
+```
+
+## Sets
 A tuple is a collection of objects which are ordered and **immutable**.
 
 ```python

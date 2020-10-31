@@ -158,6 +158,11 @@ my_dict.get(key):
 ### The setdefault() method
 The `setdefault()` method returns the value of the item with the specified key. If the key does not exist, insert the key, with the specified value: `dictionary.setdefault(keyname, value)`
 
+## Tuples
+A tuple is a collection of objects which are ordered and **immutable**.
+
+
+
 ## Regex
 For Python regular expressions, you need to import the `re` module.  
 
@@ -286,7 +291,7 @@ df = pd.DataFrame(lst, columns =['Name', 'Age'])
 
 
 
-## Numpy
+## NumPy
 
 
 

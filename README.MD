@@ -32,7 +32,10 @@ Notes and references on Python. Taken from various places on the internet.
 * [Space complexity](#Space-complexity)
 * [Object Oriented Programming](Object-Oriented-Programming)
     * [Classes](#Classes)
-    
+* [Pandas](#Pandas)
+    * [Selecting](#Selecting)
+* [NumPy](#NumPy)
+  
 ## Strings
 A "raw" string literal is prefixed by an 'r' and passes all the chars through without special treatment of backslashes, so `r'x\nx'` evaluates to the length-4 string 'x\nx'.
 
@@ -309,7 +312,13 @@ df = pd.DataFrame(lst, columns =['Name', 'Age'])
 
 ### Selecting
 
+```python
+d = {'col1': [1, 2], 'col2': [3, 4]}
 
+# Select some columns
+d[['col1', 'col2]]
+
+```
 
 ## NumPy
 

@@ -163,7 +163,11 @@ The `setdefault()` method returns the value of the item with the specified key. 
 ## Tuples
 A tuple is a collection of objects which are ordered and **immutable**.
 
+```python
+some_tuple = (1, )
+another_tuple = ('a', 'b', 2)
 
+```
 
 ## Regex
 For Python regular expressions, you need to import the `re` module.  
@@ -174,7 +178,6 @@ string = 'this is some string'
 
 re.search(pattern, string)
 re.findall(pattern, string)
-
 ```
 
 

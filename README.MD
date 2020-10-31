@@ -27,6 +27,8 @@ Notes and references on Python. Taken from various places on the internet.
 * [Time complexity](#Time-complexity)
     * [Time complexity of built-ins](#time-complexity-of-built-ins)
 * [Space complexity](#Space-complexity)
+* [Object Oriented Programming](Object-Oriented-Programming)
+    * [Classes](#Classes)
     
 ## Strings
 A "raw" string literal is prefixed by an 'r' and passes all the chars through without special treatment of backslashes, so `r'x\nx'` evaluates to the length-4 string 'x\nx'.
@@ -246,7 +248,7 @@ The space complexity of an algorithm or a computer program is the amount of memo
 ## Object Oriented Programming
 
 ### Classes
-There are also functions like `repr()` or `str()' that you can override.
+There are also functions like `repr()` or `str()` that you can override.
 
 ```python
 class Person:

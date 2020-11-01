@@ -189,6 +189,10 @@ a = set('abracadabra')  # {'a', 'r', 'b', 'c', 'd'}
 
 ```
 
+A set has a significantly faster `in` search than lists.  This is because sets finds the element by computing a hash from the key - whearas, in general, the whole list needs to be searched.  Both have O(1) time complexity, however.
+
+Lists are faster (in general) when you are iterating over values, however.  This performance increases if you sort the list.
+
 ## Regex
 For Python regular expressions, you need to import the `re` module.  
 

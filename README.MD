@@ -33,6 +33,7 @@ Notes and references on Python. Taken from various places on the internet.
 * [Object Oriented Programming](Object-Oriented-Programming)
     * [Classes](#Classes)
 * [Functions](#Functions)
+    * [Arguments](#Arguments)
 * [Pandas](#Pandas)
     * [Selecting](#Selecting)
 * [NumPy](#NumPy)
@@ -301,6 +302,8 @@ print(p1.age)
 ```
 
 ## Functions
+
+### Arguments
 
 
 ## Pandas

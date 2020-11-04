@@ -32,6 +32,7 @@ Notes and references on Python. Taken from various places on the internet.
 * [Space complexity](#Space-complexity)
 * [Object Oriented Programming](Object-Oriented-Programming)
     * [Classes](#Classes)
+* [Functions](#Functions)
 * [Pandas](#Pandas)
     * [Selecting](#Selecting)
 * [NumPy](#NumPy)
@@ -298,6 +299,9 @@ p1.myfunc()
 print(p1.age)
 
 ```
+
+## Functions
+
 
 ## Pandas
 

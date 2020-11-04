@@ -304,6 +304,9 @@ print(p1.age)
 ## Functions
 
 ### Arguments
+There are keyword and positional arguments.
+
+
 
 
 ## Pandas

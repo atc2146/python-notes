@@ -304,10 +304,54 @@ print(p1.age)
 ## Functions
 
 ### Arguments
-There are keyword and positional arguments.
+There are keyword and positional arguments.  Usually denoted *args and **kwargs. They allow you to pass an unspecified number of arguments to a function.
 
+The asterisk is an unpacking operator.
 
+#### *args (non-keyword argument)
+*args is used to send a non-keyworded variable length argument list to the function
 
+```python
+def my_sum(*args):
+    result = 0
+    # Iterating over the Python args tuple
+    for x in args:
+        result += x
+    return result
+
+print(my_sum(1, 2, 3))
+# 6
+
+def myFun(*argv): 
+    for arg in argv: 
+        print (arg)
+   
+myFun('Hello', 'Welcome', 'to', 'GeeksforGeeks') 
+# Hello
+# Welcome
+# to
+# GeeksforGeeks
+```
+
+#### **kwargs (keyword argument)
+**kwargs allows you to pass keyworded variable length of arguments to a function. You should use **kwargs if you want to handle named arguments in a function.
+
+```python
+def intro(**data):
+    print("\nData type of argument:",type(data))
+
+    for key, value in data.items():
+        print("{} is {}".format(key,value))
+
+intro(Firstname="Sita", Lastname="Sharma", Age=22, Phone=1234567890)
+intro(Firstname="John", Lastname="Wood", Email="johnwood@nomail.com", Country="Wakanda", Age=25, Phone=9876543210)
+```
+
+#### Ordering
+When defining a function, the order is as follows
+1. positional arguments
+2. *args
+3. **kwargs
 
 ## Pandas
 
@@ -346,6 +390,7 @@ The core functionality of NumPy is its "ndarray", for n-dimensional array, data 
 
 * [Google for Education > Python](https://developers.google.com/edu/python)
 * [Progamiz](https://www.programiz.com/)
+    * [args and kwargs](https://www.programiz.com/python-programming/args-and-kwargs)
 * [Real Python](https://realpython.com/)
 * [Geeks For Geeks](https://www.geeksforgeeks.org/)
 * [W3Schools](https://www.w3schools.com/python)

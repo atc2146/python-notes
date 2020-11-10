@@ -30,10 +30,13 @@ Notes and references on Python. Taken from various places on the internet.
 * [Time complexity](#Time-complexity)
     * [Time complexity of built-ins](#time-complexity-of-built-ins)
 * [Space complexity](#Space-complexity)
-* [Object Oriented Programming](Object-Oriented-Programming)
+* [Object Oriented Programming](#object-oriented-programming)
     * [Classes](#Classes)
 * [Functions](#Functions)
     * [Arguments](#Arguments)
+        * [*args](#args-non-keyword-argument)
+        * [**kwargs](#kwargs-keyword-argument)
+        * [Ordering](#ordering)
 * [Pandas](#Pandas)
     * [Selecting](#Selecting)
 * [NumPy](#NumPy)
@@ -309,7 +312,7 @@ There are keyword and positional arguments.  Usually denoted *args and **kwargs.
 The asterisk is an unpacking operator.
 
 #### *args (non-keyword argument)
-*args is used to send a non-keyworded variable length argument list to the function
+*args is used to send a non-keyworded variable length argument list to the function.  For example, lists and tuples.
 
 ```python
 def my_sum(*args):
@@ -334,7 +337,7 @@ myFun('Hello', 'Welcome', 'to', 'GeeksforGeeks')
 ```
 
 #### **kwargs (keyword argument)
-**kwargs allows you to pass keyworded variable length of arguments to a function. You should use **kwargs if you want to handle named arguments in a function.
+**kwargs allows you to pass keyworded variable length of arguments to a function. You should use **kwargs if you want to handle named arguments in a function.  For example, dictionaries.
 
 ```python
 def intro(**data):
@@ -353,6 +356,10 @@ When defining a function, the order is as follows
 2. *args
 3. **kwargs
 
+```python
+def example2(arg_1, arg_2, *args, kw_1="shark", kw_2="blobfish", **kwargs):
+    pass
+```
 ## Pandas
 
 Remember to `import pandas as pd`
@@ -395,3 +402,4 @@ The core functionality of NumPy is its "ndarray", for n-dimensional array, data 
 * [Geeks For Geeks](https://www.geeksforgeeks.org/)
 * [W3Schools](https://www.w3schools.com/python)
 * [Wikipedia Numpy](https://en.wikipedia.org/wiki/NumPy)
+* [DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-use-args-and-kwargs-in-python-3)

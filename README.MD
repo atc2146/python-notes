@@ -19,11 +19,20 @@ Notes and references on Python. Taken from various places on the internet.
 * [Tuples](#tuples)
 * [Sets](#sets)
 * [Regex](#Regex)
+* [Functions](#Functions)
+    * [Arguments](#Arguments)
+        * [*args](#args-non-keyword-argument)
+        * [**kwargs](#kwargs-keyword-argument)
+        * [Ordering](#ordering)
 * [Lambda Functions](#Lambda-Functions)
     * [reduce(), filter(), map()](#reduce-filter-map)
         * [reduce()](#reduce)
         * [filter()](#filter)
         * [map()](#map)
+* [Iterators, Generators, and Decorators](#iterators-generators-and-decorators)
+    * [Iterators](#iterators)
+    * [Generators](#generators)
+    * [Decorators](#decorators)
 * [Sorting](#Sorting)
 * [Algorithms](#Algorithms)
     * [Hash Tables](#Hash-tables)
@@ -32,11 +41,6 @@ Notes and references on Python. Taken from various places on the internet.
 * [Space complexity](#Space-complexity)
 * [Object Oriented Programming](#object-oriented-programming)
     * [Classes](#Classes)
-* [Functions](#Functions)
-    * [Arguments](#Arguments)
-        * [*args](#args-non-keyword-argument)
-        * [**kwargs](#kwargs-keyword-argument)
-        * [Ordering](#ordering)
 * [Pandas](#Pandas)
     * [Selecting](#Selecting)
 * [NumPy](#NumPy)
@@ -208,7 +212,65 @@ string = 'this is some string'
 re.search(pattern, string)
 re.findall(pattern, string)
 ```
+## Functions
 
+### Arguments
+There are keyword and positional arguments.  Usually denoted *args and **kwargs. They allow you to pass an unspecified number of arguments to a function.
+
+The asterisk is an unpacking operator.
+
+#### *args (non-keyword argument)
+*args is used to send a non-keyworded variable length argument list to the function.  For example, lists and tuples.
+
+```python
+def my_sum(*args):
+    result = 0
+    # Iterating over the Python args tuple
+    for x in args:
+        result += x
+    return result
+
+print(my_sum(1, 2, 3))
+# 6
+
+def myFun(*argv): 
+    for arg in argv: 
+        print (arg)
+   
+myFun('Hello', 'Welcome', 'to', 'GeeksforGeeks') 
+# Hello
+# Welcome
+# to
+# GeeksforGeeks
+```
+
+#### **kwargs (keyword argument)
+**kwargs allows you to pass keyworded variable length of arguments to a function. You should use **kwargs if you want to handle named arguments in a function.  For example, dictionaries.
+
+```python
+def intro(**data):
+    print("\nData type of argument:",type(data))
+
+    for key, value in data.items():
+        print("{} is {}".format(key,value))
+
+intro(Firstname="Sita", Lastname="Sharma", Age=22, Phone=1234567890)
+intro(Firstname="John", Lastname="Wood", Email="johnwood@nomail.com", Country="Wakanda", Age=25, Phone=9876543210)
+
+# Data type of argument: <class 'dict'>
+# Firstname is Sita
+# Lastname is Sharma
+# Age is 22
+# Phone is 1234567890
+# 
+# Data type of argument: <class 'dict'>
+# Firstname is John
+# Lastname is Wood
+# Email is johnwood@nomail.com
+# Country is Wakanda
+# Age is 25
+# Phone is 9876543210
+```
 
 ## Lambda Functions
 Lambda functions are known as anonymous functions.
@@ -234,6 +296,15 @@ print(reduce(lambda x, y: x + y, [1, 2, 3, 4]))
 
 
 #### map()
+
+
+## Iterators, Generators, and Decorators
+
+### Iterators
+
+### Decorators
+
+### Iterators
 
 ## Sorting
 A simple ascending sort is very easy: just call the `sorted()` function. It returns a new sorted list.  The original list is not changed. 
@@ -302,52 +373,6 @@ p1 = Person("John", 36)
 p1.myfunc()
 print(p1.age)
 
-```
-
-## Functions
-
-### Arguments
-There are keyword and positional arguments.  Usually denoted *args and **kwargs. They allow you to pass an unspecified number of arguments to a function.
-
-The asterisk is an unpacking operator.
-
-#### *args (non-keyword argument)
-*args is used to send a non-keyworded variable length argument list to the function.  For example, lists and tuples.
-
-```python
-def my_sum(*args):
-    result = 0
-    # Iterating over the Python args tuple
-    for x in args:
-        result += x
-    return result
-
-print(my_sum(1, 2, 3))
-# 6
-
-def myFun(*argv): 
-    for arg in argv: 
-        print (arg)
-   
-myFun('Hello', 'Welcome', 'to', 'GeeksforGeeks') 
-# Hello
-# Welcome
-# to
-# GeeksforGeeks
-```
-
-#### **kwargs (keyword argument)
-**kwargs allows you to pass keyworded variable length of arguments to a function. You should use **kwargs if you want to handle named arguments in a function.  For example, dictionaries.
-
-```python
-def intro(**data):
-    print("\nData type of argument:",type(data))
-
-    for key, value in data.items():
-        print("{} is {}".format(key,value))
-
-intro(Firstname="Sita", Lastname="Sharma", Age=22, Phone=1234567890)
-intro(Firstname="John", Lastname="Wood", Email="johnwood@nomail.com", Country="Wakanda", Age=25, Phone=9876543210)
 ```
 
 #### Ordering

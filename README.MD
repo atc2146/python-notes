@@ -18,6 +18,7 @@ Notes and references on Python. Taken from various places on the internet.
     * [The setdefault() method](#The-setdefault-method)
 * [Tuples](#tuples)
 * [Sets](#sets)
+* [Deleting Stuff](#deleting-stuff)
 * [Regex](#Regex)
 * [Functions](#Functions)
     * [Arguments](#Arguments)
@@ -33,6 +34,7 @@ Notes and references on Python. Taken from various places on the internet.
     * [Iterators](#iterators)
     * [Generators](#generators)
     * [Decorators](#decorators)
+* [Syntatic Sugar and Other](#syntatic-sugar-and-other)
 * [Sorting](#Sorting)
 * [Algorithms](#Algorithms)
     * [Hash Tables](#Hash-tables)
@@ -102,8 +104,9 @@ my_list = [1,2,3,4]
     * You can also have an index at a negative value. This will count backwards from the list.
     * Pop without an index removes the last element of the list.
 * The `remove()` method removes the first matching element (which is passed as an argument) from the list.
-    * Returns None
-    * If the element doesn't exist, it throws a ValueError.
+    * Returns `None`
+    * If the element doesn't exist, it throws a `ValueError`.
+    * If a list contains duplicate elements, the `remove()` method only removes the first matching element.
 * The `count()` method returns the number of times the specified element appears in the list.
 * The `index()` method returns the index of the specified element in the list.
 
@@ -127,10 +130,19 @@ If you want to create a list.
 
 ```python
 my_list = ['bob']*3
+# ['bob', 'bob', 'bob']
 
 my_list = list(range(2,20,3))
+#[2, 5, 8, 11, 14, 17]
 ```
 
+### Adding Lists
+Adding lists in Python is not done element wise.
+
+```python
+[1,2] + [1,1]
+#[1,2,1,1]
+```
 
 ## Dictionaries
 
@@ -165,12 +177,21 @@ if key in my_dict:
     print(str(key) + ' exists')
 ```
 
-There is also the `get()` method.  This method returns a value for the given key. If the key is not available, then returns default value None.
+There is also the `get()` method.  This method returns a value for the given key. If the key is not available, then returns default value `None`.
 ```python
 my_dict = {'bob': 20, 'james': 33, 'mary': 18}
 key = 'bob'
 
 my_dict.get(key):
+```
+
+If you try to access a key that does not exist, an error with be thrown:
+
+```python
+my_dict = {'bob': 20, 'james': 33, 'mary': 18}
+
+my_dict['obama']
+# Will throw an error
 ```
 
 ### The setdefault() method
@@ -201,6 +222,44 @@ a = set('abracadabra')  # {'a', 'r', 'b', 'c', 'd'}
 A set has a significantly faster `in` search than lists.  This is because sets finds the element by computing a hash from the key - whearas, in general, the whole list needs to be searched.  Both have O(1) time complexity, however.
 
 Lists are faster (in general) when you are iterating over values, however.  This performance increases if you sort the list.
+
+## Deleting Stuff
+You can use the `del` keyword to delete variables, user-defined objects, lists, items within lists, dictionaries, etc.
+
+You cannot delete tuple elements, but you can delete an entire tuple.
+```python
+my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+# deleting the third item
+del my_list[2]
+
+# Output: [1, 2, 4, 5, 6, 7, 8, 9]
+print(my_list)
+
+# deleting items from 2nd to 4th
+del my_list[1:4]
+
+# Output: [1, 6, 7, 8, 9]
+print(my_list)
+
+# deleting all elements
+del my_list[:]
+
+# Output: []
+print(my_list)
+
+# Removing a key-value pair from a dict
+person = { 'name': 'Sam',
+  'age': 25,
+  'profession': 'Programmer'
+}
+
+del person['profession']
+
+# Output: {'name': 'Sam', 'age': 25}
+print(person)
+
+```
 
 ## Regex
 For Python regular expressions, you need to import the `re` module.  
@@ -272,6 +331,17 @@ intro(Firstname="John", Lastname="Wood", Email="johnwood@nomail.com", Country="W
 # Phone is 9876543210
 ```
 
+#### Ordering
+When defining a function, the order is as follows
+1. positional arguments
+2. *args
+3. **kwargs
+
+```python
+def example2(arg_1, arg_2, *args, kw_1="shark", kw_2="blobfish", **kwargs):
+    pass
+```
+
 ## Lambda Functions
 Lambda functions are known as anonymous functions.
 
@@ -298,6 +368,7 @@ print(reduce(lambda x, y: x + y, [1, 2, 3, 4]))
 #### map()
 
 
+
 ## Iterators, Generators, and Decorators
 
 ### Iterators
@@ -305,6 +376,64 @@ print(reduce(lambda x, y: x + y, [1, 2, 3, 4]))
 ### Decorators
 
 ### Iterators
+
+
+## Syntatic Sugar and Other
+
+### any and all
+The `any(iterable)` and `all(iterable)` are built-in functions in Python.  They are equivalent to writing a series of `or` and `and` operators respectively between each of the elements of the passed iterable
+
+Example:
+
+```python
+any([True, False, False, False])
+# True
+
+all([True, True, True, False])
+# False
+```
+
+## Max and Min
+The Python `max()` function returns the largest item in an iterable. It can also be used to find the largest item between two or more parameters.
+
+`max(iterable, *iterables, key, default)`
+
+* iterable - an iterable such as list, tuple, set, dictionary, etc.
+* *iterables (optional) - any number of iterables; can be more than one
+* key (optional) - key function where the iterables are passed and comparison is performed based on its return value
+* default (optional) - default value if the given iterable is empty
+
+```python
+square = {2: 4, -3: 9, -1: 1, -2: 4}
+
+# the largest key
+key1 = max(square)
+print("The largest key:", key1)    # 2
+
+# the key whose value is the largest
+key2 = max(square, key = lambda k: square[k])
+
+print("The key with the largest value:", key2)    # -3
+
+# getting the largest value
+print("The largest value:", square[key2])    # 9
+```
+
+### Creating Lists
+```python
+[0]*3
+# [0,0,0]
+
+[1,2]*2
+#[1,2,1,2]
+
+[[1,2] for i in range(0, 2)]
+#[[1, 2], [1, 2]]
+
+```
+
+## Bitwise Operators
+In Python, bitwise operators are used to perform bitwise calculations on integers. The integers are first converted into binary and then operations are performed on bit by bit, hence the name bitwise operators. Then the result is returned in decimal format.
 
 ## Sorting
 A simple ascending sort is very easy: just call the `sorted()` function. It returns a new sorted list.  The original list is not changed. 
@@ -375,16 +504,6 @@ print(p1.age)
 
 ```
 
-#### Ordering
-When defining a function, the order is as follows
-1. positional arguments
-2. *args
-3. **kwargs
-
-```python
-def example2(arg_1, arg_2, *args, kw_1="shark", kw_2="blobfish", **kwargs):
-    pass
-```
 ## Pandas
 
 Remember to `import pandas as pd`
@@ -423,6 +542,7 @@ The core functionality of NumPy is its "ndarray", for n-dimensional array, data 
 * [Google for Education > Python](https://developers.google.com/edu/python)
 * [Progamiz](https://www.programiz.com/)
     * [args and kwargs](https://www.programiz.com/python-programming/args-and-kwargs)
+    * [del](https://www.programiz.com/python-programming/del)
 * [Real Python](https://realpython.com/)
 * [Geeks For Geeks](https://www.geeksforgeeks.org/)
 * [W3Schools](https://www.w3schools.com/python)

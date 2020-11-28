@@ -122,8 +122,11 @@ my_list.remove(element)
 my_list.count(element)
 
 my_list.index(element, [start], [end])
-```
 
+my_list[:-1]
+#[1,2,3]
+```
+ Slicing creates a shallow copy of the original list.
 
 ### Creating Lists
 If you want to create a list.
@@ -372,10 +375,81 @@ print(reduce(lambda x, y: x + y, [1, 2, 3, 4]))
 ## Iterators, Generators, and Decorators
 
 ### Iterators
+An iterator is just any object that you can iterate over.
+
+Iterators implement the `__next__()` and `__iter__()` methods.
+
+```python
+# define a list
+my_list = [4, 7, 0, 3]
+
+# get an iterator using iter()
+my_iter = iter(my_list)
+
+# iterate through it using next()
+
+# Output: 4
+print(next(my_iter))
+
+# Output: 7
+print(next(my_iter))
+```
+
+or you can use a `for` loop.
+
+```python
+for elem in my_list:
+    print(elem)
+```
+
+### Generators
+Python generators are a simple way of creating iterators.
+
+A generator is a function that returns an object (iterator) which we can iterate over (one value at a time).
+
+A generator is simply a normal function, but with a yield statement instead of a return statement.
+
+The difference is that while a `return` statement terminates a function entirely, `yield` statement pauses the function saving all its states and later continues from there on successive calls.
+
+```python
+def rev_str(my_str):
+    length = len(my_str)
+    for i in range(length - 1, -1, -1):
+        yield my_str[i]
+
+# For loop to reverse the string
+for char in rev_str("hello"):
+    print(char)
+```
+
+Generators have lazy execution ( producing items only when asked for ). For this reason, a generator expression is much more memory efficient than an equivalent list comprehension.
+
+```python
+generator = (x**2 for x in my_list)
+print(next(a))
+```
+
+Why Implement Generators?
+  1. Easy to implement
+  2. Memory Efficient
+  3. Represent Infinite Stream
+  4. Pipelining Generators
+
+```python
+def fibonacci_numbers(nums):
+    x, y = 0, 1
+    for _ in range(nums):
+        x, y = y, x+y
+        yield x
+
+def square(nums):
+    for num in nums:
+        yield num**2
+
+print(sum(square(fibonacci_numbers(10))))
+```
 
 ### Decorators
-
-### Iterators
 
 
 ## Syntatic Sugar and Other
@@ -548,3 +622,4 @@ The core functionality of NumPy is its "ndarray", for n-dimensional array, data 
 * [W3Schools](https://www.w3schools.com/python)
 * [Wikipedia Numpy](https://en.wikipedia.org/wiki/NumPy)
 * [DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-use-args-and-kwargs-in-python-3)
+* [GCoder: 3 Python practice interview questions](https://gdcoder.com/interview-coding-problems-1-implement-trie-prefix-tree-2-longest-substring-with-at-most-k-distinct-characters-3-3sum/)

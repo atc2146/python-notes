@@ -18,7 +18,7 @@ Notes and references on Python. Taken from various places on the internet.
     * [The setdefault() method](#The-setdefault-method)
 * [Tuples](#tuples)
 * [Sets](#sets)
-* [Deleting Stuff](#deleting-stuff)
+* [Deletion](#deletion)
 * [Regex](#Regex)
 * [Functions](#Functions)
     * [Arguments](#Arguments)
@@ -226,7 +226,7 @@ A set has a significantly faster `in` search than lists.  This is because sets f
 
 Lists are faster (in general) when you are iterating over values, however.  This performance increases if you sort the list.
 
-## Deleting Stuff
+## Deletion
 You can use the `del` keyword to delete variables, user-defined objects, lists, items within lists, dictionaries, etc.
 
 You cannot delete tuple elements, but you can delete an entire tuple.

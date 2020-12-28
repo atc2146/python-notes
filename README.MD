@@ -7,7 +7,6 @@ Notes and references on Python. Taken from various places on the internet.
     * [String Methods](#String-Methods)
     * [String Slices](#String-Slices)
     * [f-Strings](#f-Strings)
-* [Data Structures](#data-structures)
 * [Lists](#Lists)
     * [List Comprehension](#List-Comprehension)
     * [List Methods](#List-Comprehension)
@@ -36,6 +35,7 @@ Notes and references on Python. Taken from various places on the internet.
     * [Decorators](#decorators)
 * [Syntatic Sugar and Other](#syntatic-sugar-and-other)
 * [Sorting](#Sorting)
+* [Data Structures](#data-structures)
 * [Algorithms](#Algorithms)
     * [Hash Tables](#Hash-tables)
 * [Time complexity](#Time-complexity)
@@ -75,8 +75,6 @@ age = 74
 
 print(f'Hello, {name}. You are {age}.') ## Hello, Eric. You are 74.
 ``` 
-## Data Structures
-The [official](https://docs.python.org/3/tutorial/datastructures.html) Python documentation has good notes on this. A brief summary is provided below.
 
 ## Lists
 To iterate over a list with an index and value:  
@@ -527,6 +525,9 @@ a           ## [1, 2, 3, 4, 5]
 The sorted() function can be customized through optional arguments. The `sorted()` optional argument reverse=True, e.g. `sorted(my_list, reverse=True)`, makes it sort backwards.
 
 For more complex custom sorting, `sorted()` takes an optional "key=" specifying a "key" function that transforms each element before comparison. The key function takes in 1 value and returns 1 value, and the returned "proxy" value is used for the comparisons within the sort.  For example, you can sort elements of the list by length by passing in `key=len`.
+
+## Data Structures
+The [official](https://docs.python.org/3/tutorial/datastructures.html) Python documentation has good notes on this. A brief summary is provided below.
 
 ## Algorithms
 

@@ -606,6 +606,8 @@ d[['col1', 'col2]]
 
 ```
 
+### Dates
+
 ## NumPy
 
 A library (`numpy`) in Python that is useful for mathematical operations (particularly vector operations).  

@@ -606,8 +606,8 @@ d[['col1', 'col2]]
 
 ```
 
-### Dates
-* Be sure to explicity convert dates: you may use `pd.to_datetime()`
+### Dates and Times
+* Datetime can be converted using `pd.to_datetime()`
 
 ## NumPy
 

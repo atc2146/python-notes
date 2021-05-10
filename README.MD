@@ -198,6 +198,16 @@ my_dict['obama']
 ### The setdefault() method
 The `setdefault()` method returns the value of the item with the specified key. If the key does not exist, insert the key, with the specified value: `dictionary.setdefault(keyname, value)`
 
+### The defaultdict collection
+
+If a key is not found in the dictionary, then instead of a KeyError being thrown, a new entry is created. Read [more](https://docs.python.org/3/library/collections.html#collections.defaultdict).
+
+```python
+
+hash_map = defaultdict(int)
+
+```
+
 ## Tuples
 A tuple is a collection of objects which are ordered and **immutable**.
 

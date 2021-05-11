@@ -37,6 +37,7 @@ Notes and references on Python. Taken from various places on the internet.
 * [Sorting](#Sorting)
 * [Data Structures](#data-structures)
     * [Queues](#queues)
+        * [Priority Queues](#priority-queues)
     * [Hash Tables](#Hash-tables)
 * [Algorithms](#Algorithms)
 * [Time complexity](#Time-complexity)
@@ -544,7 +545,11 @@ Timsort is the sorting algorithm used by Python.
 The [official](https://docs.python.org/3/tutorial/datastructures.html) Python documentation has good notes on this. A brief summary is provided below.
 
 ### Queues
-This can include queues such as Priority Queues.
+
+#### Priority Queues
+A [priority queue](https://en.wikipedia.org/wiki/Priority_queue) is an abstract data type similar to a regular queue or stack data structure in which each element additionally has a "priority" associated with it.
+
+The items in the queue must be able to be assigned a priority.
 
 ### Hash tables
 See [dictionary](#dictionary) section of notes.

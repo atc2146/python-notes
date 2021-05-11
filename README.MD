@@ -537,6 +537,8 @@ The sorted() function can be customized through optional arguments. The `sorted(
 
 For more complex custom sorting, `sorted()` takes an optional "key=" specifying a "key" function that transforms each element before comparison. The key function takes in 1 value and returns 1 value, and the returned "proxy" value is used for the comparisons within the sort.  For example, you can sort elements of the list by length by passing in `key=len`.
 
+Timsort is the sorting algorithm used by Python.
+
 ## Data Structures
 The [official](https://docs.python.org/3/tutorial/datastructures.html) Python documentation has good notes on this. A brief summary is provided below.
 
@@ -553,11 +555,11 @@ See [dictionary](#dictionary) section of notes.
 
 Given n, the size of the input to the algorithm, Big O notation represents the relationship between n and the number of steps the algorithm takes to find a solution.
 
-We have 
+We have: 
 * O(1): Constant
-* O(logn): log
-* O(n): linear
-* O(nlogn): log-linear
+* O(logn): Logarithmic
+* O(n): Linear
+* O(nlogn): Log-linear
 * O(n<sup>2</sup>): Quadratic
 * O(2<sup>n</sup>): Exponential
 * O(n!): Factorial

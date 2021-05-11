@@ -39,6 +39,7 @@ Notes and references on Python. Taken from various places on the internet.
 * [Algorithms](#Algorithms)
     * [Hash Tables](#Hash-tables)
 * [Time complexity](#Time-complexity)
+    * [Big O Notation](#big-o-notation)
     * [Time complexity of built-ins](#time-complexity-of-built-ins)
 * [Space complexity](#Space-complexity)
 * [Object Oriented Programming](#object-oriented-programming)

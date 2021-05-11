@@ -36,8 +36,9 @@ Notes and references on Python. Taken from various places on the internet.
 * [Syntatic Sugar and Other](#syntatic-sugar-and-other)
 * [Sorting](#Sorting)
 * [Data Structures](#data-structures)
-* [Algorithms](#Algorithms)
+    * [Queues](#queues)
     * [Hash Tables](#Hash-tables)
+* [Algorithms](#Algorithms)
 * [Time complexity](#Time-complexity)
     * [Big O Notation](#big-o-notation)
     * [Time complexity of built-ins](#time-complexity-of-built-ins)
@@ -542,11 +543,13 @@ Timsort is the sorting algorithm used by Python.
 ## Data Structures
 The [official](https://docs.python.org/3/tutorial/datastructures.html) Python documentation has good notes on this. A brief summary is provided below.
 
-## Algorithms
+### Queues
+This can include queues such as Priority Queues.
 
 ### Hash tables
 See [dictionary](#dictionary) section of notes.
 
+## Algorithms
 
 
 ## Time complexity

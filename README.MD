@@ -532,7 +532,7 @@ a.sort()
 a           ## [1, 2, 3, 4, 5]
 ```
 
-The sorted() function can be customized through optional arguments. The `sorted()` optional argument reverse=True, e.g. `sorted(my_list, reverse=True)`, makes it sort backwards.
+The sorted() function can be customized through optional arguments. The `sorted()` optional argument `reverse=True`, e.g. `sorted(my_list, reverse=True)`, makes it sort backwards.
 
 For more complex custom sorting, `sorted()` takes an optional "key=" specifying a "key" function that transforms each element before comparison. The key function takes in 1 value and returns 1 value, and the returned "proxy" value is used for the comparisons within the sort.  For example, you can sort elements of the list by length by passing in `key=len`.
 
@@ -547,6 +547,19 @@ See [dictionary](#dictionary) section of notes.
 
 
 ## Time complexity
+
+### Big O Notation
+
+Given n, the size of the input to the algorithm, Big O notation represents the relationship between n and the number of steps the algorithm takes to find a solution.
+
+We have 
+* O(1): Constant
+* O(logn): log
+* O(n): linear
+* O(nlogn): log-linear
+* O(n<sup>2</sup>): Quadratic
+* O(2<sup>n</sup>): Exponential
+* O(n!): Factorial
 
 ### Time complexity of built-ins
 
@@ -637,3 +650,5 @@ The core functionality of NumPy is its "ndarray", for n-dimensional array, data 
 * [Wikipedia Numpy](https://en.wikipedia.org/wiki/NumPy)
 * [DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-use-args-and-kwargs-in-python-3)
 * [GCoder: 3 Python practice interview questions](https://gdcoder.com/interview-coding-problems-1-implement-trie-prefix-tree-2-longest-substring-with-at-most-k-distinct-characters-3-3sum/)
+
+Materials taken from other websites too used only for educational purposes.

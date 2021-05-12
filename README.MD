@@ -57,13 +57,17 @@ A "raw" string literal is prefixed by an 'r' and passes all the chars through wi
 
 ### String Methods
 * `s.split('delim')`: returns a list of substrings separated by the given delimiter. The delimiter is not a regular expression, it's just text.
-  * `'aaa,bbb,ccc'.split(',')` -> ['aaa', 'bbb', 'ccc'].
+  * `'aaa,bbb,ccc'.split(',')` -> `['aaa', 'bbb', 'ccc']`.
   * As a convenient special case `s.split()` (with no arguments) splits on all whitespace chars.
-* `s.join(list)`: opposite of `split()`, joins the elements in the given list together using the string as the delimiter. e.g. `'---'.join(['aaa', 'bbb', 'ccc'])` -> aaa---bbb---ccc
-* `s.count()`: In simple words, `count()` method searches the substring in the given string and returns how many times the substring is present in it.  The syntax is: `string.count(substring, [start=...], [end=...])`
+* `s.join(list)`: opposite of `split()`, joins the elements in the given list together using the string as the delimiter.
+  * e.g. `'---'.join(['aaa', 'bbb', 'ccc'])` -> `aaa---bbb---ccc`
+* `s.count()`: In simple words, `count()` method searches the substring in the given string and returns how many times the substring is present in it.
+  * The syntax is: `string.count(substring, [start=...], [end=...])`
 
 ### String Slices
-The "slice" syntax is a handy way to refer to sub-parts of sequences -- typically strings and lists. The slice `s[start:end]` is the elements beginning at start and extending up to but not including end.
+The "slice" syntax is a handy way to refer to sub-parts of sequences -- typically strings and lists. The slice `s[start:end]` is the elements beginning at start and extending up to but not including the end.
+
+String slices can also take a 3rd argument, the stride, `str_[start:stop:stride]`
 
 You can reverse a string (or list) with the following slice:
 ```python

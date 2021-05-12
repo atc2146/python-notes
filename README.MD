@@ -56,7 +56,9 @@ Notes and references on Python. Taken from various places on the internet.
 A "raw" string literal is prefixed by an 'r' and passes all the chars through without special treatment of backslashes, so `r'x\nx'` evaluates to the length-4 string 'x\nx'.
 
 ### String Methods
-* `s.split('delim')`: returns a list of substrings separated by the given delimiter. The delimiter is not a regular expression, it's just text. `'aaa,bbb,ccc'.split(',')` -> ['aaa', 'bbb', 'ccc']. As a convenient special case `s.split()` (with no arguments) splits on all whitespace chars.
+* `s.split('delim')`: returns a list of substrings separated by the given delimiter. The delimiter is not a regular expression, it's just text.
+  * `'aaa,bbb,ccc'.split(',')` -> ['aaa', 'bbb', 'ccc'].
+  * As a convenient special case `s.split()` (with no arguments) splits on all whitespace chars.
 * `s.join(list)`: opposite of `split()`, joins the elements in the given list together using the string as the delimiter. e.g. `'---'.join(['aaa', 'bbb', 'ccc'])` -> aaa---bbb---ccc
 * `s.count()`: In simple words, `count()` method searches the substring in the given string and returns how many times the substring is present in it.  The syntax is: `string.count(substring, [start=...], [end=...])`
 

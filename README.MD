@@ -60,7 +60,7 @@ A "raw" string literal is prefixed by an 'r' and passes all the chars through wi
   * `'aaa,bbb,ccc'.split(',')` -> `['aaa', 'bbb', 'ccc']`.
   * As a convenient special case `s.split()` (with no arguments) splits on all whitespace chars.
 * `s.join(list)`: opposite of `split()`, joins the elements in the given list together using the string as the delimiter.
-  * e.g. `'---'.join(['aaa', 'bbb', 'ccc'])` -> `aaa---bbb---ccc`
+  * Example: `'---'.join(['aaa', 'bbb', 'ccc'])` -> `aaa---bbb---ccc`
 * `s.count()`: In simple words, `count()` method searches the substring in the given string and returns how many times the substring is present in it.
   * The syntax is: `string.count(substring, [start=...], [end=...])`
 

@@ -147,7 +147,7 @@ my_list = list(range(2,20,3))
 ```
 
 ### Adding Lists
-Adding lists in Python is not done element wise.
+Adding lists in Python is **not** done element wise.
 
 ```python
 [1,2] + [1,1]

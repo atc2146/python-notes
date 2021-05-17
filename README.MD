@@ -139,7 +139,7 @@ my_list[:-1]
 If you want to create a list.
 
 ```python
-my_list = ['bob']*3
+my_list = ['bob']*3 # can't be an empty list
 # ['bob', 'bob', 'bob']
 
 my_list = list(range(2,20,3))

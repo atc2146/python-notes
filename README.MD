@@ -203,6 +203,16 @@ my_dict = {'bob': 20, 'james': 33, 'mary': 18}
 my_dict['obama']
 # Will throw an error
 ```
+### Sorting a dictionary
+
+```python
+x = {1: 2, 3: 4, 4: 3, 2: 1, 0: 0}
+f = sorted(x.items(), key = lambda i: i[1])
+#  [(0, 0), (2, 1), (1, 2), (4, 3), (3, 4)]
+dict(f)
+# {0: 0, 2: 1, 1: 2, 4: 3, 3: 4}
+
+```
 
 ### The setdefault() method
 The `setdefault()` method returns the value of the item with the specified key. If the key does not exist, insert the key, with the specified value: `dictionary.setdefault(keyname, value)`

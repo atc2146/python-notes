@@ -166,6 +166,10 @@ del my_dict['bob]
 
 # clear dictionary
 my_dict.clear()
+
+# list keys
+my_dict.keys()
+
 ```
 
 ### Iterating
@@ -203,6 +207,9 @@ my_dict = {'bob': 20, 'james': 33, 'mary': 18}
 my_dict['obama']
 # Will throw an error
 ```
+
+
+
 ### Sorting a dictionary
 
 ```python

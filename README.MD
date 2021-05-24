@@ -588,6 +588,9 @@ A [heap](https://en.wikipedia.org/wiki/Heap_(data_structure)) is a specialized t
 
 The node at the "top" of the heap (with no parents) is called the root node.
 
+The heap is one maximally efficient implementation of an abstract data type called a [priority queue](#priority-queues).
+
+
 ## Algorithms
 
 

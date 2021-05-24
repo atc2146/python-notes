@@ -590,6 +590,16 @@ The node at the "top" of the heap (with no parents) is called the root node.
 
 The heap is one maximally efficient implementation of an abstract data type called a [priority queue](#priority-queues).
 
+Heaps are usually implemented with an array, as follows:
+ * Each element in the array represents a node of the heap, and
+ * The parent / child relationship is defined implicitly by the elements' indices in the array.
+
+ In Python, there is the `heapq` module that implements a priorty queue using a binary heap.
+
+ ```python
+
+
+ ```
 
 ## Algorithms
 

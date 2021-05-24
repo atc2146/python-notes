@@ -622,7 +622,6 @@ The space complexity of an algorithm or a computer program is the amount of memo
 ## Object Oriented Programming
 
 ### Classes
-There are also functions like `repr()` or `str()` that you can override.
 
 ```python
 class Person:
@@ -638,6 +637,7 @@ p1.myfunc()
 print(p1.age)
 
 ```
+There are also functions like `repr()` or `str()` that you can override.
 
 ## Pandas
 

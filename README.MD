@@ -39,6 +39,7 @@ Notes and references on Python. Taken from various places on the internet.
     * [Queues](#queues)
         * [Priority Queues](#priority-queues)
     * [Hash Tables](#Hash-tables)
+    * [Heaps](#Heaps)
 * [Algorithms](#Algorithms)
 * [Time complexity](#Time-complexity)
     * [Big O Notation](#big-o-notation)
@@ -578,6 +579,14 @@ The items in the queue must be able to be assigned a priority.
 
 ### Hash tables
 See [dictionary](#dictionary) section of notes.
+
+
+### Heaps
+A [heap](https://en.wikipedia.org/wiki/Heap_(data_structure)) is a specialized tree-based data structure which essentially an almost complete tree that satisfies the heap property:
+* Max heap:  for any given node C, if P is a parent node of C, then the key (the value) of P is greater than or equal to the key of C
+* Min heap: the key of P is less than or equal to the key of C
+
+The node at the "top" of the heap (with no parents) is called the root node.
 
 ## Algorithms
 

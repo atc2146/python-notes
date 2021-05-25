@@ -601,13 +601,13 @@ import heapq
 
 my_list = [5, 7, 9, 1, 3]
 
-# Make list into heap
+# Make list into heap (smallest has default highest priority)
 heapq.heapify(my_list)
 
 # Push element into heap
-heapq.heappush(my_list, 9) #[1, 3, 4, 7, 5, 9]
+heapq.heappush(my_list, 9) # [1, 3, 4, 7, 5, 9]
 
-# Pop an element
+# Pop an element (with the highest priority)
 popped = heapq.heappop(my_list)
 # popped is 1
 

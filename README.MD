@@ -597,7 +597,19 @@ Heaps are usually implemented with an array, as follows:
  In Python, there is the `heapq` module that implements a priorty queue using a binary heap.
 
  ```python
+import heapq
 
+my_list = [5, 7, 9, 1, 3]
+
+# Make list into heap
+heapq.heapify(my_list)
+
+# Push element into heap
+heapq.heappush(my_list, 9) #[1, 3, 4, 7, 5, 9]
+
+# Pop an element
+popped = heapq.heappop(my_list)
+# popped is 1
 
  ```
 

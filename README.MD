@@ -34,6 +34,9 @@ Notes and references on Python. Taken from various places on the internet.
     * [Generators](#generators)
     * [Decorators](#decorators)
 * [Syntatic Sugar and Other](#syntatic-sugar-and-other)
+    * [Any and All](#any-and-all)
+    * [Max And Min](#max-and-min)
+    * [Zip](#zip)
 * [Sorting](#Sorting)
 * [Data Structures](#data-structures)
     * [Queues](#queues)
@@ -142,6 +145,12 @@ If you want to create a list.
 ```python
 my_list = ['bob']*3 # can't be an empty list
 # ['bob', 'bob', 'bob']
+
+[1,2]*2
+#[1,2,1,2]
+
+[[1,2] for i in range(0, 2)]
+#[[1, 2], [1, 2]]
 
 my_list = list(range(2,20,3))
 #[2, 5, 8, 11, 14, 17]
@@ -530,18 +539,8 @@ print("The key with the largest value:", key2)    # -3
 print("The largest value:", square[key2])    # 9
 ```
 
-### Creating Lists
-```python
-[0]*3
-# [0,0,0]
+### Zip
 
-[1,2]*2
-#[1,2,1,2]
-
-[[1,2] for i in range(0, 2)]
-#[[1, 2], [1, 2]]
-
-```
 
 ## Bitwise Operators
 In Python, bitwise operators are used to perform bitwise calculations on integers. The integers are first converted into binary and then operations are performed on bit by bit, hence the name bitwise operators. Then the result is returned in decimal format.

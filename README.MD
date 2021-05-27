@@ -152,7 +152,7 @@ my_list = ['bob']*3 # can't be an empty list
 [[1,2] for i in range(0, 2)]
 #[[1, 2], [1, 2]]
 
-my_list = list(range(2,20,3))
+my_list = list(range(2,20,3)) # last argument is stride
 #[2, 5, 8, 11, 14, 17]
 ```
 

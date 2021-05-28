@@ -135,7 +135,10 @@ my_list.count(element)
 my_list.index(element, [start], [end])
 
 my_list[:-1]
-#[1,2,3]
+#[1, 2, 3]
+
+my_list[::-1]
+#[4, 3, 2, 1]
 ```
  Slicing creates a shallow copy of the original list.
 

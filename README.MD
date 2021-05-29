@@ -44,6 +44,7 @@ Notes and references on Python. Taken from various places on the internet.
     * [Hash Tables](#Hash-tables)
     * [Heaps](#Heaps)
 * [Algorithms](#Algorithms)
+* [Dynamic Programming](#dynamic-programming)
 * [Time complexity](#Time-complexity)
     * [Big O Notation](#big-o-notation)
     * [Time complexity of built-ins](#time-complexity-of-built-ins)
@@ -617,6 +618,7 @@ popped = heapq.heappop(my_list)
 
 ## Algorithms
 
+## Dynamic Programming
 
 ## Time complexity
 

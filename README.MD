@@ -616,7 +616,7 @@ popped = heapq.heappop(my_list)
 
  ```
 
- Note you can implement a [max heap](https://stackoverflow.com/questions/2501457/what-do-i-use-for-a-max-heap-implementation-in-python) in python using the negative of a list.
+ Note you can implement a [max heap](https://stackoverflow.com/questions/2501457/what-do-i-use-for-a-max-heap-implementation-in-python) in python using the negative of a list.  The heap is not necessarily sorted - but it does satisfy the heap property.
 
 ## Algorithms
 

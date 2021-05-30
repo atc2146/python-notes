@@ -585,7 +585,7 @@ See [dictionary](#dictionary) section of notes.
 
 
 ### Heaps
-A [heap](https://en.wikipedia.org/wiki/Heap_(data_structure)) is a specialized tree-based data structure which essentially an almost complete tree that satisfies the heap property:
+A [heap](https://en.wikipedia.org/wiki/Heap_(data_structure)) is a specialized tree-based data structure which is essentially an almost complete tree that satisfies the heap property:
 * Max heap:  for any given node C, if P is a parent node of C, then the key (the value) of P is greater than or equal to the key of C
 * Min heap: the key of P is less than or equal to the key of C
 
@@ -607,7 +607,7 @@ my_list = [5, 7, 9, 1, 3]
 # Make list into heap (smallest has default highest priority)
 heapq.heapify(my_list)
 
-# Push element into heap
+# Push element into min-heap
 heapq.heappush(my_list, 9) # [1, 3, 4, 7, 5, 9]
 
 # Pop an element (with the highest priority)

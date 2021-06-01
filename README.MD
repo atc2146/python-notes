@@ -520,10 +520,10 @@ The `assert` statement enables you to verify if a certain condition is met and w
 ```python
 x = "hello"
 
-#if condition returns True, then nothing happens:
+# if condition returns True, then nothing happens:
 assert x == "hello"
 
-#if condition returns False, AssertionError is raised:
+# if condition returns False, AssertionError is raised:
 assert x == "goodbye"
 ```
 

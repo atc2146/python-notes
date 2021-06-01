@@ -515,7 +515,7 @@ print(sum(square(fibonacci_numbers(10))))
 
 You can also raise exceptions and catch specific exceptions.
 
-
+The `assert` statement enables you to verify if a certain condition is met and will throw an exception if it isn’t.
 
 ### any and all
 The `any(iterable)` and `all(iterable)` are built-in functions in Python.  They are equivalent to writing a series of `or` and `and` operators respectively between each of the elements of the passed iterable

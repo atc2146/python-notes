@@ -528,10 +528,8 @@ assert x == "goodbye"
 ```
 
 
-### any and all
-The `any(iterable)` and `all(iterable)` are built-in functions in Python.  They are equivalent to writing a series of `or` and `and` operators respectively between each of the elements of the passed iterable
-
-Example:
+### Any and All
+The `any(iterable)` and `all(iterable)` are built-in functions in Python.  They are equivalent to writing a series of `or` and `and` operators respectively between each of the elements of the passed iterable.
 
 ```python
 any([True, False, False, False])

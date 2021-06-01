@@ -34,6 +34,7 @@ Notes and references on Python. Taken from various places on the internet.
     * [Generators](#generators)
     * [Decorators](#decorators)
 * [Syntatic Sugar and Other](#syntatic-sugar-and-other)
+    * [Try Except](#try-except)
     * [Any and All](#any-and-all)
     * [Max And Min](#max-and-min)
     * [Zip](#zip)
@@ -504,6 +505,14 @@ print(sum(square(fibonacci_numbers(10))))
 
 
 ## Syntatic Sugar and Other
+
+### Try Except
+
+* try: Try to run this code
+* except: Execute this code when there is an exception
+* else: No excpetions? Then run this code
+* finally: Always run this code
+
 
 ### any and all
 The `any(iterable)` and `all(iterable)` are built-in functions in Python.  They are equivalent to writing a series of `or` and `and` operators respectively between each of the elements of the passed iterable

@@ -510,7 +510,7 @@ print(sum(square(fibonacci_numbers(10))))
 
 * `try`: Try to run this code
 * `except`: Execute this code when there is an exception
-* `else`: No excpetions? Then run this code
+* `else`: No exceptions? Then run this code
 * `finally`: Always run this code
 
 You can also raise exceptions and catch specific exceptions.

@@ -517,6 +517,17 @@ You can also raise exceptions and catch specific exceptions.
 
 The `assert` statement enables you to verify if a certain condition is met and will throw an exception if it isn’t.
 
+```python
+x = "hello"
+
+#if condition returns True, then nothing happens:
+assert x == "hello"
+
+#if condition returns False, AssertionError is raised:
+assert x == "goodbye"
+```
+
+
 ### any and all
 The `any(iterable)` and `all(iterable)` are built-in functions in Python.  They are equivalent to writing a series of `or` and `and` operators respectively between each of the elements of the passed iterable
 
@@ -739,6 +750,7 @@ The core functionality of NumPy is its "ndarray", for n-dimensional array, data 
 * [Real Python](https://realpython.com/)
 * [Geeks For Geeks](https://www.geeksforgeeks.org/)
 * [W3Schools](https://www.w3schools.com/python)
+  * [assert keyword](https://www.w3schools.com/python/ref_keyword_assert.asp)
 * [Wikipedia Numpy](https://en.wikipedia.org/wiki/NumPy)
 * [DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-use-args-and-kwargs-in-python-3)
 * [GCoder: 3 Python practice interview questions](https://gdcoder.com/interview-coding-problems-1-implement-trie-prefix-tree-2-longest-substring-with-at-most-k-distinct-characters-3-3sum/)

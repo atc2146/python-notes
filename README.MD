@@ -359,7 +359,7 @@ myFun('Hello', 'Welcome', 'to', 'GeeksforGeeks')
 ```
 
 #### **kwargs (keyword argument)
-**kwargs allows you to pass keyworded variable length of arguments to a function. You should use **kwargs if you want to handle named arguments in a function.  For example, dictionaries.
+`**kwargs` allows you to pass keyworded variable length of arguments to a function. You should use `**kwargs` if you want to handle named arguments in a function.  For example, dictionaries.
 
 ```python
 def intro(**data):

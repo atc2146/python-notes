@@ -329,12 +329,12 @@ re.findall(pattern, string)
 ## Functions
 
 ### Arguments
-There are keyword and positional arguments.  Usually denoted *args and **kwargs. They allow you to pass an unspecified number of arguments to a function.
+There are keyword and positional arguments.  Usually denoted `*args` and `**kwargs`. They allow you to pass an unspecified number of arguments to a function.
 
 The asterisk is an unpacking operator.
 
 #### *args (non-keyword argument)
-*args is used to send a non-keyworded variable length argument list to the function.  For example, lists and tuples.
+`*args` is used to send a non-keyworded variable length argument list to the function.  For example, lists and tuples.
 
 ```python
 def my_sum(*args):
@@ -389,8 +389,8 @@ intro(Firstname="John", Lastname="Wood", Email="johnwood@nomail.com", Country="W
 #### Ordering
 When defining a function, the order is as follows
 1. positional arguments
-2. *args
-3. **kwargs
+2. `*args`
+3. `**kwargs`
 
 ```python
 def example2(arg_1, arg_2, *args, kw_1="shark", kw_2="blobfish", **kwargs):

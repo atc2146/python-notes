@@ -567,6 +567,21 @@ print("The largest value:", square[key2])    # 9
 
 ### Zip
 
+The zip() function returns a zip object, which is an iterator of tuples where the first item in each passed iterator is paired together, and then the second item in each passed iterator are paired together etc.
+
+```python
+a = ["John", "Charles", "Mike"]
+b = ["Jenny", "Christy", "Monica", "Vicky"]
+
+x = zip(a, b)
+
+for i in x:
+	print(i) # i is type tuple
+
+# ('John', 'Jenny')
+# ('Charles', 'Christy')
+# ('Mike', 'Monica')
+```
 
 ## Bitwise Operators
 In Python, bitwise operators are used to perform bitwise calculations on integers. The integers are first converted into binary and then operations are performed on bit by bit, hence the name bitwise operators. Then the result is returned in decimal format.
@@ -751,6 +766,7 @@ The core functionality of NumPy is its "ndarray", for n-dimensional array, data 
 * [Geeks For Geeks](https://www.geeksforgeeks.org/)
 * [W3Schools](https://www.w3schools.com/python)
   * [assert keyword](https://www.w3schools.com/python/ref_keyword_assert.asp)
+  * [zip](https://www.w3schools.com/python/ref_func_zip.asp)
 * [Wikipedia Numpy](https://en.wikipedia.org/wiki/NumPy)
 * [DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-use-args-and-kwargs-in-python-3)
 * [GCoder: 3 Python practice interview questions](https://gdcoder.com/interview-coding-problems-1-implement-trie-prefix-tree-2-longest-substring-with-at-most-k-distinct-characters-3-3sum/)

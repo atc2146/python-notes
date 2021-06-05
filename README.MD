@@ -706,16 +706,23 @@ The space complexity of an algorithm or a computer program is the amount of memo
 
 ```python
 class Person:
-  def __init__(self, name, age):
-    self.name = name
-    self.age = age
+    # class variable
+    human = True
 
-  def myfunc(self):
-    print("Hello my name is " + self.name)
+    def __init__(self, name, age):
+        # instance variables
+        self.name = name
+        self.age = age
+
+    def myfunc(self):
+        print("Hello my name is " + self.name)
+
+
 
 p1 = Person("John", 36)
 p1.myfunc()
-print(p1.age)
+print(p1.age) # 36
+print(p1.human) # True
 
 ```
 There are also functions like `repr()` or `str()` that you can override.

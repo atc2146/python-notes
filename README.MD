@@ -38,6 +38,7 @@ Notes and references on Python. Taken from various places on the internet.
     * [Any and All](#any-and-all)
     * [Max And Min](#max-and-min)
     * [Zip](#zip)
+    * [Type Hinting](#type-hinting)
 * [Sorting](#Sorting)
 * [Data Structures](#data-structures)
     * [Queues](#queues)
@@ -582,6 +583,7 @@ for i in x:
 # ('Charles', 'Christy')
 # ('Mike', 'Monica')
 ```
+### Type Hinting
 
 ## Bitwise Operators
 In Python, bitwise operators are used to perform bitwise calculations on integers. The integers are first converted into binary and then operations are performed on bit by bit, hence the name bitwise operators. Then the result is returned in decimal format.
@@ -604,6 +606,13 @@ a           ## [1, 2, 3, 4, 5]
 The sorted() function can be customized through optional arguments. The `sorted()` optional argument `reverse=True`, e.g. `sorted(my_list, reverse=True)`, makes it sort backwards.
 
 For more complex custom sorting, `sorted()` takes an optional "key=" specifying a "key" function that transforms each element before comparison. The key function takes in 1 value and returns 1 value, and the returned "proxy" value is used for the comparisons within the sort.  For example, you can sort elements of the list by length by passing in `key=len`.
+
+```python
+lst = [('candy',32,'100'), ('apple',8,'200'), ('baby',20,'300')]
+print(sorted(lst, key=lambda x: x[1]))
+# [('apple', 8, '200'), ('baby', 20, '300'), ('candy', 32, '100')]
+
+```
 
 Timsort is the sorting algorithm used by Python.
 
@@ -716,7 +725,6 @@ class Person:
 
     def myfunc(self):
         print("Hello my name is " + self.name)
-
 
 
 p1 = Person("John", 36)

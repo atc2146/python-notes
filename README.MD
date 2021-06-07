@@ -734,6 +734,7 @@ p1 = Person("John", 36)
 p1.myfunc()
 print(p1.age) # 36
 print(p1.human) # True
+print(Person.human) # will also be True, don't need to instantiate a class to access a class variable
 
 ```
 There are also functions like `repr()` or `str()` that you can override.

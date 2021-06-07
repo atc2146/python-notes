@@ -214,6 +214,9 @@ my_dict = {'bob': 20, 'james': 33, 'mary': 18}
 key = 'bob'
 
 my_dict.get(key):
+
+# if you want to specify a default value if key cannot be found
+my_dict.get(key, 'DEFAULT_VAL')
 ```
 
 If you try to access a key that does not exist, an error with be thrown:

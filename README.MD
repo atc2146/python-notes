@@ -586,6 +586,9 @@ for i in x:
 # ('Charles', 'Christy')
 # ('Mike', 'Monica')
 ```
+
+Note: If there are more pairs, the ones at the end are ignored.
+
 ### Type Hinting
 
 ## Bitwise Operators

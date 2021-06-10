@@ -679,6 +679,10 @@ popped = heapq.heappop(my_list)
 ### Depth First Search
 Depth-first search (DFS) is an algorithm for traversing or searching tree or graph data structures. The algorithm starts at the root node (selecting some arbitrary node as the root node in the case of a graph) and explores as far as possible along each branch before backtracking.
 
+If we are performing a search of a particular element, then at each step, a comparison operation will occur with the node we are currently at.
+
+Example: DFS of a binary tree
+
 ### Breadth First Search
 
 

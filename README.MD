@@ -50,6 +50,7 @@ Notes and references on Python. Taken from various places on the internet.
     * [Depth First Search](#depth-first-search)
     * [Breadth First Search](#breadth-first-search)
 * [Dynamic Programming](#dynamic-programming)
+* [Recursion](#recursion)
 * [Time complexity](#Time-complexity)
     * [Big O Notation](#big-o-notation)
     * [Time complexity of built-ins](#time-complexity-of-built-ins)
@@ -687,6 +688,8 @@ Example: DFS of a binary tree
 
 
 ## Dynamic Programming
+
+## Recursion
 
 ## Time complexity
 

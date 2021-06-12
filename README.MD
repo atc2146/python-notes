@@ -814,6 +814,7 @@ The core functionality of NumPy is its "ndarray", for n-dimensional array, data 
     * [args and kwargs](https://www.programiz.com/python-programming/args-and-kwargs)
     * [del](https://www.programiz.com/python-programming/del)
 * [Real Python](https://realpython.com/)
+    * [Sets](https://realpython.com/python-sets/)
 * [Geeks For Geeks](https://www.geeksforgeeks.org/)
 * [W3Schools](https://www.w3schools.com/python)
   * [assert keyword](https://www.w3schools.com/python/ref_keyword_assert.asp)

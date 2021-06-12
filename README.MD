@@ -285,6 +285,20 @@ A set has a significantly faster `in` search than lists.  This is because sets f
 
 Lists are faster (in general) when you are iterating over values, however.  This performance increases if you sort the list.
 
+Set operations include 
+* `.add()`
+* `.remove()`
+* `.discard()`
+* `.pop()`
+* `.clear()`
+* `.update()`
+* `.union()`
+* `intersection()`
+* `.symmetric_difference()`
+* `.isdisjoint()`
+* `.issubset()`
+* `.issuperset()`
+
 ## Deletion
 You can use the `del` keyword to delete variables, user-defined objects, lists, items within lists, dictionaries, etc.
 

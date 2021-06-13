@@ -142,10 +142,10 @@ my_list.count(element)
 my_list.index(element, [start], [end])
 
 my_list[:-1]
-#[1, 2, 3]
+# [1, 2, 3]
 
 my_list[::-1]
-#[4, 3, 2, 1]
+# [4, 3, 2, 1]
 ```
  Slicing creates a shallow copy of the original list.
 
@@ -156,14 +156,14 @@ If you want to create a list.
 my_list = ['bob']*3 # can't be an empty list
 # ['bob', 'bob', 'bob']
 
-[1,2]*2
-#[1,2,1,2]
+[1,2] * 2
+# [1,2,1,2]
 
 [[1,2] for i in range(0, 2)]
-#[[1, 2], [1, 2]]
+# [[1, 2], [1, 2]]
 
 my_list = list(range(2,20,3)) # last argument is stride
-#[2, 5, 8, 11, 14, 17]
+# [2, 5, 8, 11, 14, 17]
 ```
 
 ### Adding Lists
@@ -171,7 +171,7 @@ Adding lists in Python is **not** done element wise.
 
 ```python
 [1,2] + [1,1]
-#[1,2,1,1]
+# [1, 2, 1, 1]
 ```
 
 ## Dictionaries
@@ -196,6 +196,10 @@ my_dict.keys()
 To iterate over a dictionary:
 
 ```python
+# creating an empty dict
+some_dict = dict()
+some_dict = {}
+
 my_dict = {'bob': 20, 'james': 33, 'mary': 18}
 
 for k, v in my_dict.items():
@@ -271,7 +275,7 @@ another_tuple = ('a', 'b', 2)
 ## Sets
 A set is an unordered collection with no duplicate elements. Basic uses include membership testing and eliminating duplicate entries. Set objects also support mathematical operations like union, intersection, difference, and symmetric difference.  
 
-Curly braces or the `set()` function can be used to create sets. Note: to create an empty set you have to use `set()`, not `{}`.
+Curly braces or the `set()` function can be used to create sets. Note: to create an empty set you have to use `set()`, not `{}`.  The latter creates an empty dictionary.
 
 ```python
 ages = {1, 22, 38}

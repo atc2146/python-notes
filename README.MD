@@ -45,7 +45,7 @@ Notes and references on Python. Taken from various places on the internet.
         * [Priority Queues](#priority-queues)
     * [Hash Tables](#Hash-tables)
     * [Heaps](#Heaps)
-    * [Binary Trees](#binary-trees)
+    * [Binary Search Tree](#binary-search-tree)
 * [Algorithms](#Algorithms)
     * [Depth First Search](#depth-first-search)
     * [Breadth First Search](#breadth-first-search)
@@ -691,8 +691,25 @@ popped = heapq.heappop(my_list)
 
  Note you can implement a [max heap](https://stackoverflow.com/questions/2501457/what-do-i-use-for-a-max-heap-implementation-in-python) in python using the negative of a list.  The heap is not necessarily sorted - but it does satisfy the heap property.
 
-### Binary Trees
+### Binary Search Tree
 
+[Binary Search Tree](https://en.wikipedia.org/wiki/Binary_search_tree) (BST) is a node-based binary tree data structure which has the following properties:  
+
+* The left subtree of a node contains only nodes with keys lesser than the node’s key.
+* The right subtree of a node contains only nodes with keys greater than the node’s key.
+* The left and right subtree each must also be a binary search tree. 
+* There must be no duplicate nodes.
+
+```python
+# Definition for a binary tree node.
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
+
+```
 ## Algorithms
 
 ### Depth First Search

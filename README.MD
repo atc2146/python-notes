@@ -646,6 +646,9 @@ Timsort is the sorting algorithm used by Python.
 ## Data Structures
 The [official](https://docs.python.org/3/tutorial/datastructures.html) Python documentation has good notes on this. A brief summary is provided below.
 
+### Linked List
+
+
 ### Queues
 
 #### Priority Queues

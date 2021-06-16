@@ -285,7 +285,7 @@ a = set('abracadabra')  # {'a', 'r', 'b', 'c', 'd'}
 
 ```
 
-A set has a significantly faster `in` search than lists.  This is because sets finds the element by computing a hash from the key - whearas, in general, the whole list needs to be searched.  Both have O(1) time complexity, however.
+A set has a significantly faster `in` search than lists.  This is because sets finds the element by computing a hash from the key - whereas, in general, the whole list needs to be searched.  Both have O(1) time complexity, however.
 
 Lists are faster (in general) when you are iterating over values, however.  This performance increases if you sort the list.
 
@@ -302,6 +302,8 @@ Set operations include
 * `.isdisjoint()`
 * `.issubset()`
 * `.issuperset()`
+
+A set is mutable.  However, a set cannot have mutable elements (list lists, tuples) as its element.
 
 ## Deletion
 You can use the `del` keyword to delete variables, user-defined objects, lists, items within lists, dictionaries, etc.

@@ -641,6 +641,9 @@ lst = [('candy',32,'100'), ('apple',8,'200'), ('baby',20,'300')]
 print(sorted(lst, key=lambda x: x[1]))
 # [('apple', 8, '200'), ('baby', 20, '300'), ('candy', 32, '100')]
 
+# The below two are equivalent, will sort in reverse order
+print(sorted(lst, key=lambda x: -x[1]))
+print(sorted(lst, key=lambda x: x[1], reverse=True))
 ```
 
 Timsort is the sorting algorithm used by Python.

@@ -346,7 +346,11 @@ print(person)
 ## Regex
 For Python regular expressions, you need to import the `re` module.  
 
+Recall from the [strings](#strings) section, a raw string is prefixed by an `r`.
+
 ```python
+import re
+
 pattern = r'some string'
 string = 'this is some string'
 

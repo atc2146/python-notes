@@ -621,7 +621,7 @@ In Python, bitwise operators are used to perform bitwise calculations on integer
 A simple ascending sort is very easy: just call the `sorted()` function. It returns a new sorted list.  The original list is not changed. 
 
 ```python
-sorted([5, 2, 3, 1, 4])         ## [1, 2, 3, 4, 5]
+sorted([5, 2, 3, 1, 4]) # [1, 2, 3, 4, 5]
 ```
 
 You can also use the `list.sort()` method. It modifies the list in-place (and **returns None** to avoid confusion). Usually it’s less convenient than `sorted()` - but if you don’t need the original list, it’s slightly more efficient.
@@ -629,15 +629,15 @@ You can also use the `list.sort()` method. It modifies the list in-place (and **
 ```python
 a = [5, 2, 3, 1, 4]
 a.sort()
-a           ## [1, 2, 3, 4, 5]
+a # [1, 2, 3, 4, 5]
 ```
 
-The sorted() function can be customized through optional arguments. The `sorted()` optional argument `reverse=True`, e.g. `sorted(my_list, reverse=True)`, makes it sort backwards.
+The `sorted()` function can be customized through optional arguments. The `sorted()` optional argument `reverse=True`, e.g. `sorted(my_list, reverse=True)`, makes it sort backwards.
 
-For more complex custom sorting, `sorted()` takes an optional "key=" specifying a "key" function that transforms each element before comparison. The key function takes in 1 value and returns 1 value, and the returned "proxy" value is used for the comparisons within the sort.  For example, you can sort elements of the list by length by passing in `key=len`.
+For more complex custom sorting, `sorted()` takes an optional `key=` specifying a "key" function that transforms each element before comparison. The key function takes in 1 value and returns 1 value, and the returned "proxy" value is used for the comparisons within the sort.  For example, you can sort elements of the list by length by passing in `key=len`.
 
 ```python
-lst = [('candy',32,'100'), ('apple',8,'200'), ('baby',20,'300')]
+lst = [('candy', 32, '100'), ('apple', 8, '200'), ('baby', 20, '300')]
 print(sorted(lst, key=lambda x: x[1]))
 # [('apple', 8, '200'), ('baby', 20, '300'), ('candy', 32, '100')]
 

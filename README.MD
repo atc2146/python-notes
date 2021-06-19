@@ -176,7 +176,9 @@ Adding lists in Python is **not** done element wise.
 
 ## Dictionaries
 
-This is essentially Python's version of a Hash Table.  Dictionaries have key value pairs.  The keys in the dictionary need to be hashable.  For example, lists cannot be used as keys as they are not hashable.  The actual implementation is pretty interesting - read about it [here](https://docs.python.org/3/faq/design.html#how-are-dictionaries-implemented-in-cpython).
+This is essentially Python's version of a Hash Table (associative array).  Dictionaries have key value pairs.  The keys in the dictionary need to be hashable.  For example, lists cannot be used as keys as they are not hashable.  There is no restriction on the values.  
+
+The actual implementation is pretty interesting - read about it [here](https://docs.python.org/3/faq/design.html#how-are-dictionaries-implemented-in-cpython).
 
 ```python
 my_dict = {'bob': 20, 'james': 33, 'mary': 18}
@@ -247,6 +249,17 @@ sorted_list = sorted(x.items(), key = lambda i: i[1])
 
 dict(sorted_list)
 # {0: 0, 2: 1, 1: 2, 4: 3, 3: 4}
+
+```
+### Merging dictionaries
+
+You can merge dictionaries with the unpacking operator, `**`
+
+```python
+vegetable_prices = {'pepper': 0.20, 'onion': 0.55}
+fruit_prices = {'apple': 0.40, 'orange': 0.35, 'pepper': .25}
+{**vegetable_prices, **fruit_prices}
+# {'pepper': 0.25, 'onion': 0.55, 'apple': 0.4, 'orange': 0.35}
 
 ```
 

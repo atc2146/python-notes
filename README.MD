@@ -773,7 +773,7 @@ Example: DFS of a binary tree
 
 ## Recursion
 
-## Time complexity
+## Time Complexity
 
 ### Big O Notation
 
@@ -805,7 +805,7 @@ The O(n) worst case for sets and dicts is very uncommon, but it can happen if `_
 * Python's built-in `.count()` on lists has a time complexity of O(n)
 * Python's built-in `.reverse()` on lists has a time complexity of O(n)
 
-## Space complexity
+## Space Complexity
 
 The space complexity of an algorithm or a computer program is the amount of memory space required to solve an instance of the computational problem as a function of characteristics of the input. It is the memory required by an algorithm to execute a program and produce output.
 

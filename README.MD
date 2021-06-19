@@ -8,13 +8,17 @@ Notes and references on Python. Taken from various places on the internet.
     * [String Slices](#String-Slices)
     * [f-Strings](#f-Strings)
 * [Lists](#Lists)
-    * [List Comprehension](#List-Comprehension)
-    * [List Methods](#List-Comprehension)
-    * [Creating Lists](#Creating-Lists)
+    * [List Comprehension](#list-comprehension)
+    * [List Methods](#list-methods)
+    * [Creating Lists](#creating-lists)
+    * [Adding Lists](#adding-lists)
 * [Dictionaries](#Dictionaries)
     * [Iterating](#Iterating)
     * [Searching for a key](#Searching-for-a-key)
-    * [The setdefault() method](#The-setdefault-method)
+    * [Sorting a dictionary](#sorting-a-dictionary)
+    * [Merging dictionaries](#merging-dictionaries)
+    * [The setdefault() method](#the-setdefault-method)
+    * [The defaultdict collection](#the-defaultdict-collection)
 * [Tuples](#tuples)
 * [Sets](#sets)
 * [Deletion](#deletion)
@@ -242,8 +246,6 @@ my_dict = {'bob': 20, 'james': 33, 'mary': 18}
 my_dict['obama']
 # Will throw an error
 ```
-
-
 
 ### Sorting a dictionary
 

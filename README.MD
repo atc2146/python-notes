@@ -3,11 +3,11 @@
 Notes and references on Python. Taken from various places on the internet.
 
 ## Table of Contents
-* [Strings](#Strings)
-    * [String Methods](#String-Methods)
-    * [String Slices](#String-Slices)
-    * [f-Strings](#f-Strings)
-* [Lists](#Lists)
+* [Strings](#strings)
+    * [String Methods](#string-methods)
+    * [String Slices](#string-slices)
+    * [f-Strings](#f-strings)
+* [Lists](#lists)
     * [List Comprehension](#list-comprehension)
     * [List Methods](#list-methods)
     * [Creating Lists](#creating-lists)
@@ -22,13 +22,13 @@ Notes and references on Python. Taken from various places on the internet.
 * [Tuples](#tuples)
 * [Sets](#sets)
 * [Deletion](#deletion)
-* [Regex](#Regex)
-* [Functions](#Functions)
-    * [Arguments](#Arguments)
+* [Regex](#regex)
+* [Functions](#functions)
+    * [Arguments](#arguments)
         * [*args](#args-non-keyword-argument)
         * [**kwargs](#kwargs-keyword-argument)
         * [Ordering](#ordering)
-* [Lambda Functions](#Lambda-Functions)
+* [Lambda Functions](#lambda-functions)
     * [reduce(), filter(), map()](#reduce-filter-map)
         * [reduce()](#reduce)
         * [filter()](#filter)
@@ -45,10 +45,11 @@ Notes and references on Python. Taken from various places on the internet.
     * [Type Hinting](#type-hinting)
 * [Sorting](#Sorting)
 * [Data Structures](#data-structures)
+    * [Linked Lists](#linked-lists)
+    * [Hash Tables](#hash-tables)
     * [Queues](#queues)
         * [Priority Queues](#priority-queues)
-    * [Hash Tables](#Hash-tables)
-    * [Heaps](#Heaps)
+    * [Heaps](#heaps)
     * [Binary Search Tree](#binary-search-tree)
 * [Algorithms](#Algorithms)
     * [Depth First Search](#depth-first-search)
@@ -678,6 +679,8 @@ The [official](https://docs.python.org/3/tutorial/datastructures.html) Python do
 
 ### Linked List
 
+### Hash tables
+See [dictionary](#dictionary) section of notes.
 
 ### Queues
 
@@ -685,10 +688,6 @@ The [official](https://docs.python.org/3/tutorial/datastructures.html) Python do
 A [priority queue](https://en.wikipedia.org/wiki/Priority_queue) is an abstract data type similar to a regular queue or stack data structure in which each element additionally has a "priority" associated with it.
 
 The items in the queue must be able to be assigned a priority.
-
-### Hash tables
-See [dictionary](#dictionary) section of notes.
-
 
 ### Heaps
 A [heap](https://en.wikipedia.org/wiki/Heap_(data_structure)) is a specialized tree-based data structure which is essentially an almost complete tree that satisfies the heap property:

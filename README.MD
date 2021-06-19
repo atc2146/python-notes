@@ -176,7 +176,7 @@ Adding lists in Python is **not** done element wise.
 
 ## Dictionaries
 
-This is essentially Python's version of a Hash Table (associative array).  Dictionaries have key value pairs.  The keys in the dictionary need to be hashable.  For example, lists cannot be used as keys as they are not hashable.  There is no restriction on the values.  
+This is essentially Python's version of a Hash Table (associative array).  Dictionaries have key value pairs.  The keys in the dictionary need to be hashable.  For example, lists cannot be used as keys as they are not hashable.  There is no restriction on the value type.
 
 The actual implementation is pretty interesting - read about it [here](https://docs.python.org/3/faq/design.html#how-are-dictionaries-implemented-in-cpython).
 
@@ -191,6 +191,9 @@ my_dict.clear()
 
 # list keys
 my_dict.keys()
+
+# list values
+my_dict.values()
 
 ```
 
@@ -216,6 +219,9 @@ key = 'bob'
 if key in my_dict:
     print(str(key) + ' exists')
 ```
+
+Don't iterate using `if key in my_dict.keys()`. This is `O(n)`, compared to `O(1)` above.
+
 
 There is also the `get()` method.  This method returns a value for the given key. If the key is not available, then returns default value `None`.
 ```python

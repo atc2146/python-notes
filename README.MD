@@ -12,6 +12,7 @@ Notes and references on Python. Taken from various places on the internet.
     * [List Methods](#list-methods)
     * [Creating Lists](#creating-lists)
     * [Adding Lists](#adding-lists)
+    * [Iterating Lists](#iterating-lists)
 * [Dictionaries](#Dictionaries)
     * [Iterating](#Iterating)
     * [Searching for a key](#Searching-for-a-key)
@@ -104,14 +105,6 @@ print(f'Hello, {name}. You are {age}.') ## Hello, Eric. You are 74.
 ``` 
 
 ## Lists
-To iterate over a list with an index and value:  
-
-```python
-my_list = ['Team A', 'Team Bobcats', 'Team XYZ']
-
-for ind, val in enumerate(my_list):
-    print(ind, val)
-```
 
 ### List Comprehension
 The syntax is: *[expr for var in list {optional if expr}]*
@@ -180,6 +173,26 @@ Adding lists in Python is **not** done element wise.
 [1,2] + [1,1]
 # [1, 2, 1, 1]
 ```
+
+
+### Iterating Lists
+
+To iterate over a list with an index and value:  
+
+```python
+my_list = ['Team A', 'Team Bobcats', 'Team XYZ']
+
+for ind, val in enumerate(my_list):
+    print(ind, val)
+```
+
+```python
+some_list = [4, 7, 8, 9, 22, 11]
+
+for i in range(0, len(some_list), 1):
+    print(i)
+```
+This with iterate up to but not including the index at the 2nd argument in range.
 
 ## Dictionaries
 

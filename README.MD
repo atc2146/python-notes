@@ -39,6 +39,7 @@ Notes and references on Python. Taken from various places on the internet.
     * [Generators](#generators)
     * [Decorators](#decorators)
 * [Syntatic Sugar and Other](#syntatic-sugar-and-other)
+    * [Math](#math)
     * [Try Except](#try-except)
     * [Any and All](#any-and-all)
     * [Max And Min](#max-and-min)

@@ -575,6 +575,21 @@ print(sum(square(fibonacci_numbers(10))))
 
 ## Syntatic Sugar and Other
 
+### Math
+
+Integer division can be done using `//`, i.e. the floor.
+
+```python
+22 // 7 
+# 3
+
+30 // 4
+# 7
+```
+Modulus operator is given using `%`.  This gives the remainder.
+
+`bin()` will convert a base 10 number into its binary representation (as a string). Note, this will be prefixed with a '0b'.
+
 ### Try Except
 
 * `try`: Try to run this code
@@ -898,6 +913,7 @@ The core functionality of NumPy is its "ndarray", for n-dimensional array, data 
 * [Real Python](https://realpython.com/)
     * [Sets](https://realpython.com/python-sets/)
 * [Geeks For Geeks](https://www.geeksforgeeks.org/)
+* [Base N conversions](https://www.dcode.fr/base-n-convert)
 * [W3Schools](https://www.w3schools.com/python)
   * [assert keyword](https://www.w3schools.com/python/ref_keyword_assert.asp)
   * [zip](https://www.w3schools.com/python/ref_func_zip.asp)

@@ -118,7 +118,7 @@ for ind, val in enumerate(my_list):
     print(ind, val)
 ```
 
-To iterate using range:
+To iterate using `range()`:
 
 ```python
 some_list = [4, 7, 8, 9, 22, 11]
@@ -126,13 +126,13 @@ some_list = [4, 7, 8, 9, 22, 11]
 for i in range(0, len(some_list), 1):
     print(i)
 ```
-This with iterate up to but not including the index at the 2nd argument in range.
+This will iterate up to but **not** including the index at the 2nd argument in `range()`.
 
 ### List Comprehension
 The syntax is: *[expr for var in list {optional if expr}]*
 
 ```python
-my_list = [1,2,3,4]
+my_list = [1, 2, 3, 4]
 
 [i*i for i in my_list if i%2==0]
 ```

@@ -837,9 +837,7 @@ The O(n) worst case for sets and dicts is very uncommon, but it can happen if `_
 
 ## Space Complexity
 
-The space complexity of an algorithm or a computer program is the amount of memory space required to solve an instance of the computational problem as a function of characteristics of the input. It is the memory required by an algorithm to execute a program and produce output.
-
-[Source](https://en.wikipedia.org/wiki/Space_complexity)
+The [space complexity](https://en.wikipedia.org/wiki/Space_complexity) of an algorithm or a computer program is the amount of memory space required to solve an instance of the computational problem as a function of characteristics of the input. It is the memory required by an algorithm to execute a program and produce output.
 
 
 ## Object Oriented Programming

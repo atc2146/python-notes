@@ -89,11 +89,13 @@ The "slice" syntax is a handy way to refer to sub-parts of sequences -- typicall
 
 String slices can also take a 3rd argument, the stride, `str_[start:stop:stride]`
 
-You can reverse a string (or list) with the following slice:
+Example:
 ```python
-my_string = 'a string'
+# Reverse String
+my_string = 'Hello world'
+my_string[::-1] # 'dlrow olleH'
 
-my_string[::-1]
+my_string[-2:] # 'ld'
 ```
 ### f-Strings
 A convenient way to format strings with variables.

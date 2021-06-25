@@ -85,13 +85,13 @@ A "raw" string literal is prefixed by an 'r' and passes all the chars through wi
   * The syntax is: `string.count(substring, [start=...], [end=...])`
 
 ### String Slices
-The "slice" syntax is a handy way to refer to sub-parts of sequences -- typically strings and lists. The slice `s[start:end]` is the elements beginning at start and extending up to but not including the end.
+The "slice" syntax is a handy way to refer to sub-parts of sequences -- typically strings and lists. The slice `s[start:end]` is the elements beginning at start and extending up to but **not** including the end.
 
 String slices can also take a 3rd argument, the stride, `str_[start:stop:stride]`
 
 Example:
 ```python
-# Reverse String
+# Reverse a string
 my_string = 'Hello world'
 my_string[::-1] # 'dlrow olleH'
 
@@ -200,7 +200,7 @@ Adding lists in Python is **not** done element wise.
 
 ## Dictionaries
 
-This is essentially Python's version of a Hash Table (associative array).  Dictionaries have key value pairs.  The keys in the dictionary need to be hashable.  For example, lists cannot be used as keys as they are not hashable.  There is no restriction on the value type.
+This is essentially Python's version of a Hash Table (associative array).  Dictionaries have key value pairs.  The keys in the dictionary need to be **hashable**.  For example, lists cannot be used as keys as they are not hashable.  There is no restriction on the value type.
 
 The actual implementation is pretty interesting - read about it [here](https://docs.python.org/3/faq/design.html#how-are-dictionaries-implemented-in-cpython).
 
@@ -286,6 +286,7 @@ You can merge dictionaries with the unpacking operator, `**`
 ```python
 vegetable_prices = {'pepper': 0.20, 'onion': 0.55}
 fruit_prices = {'apple': 0.40, 'orange': 0.35, 'pepper': .25}
+
 {**vegetable_prices, **fruit_prices}
 # {'pepper': 0.25, 'onion': 0.55, 'apple': 0.4, 'orange': 0.35}
 
@@ -294,13 +295,43 @@ fruit_prices = {'apple': 0.40, 'orange': 0.35, 'pepper': .25}
 ### The setdefault() method
 The `setdefault()` method returns the value of the item with the specified key. If the key does not exist, insert the key, with the specified value: `dictionary.setdefault(keyname, value)`
 
+```python
+person = {'name': 'Phill'}
+
+# key is not in the dictionary
+salary = person.setdefault('salary')
+print('person = ',person)
+print('salary = ',salary)
+
+# key is not in the dictionary
+# default_value is provided
+age = person.setdefault('age', 22)
+print('person = ',person)
+print('age = ',age)
+
+# person =  {'name': 'Phill', 'salary': None}
+# salary =  None
+# person =  {'name': 'Phill', 'age': 22, 'salary': None}
+# age =  22
+```
+
 ### The defaultdict collection
 
 If a key is not found in the dictionary, then instead of a KeyError being thrown, a new entry is created. Read [more](https://docs.python.org/3/library/collections.html#collections.defaultdict).
 
 ```python
+from collections import defaultdict
 
-hash_map = defaultdict(int)
+ice_cream = defaultdict(lambda: 'Vanilla')
+
+ice_cream['Sarah'] = 'Chunky Monkey'
+ice_cream['Abdul'] = 'Butter Pecan'
+
+print(ice_cream['Sarah'])
+# Chunky Monkey
+
+print(ice_cream['Joe'])
+# Vanilla
 
 ```
 
@@ -919,6 +950,8 @@ The core functionality of NumPy is its "ndarray", for n-dimensional array, data 
   * [assert keyword](https://www.w3schools.com/python/ref_keyword_assert.asp)
   * [zip](https://www.w3schools.com/python/ref_func_zip.asp)
 * [Wikipedia Numpy](https://en.wikipedia.org/wiki/NumPy)
+* StackOverflow
+  * [StackOverFlow how does collections defaultdict work](https://stackoverflow.com/questions/5900578/how-does-collections-defaultdict-work)
 * [DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-use-args-and-kwargs-in-python-3)
 * [GCoder: 3 Python practice interview questions](https://gdcoder.com/interview-coding-problems-1-implement-trie-prefix-tree-2-longest-substring-with-at-most-k-distinct-characters-3-3sum/)
 

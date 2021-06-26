@@ -342,6 +342,27 @@ A tuple is a collection of objects which are ordered and **immutable**.
 some_tuple = (1, )
 another_tuple = ('a', 'b', 2)
 
+empty_tuple = ()
+
+valid_tuple = 3, 6, 'bob'
+```
+
+Note: You can also create a tuple without parentheses.
+
+A tuple with one element needs a trailing comma.
+
+Tuples are immutable, but if the element is itself a mutable data type like a list, its nested items can be changed.
+
+Using the `+` or `*` operator on a tuple creates a new tuple.
+
+```python
+# Concatenation
+# Output: (1, 2, 3, 4, 5, 6)
+print((1, 2, 3) + (4, 5, 6))
+
+# Repeat
+# Output: ('Repeat', 'Repeat', 'Repeat')
+print(("Repeat",) * 3)
 ```
 
 ## Sets

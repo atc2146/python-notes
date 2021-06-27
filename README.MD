@@ -13,14 +13,15 @@ Notes and references on Python. Taken from various places on the internet.
     * [List Methods](#list-methods)
     * [Creating Lists](#creating-lists)
     * [Adding Lists](#adding-lists)
-* [Dictionaries](#Dictionaries)
-    * [Iterating](#Iterating)
-    * [Searching for a key](#Searching-for-a-key)
+* [Dictionaries](#dictionaries)
+    * [Iterating](#iterating)
+    * [Searching for a key](#searching-for-a-key)
     * [Sorting a dictionary](#sorting-a-dictionary)
     * [Merging dictionaries](#merging-dictionaries)
     * [The setdefault() method](#the-setdefault-method)
     * [The defaultdict collection](#the-defaultdict-collection)
 * [Tuples](#tuples)
+    * [Tuple Methods](#tuple-methods)
 * [Sets](#sets)
 * [Deletion](#deletion)
 * [Regex](#regex)
@@ -364,6 +365,13 @@ print((1, 2, 3) + (4, 5, 6))
 # Output: ('Repeat', 'Repeat', 'Repeat')
 print(("Repeat",) * 3)
 ```
+
+### Tuple Methods
+
+Tuples has the `count()` and `index()` method.
+
+Methods that add items or remove items are not available with tuple.
+
 
 ## Sets
 A set is an unordered collection with no duplicate elements. Basic uses include membership testing and eliminating duplicate entries. Set objects also support mathematical operations like union, intersection, difference, and symmetric difference.  

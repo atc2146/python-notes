@@ -354,7 +354,7 @@ A tuple with one element needs a trailing comma.
 
 Tuples are immutable, but if the element is itself a mutable data type like a list, its nested items can be changed.
 
-Using the `+` or `*` operator on a tuple creates a new tuple.
+Using the `+` or `*` operator on a tuple creates a **new** tuple.
 
 ```python
 # Concatenation

@@ -375,15 +375,20 @@ Methods that add items or remove items are not available with tuple.
 
 
 ## Sets
-A set is an unordered collection with no duplicate elements. Basic uses include membership testing and eliminating duplicate entries. Set objects also support mathematical operations like union, intersection, difference, and symmetric difference.  
+A set is an **unordered** collection with no duplicate elements. Basic uses include membership testing and eliminating duplicate entries. Set objects also support mathematical operations like union, intersection, difference, and symmetric difference.  
 
-Curly braces or the `set()` function can be used to create sets. Note: to create an empty set you have to use `set()`, not `{}`.  The latter creates an empty dictionary.
+Curly braces or the `set()` function can be used to create sets.  
+
+Note: to create an empty set you have to use `set()`, not `{}`.  The latter creates an empty dictionary.
 
 ```python
 ages = {1, 22, 38}
 empty_set = set()
 
 a = set('abracadabra')  # {'a', 'r', 'b', 'c', 'd'}
+
+# Can also create a set by passing it an iteratble
+x = set(<iter>)
 
 ```
 
@@ -398,14 +403,17 @@ Set operations include
 * `.pop()`
 * `.clear()`
 * `.update()`
+* `.intersection_update()`
+* `.difference_update()`
+* `.symmetric_difference_update()`
 * `.union()`
-* `intersection()`
+* `.intersection()`
 * `.symmetric_difference()`
 * `.isdisjoint()`
 * `.issubset()`
 * `.issuperset()`
 
-A set is mutable.  However, a set cannot have mutable elements (list lists, tuples) as its element.
+A set is mutable.  However, a set cannot have mutable elements (lists, dictionaries) as its element.  A tuple may be included in a set.
 
 ## Deletion
 You can use the `del` keyword to delete variables, user-defined objects, lists, items within lists, dictionaries, etc.

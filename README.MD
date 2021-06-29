@@ -458,14 +458,20 @@ For Python regular expressions, you need to import the `re` module.
 
 Recall from the [strings](#strings) section, a raw string is prefixed by an `r`.
 
+Some common regex functions are:
+* `re.match(pattern, string)`: Searches the regular expression pattern and returns the first occurrence. Only searches the beginning of the string.
+* `re.search(pattern, string)`: Searches the regular expression pattern and returns the first occurrence. Unlike Python `re.match()`, it will check all lines of the input string.
+* `re.findall(pattern, string)`:
+
 ```python
 import re
 
 pattern = r'some string'
 string = 'this is some string'
 
-re.search(pattern, string)
-re.findall(pattern, string)
+re.match(pattern, string) # None
+re.search(pattern, string) # <re.Match object; span=(8, 19), match='some string'>
+re.findall(pattern, string) # ['some string']
 ```
 ## Functions
 

@@ -784,7 +784,7 @@ A simple ascending sort is very easy: just call the `sorted()` function. It retu
 sorted([5, 2, 3, 1, 4]) # [1, 2, 3, 4, 5]
 ```
 
-You can also use the `list.sort()` method. It modifies the list in-place (and **returns None** to avoid confusion). Usually it’s less convenient than `sorted()` - but if you don’t need the original list, it’s slightly more efficient.
+You can also use the `list.sort()` method. It modifies the list in-place (and **returns None** to avoid confusion). Usually it’s less convenient than `sorted()` - but if you don’t need the original list, it’s slightly more efficient.  Can also take the `reverse` and `key` parameter.
 
 ```python
 a = [5, 2, 3, 1, 4]

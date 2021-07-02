@@ -501,7 +501,7 @@ Modifiers include:
 ## Functions
 
 ### Arguments
-There are keyword and positional arguments.  Usually denoted `*args` and `**kwargs`. They allow you to pass an unspecified number of arguments to a function.
+There are keyword and positional arguments.  Usually denoted by `*args` and `**kwargs`. They allow you to pass an unspecified number of arguments to a function.
 
 The asterisk is an unpacking operator.
 
@@ -535,10 +535,10 @@ myFun('Hello', 'Welcome', 'to', 'GeeksforGeeks')
 
 ```python
 def intro(**data):
-    print("\nData type of argument:",type(data))
+    print("\nData type of argument:", type(data))
 
     for key, value in data.items():
-        print("{} is {}".format(key,value))
+        print("{} is {}".format(key, value))
 
 intro(Firstname="Sita", Lastname="Sharma", Age=22, Phone=1234567890)
 intro(Firstname="John", Lastname="Wood", Email="johnwood@nomail.com", Country="Wakanda", Age=25, Phone=9876543210)
@@ -548,7 +548,7 @@ intro(Firstname="John", Lastname="Wood", Email="johnwood@nomail.com", Country="W
 # Lastname is Sharma
 # Age is 22
 # Phone is 1234567890
-# 
+
 # Data type of argument: <class 'dict'>
 # Firstname is John
 # Lastname is Wood

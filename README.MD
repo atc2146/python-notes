@@ -575,12 +575,12 @@ Lambda functions are known as anonymous functions.
 
 ### reduce(), filter(), map()
 
-Functional programming that is commonly used with lambda functions. In Python 3, you need to `import functools`.
+Functional programming is commonly used with lambda functions. In Python 3, you need to `import functools`.
 
 
 #### reduce()
 
-`reduce()` implements a mathematical technique commonly known as folding or reduction. You’re doing a fold or reduction when you reduce a list of items to a single cumulative value. Python’s reduce() operates on any iterable. Code outline: `functools.reduce(function, iterable[, initializer])`
+`reduce()` implements a mathematical technique commonly known as folding or reduction. You’re doing a fold or reduction when you reduce a list of items to a single cumulative value. Python’s `reduce()` operates on any iterable. Code outline: `functools.reduce(function, iterable[, initializer])`
 
 ```python
 import functools 

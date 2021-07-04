@@ -580,7 +580,9 @@ Functional programming is commonly used with lambda functions. In Python 3, you 
 
 #### reduce()
 
-`reduce()` implements a mathematical technique commonly known as folding or reduction. You’re doing a fold or reduction when you reduce a list of items to a single cumulative value. Python’s `reduce()` operates on any iterable. Code outline: `functools.reduce(function, iterable[, initializer])`
+`reduce()` implements a mathematical technique commonly known as folding or reduction. You’re doing a fold or reduction when you reduce a list of items to a single cumulative value. Python’s `reduce()` operates on any iterable. 
+
+* Code outline: `functools.reduce(function, iterable[, initializer])`
 
 ```python
 import functools 
@@ -590,6 +592,32 @@ print(reduce(lambda x, y: x + y, [1, 2, 3, 4]))
 ```
 
 #### filter()
+
+The `filter()` method constructs an iterator from elements of an iterable for which a function returns true.
+
+* Code outline: `functools.filter(function, iterable)`
+
+```python
+import functools 
+
+# list of letters
+letters = ['a', 'b', 'd', 'e', 'i', 'j', 'o']
+
+# function that filters vowels
+def filter_vowels(letter):
+    vowels = ['a', 'e', 'i', 'o', 'u']
+
+    if(letter in vowels):
+        return True
+    else:
+        return False
+
+filtered_vowels = filter(filter_vowels, letters)
+
+print('The filtered vowels are:')
+for vowel in filtered_vowels:
+    print(vowel)
+```
 
 
 #### map()

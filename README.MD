@@ -621,7 +621,29 @@ for vowel in filtered_vowels:
 
 
 #### map()
+The `map()` function applies a given function to each item of an iterable (list, tuple etc.) and returns a list of the results.
 
+* Code outline: `functools.map(function, iterable)`
+
+```python
+import functools 
+
+# function that filters vowels
+def calculateSquare(n):
+    return n*n
+
+
+numbers = (1, 2, 3, 4)
+result = map(calculateSquare, numbers)
+print(result)
+
+# converting map object to set
+numbersSquare = set(result)
+print(numbersSquare)
+
+# <map object at 0x7f722da129e8>
+# {16, 1, 4, 9}
+```
 
 
 ## Iterators, Generators, and Decorators
@@ -1041,6 +1063,7 @@ The core functionality of NumPy is its "ndarray", for n-dimensional array, data 
     * [del](https://www.programiz.com/python-programming/del)
 * [Real Python](https://realpython.com/)
     * [Sets](https://realpython.com/python-sets/)
+    * [map](https://www.programiz.com/python-programming/methods/built-in/map)
 * [Geeks For Geeks](https://www.geeksforgeeks.org/)
 * [Base N conversions](https://www.dcode.fr/base-n-convert)
 * [W3Schools](https://www.w3schools.com/python)

@@ -724,6 +724,10 @@ print(sum(square(fibonacci_numbers(10))))
 
 ### Decorators
 
+A decorator takes in a function, adds some functionality and returns it.  This is also called metaprogramming because a part of the program tries to modify another part of the program at compile time.
+
+
+
 
 ## Syntatic Sugar and Other
 

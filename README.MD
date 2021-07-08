@@ -746,6 +746,13 @@ Modulus operator is given using `%`.  This gives the remainder.
 
 `bin()` will convert a base 10 number into its binary representation (as a string). Note, this will be prefixed with a '0b'.
 
+```python
+bin(2) # 0b10
+
+bin(33) # 0b100001
+
+```
+
 ### Try Except
 
 * `try`: Try to run this code

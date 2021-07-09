@@ -750,7 +750,6 @@ Modulus operator is given using `%`.  This gives the remainder.
 bin(2) # 0b10
 
 bin(33) # 0b100001
-
 ```
 
 ### Try Except
@@ -759,6 +758,31 @@ bin(33) # 0b100001
 * `except`: Execute this code when there is an exception
 * `else`: No exceptions? Then run this code
 * `finally`: Always run this code
+
+```python
+def divide(x, y):
+    try:
+        # Floor Division : Gives only Fractional
+        # Part as Answer
+        result = x // y
+    except ZeroDivisionError:
+        print("Sorry ! You are dividing by zero ")
+    else:
+        print("Yeah ! Your answer is :", result)
+    finally: 
+        # this block is always executed  
+        # regardless of exception generation. 
+        print('This is always executed')  
+ 
+# Look at parameters and note the working of Program
+divide(3, 2)
+divide(3, 0)
+
+# Yeah ! Your answer is : 1
+# This is always executed
+# Sorry ! You are dividing by zero 
+# This is always executed
+```
 
 You can also raise exceptions and catch specific exceptions.
 
@@ -1075,6 +1099,7 @@ The core functionality of NumPy is its "ndarray", for n-dimensional array, data 
     * [Sets](https://realpython.com/python-sets/)
     * [map](https://www.programiz.com/python-programming/methods/built-in/map)
 * [Geeks For Geeks](https://www.geeksforgeeks.org/)
+    * [Try Except](https://www.geeksforgeeks.org/try-except-else-and-finally-in-python/)
 * [Base N conversions](https://www.dcode.fr/base-n-convert)
 * [W3Schools](https://www.w3schools.com/python)
   * [assert keyword](https://www.w3schools.com/python/ref_keyword_assert.asp)

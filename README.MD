@@ -872,6 +872,19 @@ Use spaces around the = sign when combining an argument annotation with a defaul
 ## Bitwise Operators
 In Python, bitwise operators are used to perform bitwise calculations on integers. The integers are first converted into binary and then operations are performed on bit by bit, hence the name bitwise operators. Then the result is returned in decimal format.
 
+If you XOR the same number together, it cancels out:
+
+```
+nums = [2,4,5,4,3,5,2]
+XORing everything together
+= 2 ^ 4 ^ 5 ^ 4 ^ 3 ^ 5 ^ 2
+= (2^2) ^ (4^4) ^ (5^5) ^ 3
+= 0 ^ 0 ^0 ^ 3
+= 3
+```
+
+Example leetcode question [(136. Single Number)](https://leetcode.com/problems/single-number/).
+
 ## Sorting
 A simple ascending sort is very easy: just call the `sorted()` function. It returns a new sorted list.  The original list is not changed. 
 

@@ -920,6 +920,7 @@ Timsort is the sorting algorithm used by Python.
 The [official](https://docs.python.org/3/tutorial/datastructures.html) Python documentation has good notes on this. A brief summary is provided below.
 
 ### Linked List
+A [linked list](https://en.wikipedia.org/wiki/Linked_list) is a linear collection of data elements whose order is not given by their physical placement in memory. Instead, each element points to the next. It is a data structure consisting of a collection of nodes which together represent a sequence.
 
 ### Hash tables
 See [dictionary](#dictionary) section of notes.

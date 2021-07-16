@@ -474,6 +474,7 @@ string = 'this is some string'
 re.match(pattern, string) # None
 re.search(pattern, string) # <re.Match object; span=(8, 19), match='some string'>
 re.findall(pattern, string) # ['some string']
+re.sub(pattern, 'bob' , string) # 'this is bob'
 ```
 ### Regex Patterns
 

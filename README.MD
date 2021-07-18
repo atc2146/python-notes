@@ -918,7 +918,7 @@ print(sorted(lst, key=lambda x: x[1], reverse=True))
 
 Timsort is the sorting algorithm used by Python.
 
-## Data Structures
+## Data Structures and Types
 The [official](https://docs.python.org/3/tutorial/datastructures.html) Python documentation has good notes on this. A brief summary is provided below.
 
 ### Linked List

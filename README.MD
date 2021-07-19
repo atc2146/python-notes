@@ -48,7 +48,7 @@ Notes and references on Python. Taken from various places on the internet.
     * [Zip](#zip)
     * [Type Hinting](#type-hinting)
 * [Sorting](#Sorting)
-* [Data Structures](#data-structures)
+* [Data Structures and Types](#data-structures-and-types)
     * [Linked Lists](#linked-lists)
     * [Hash Tables](#hash-tables)
     * [Queues](#queues)
@@ -921,7 +921,7 @@ Timsort is the sorting algorithm used by Python.
 ## Data Structures and Types
 The [official](https://docs.python.org/3/tutorial/datastructures.html) Python documentation has good notes on this. A brief summary is provided below.
 
-### Linked List
+### Linked Lists
 A [linked list](https://en.wikipedia.org/wiki/Linked_list) is a linear collection of data elements whose order is not given by their physical placement in memory. Instead, each element points to the next. It is a data structure consisting of a collection of nodes which together represent a sequence.
 
 Linked Lists can be used to implement queues or stacks as well as graphs.

@@ -53,6 +53,7 @@ Notes and references on Python. Taken from various places on the internet.
     * [Hash Tables](#hash-tables)
     * [Queues](#queues)
         * [Priority Queues](#priority-queues)
+        * [Double Ended Queue](#double-ended-queue)
     * [Heaps](#heaps)
     * [Binary Search Tree](#binary-search-tree)
 * [Algorithms](#algorithms)
@@ -936,6 +937,10 @@ See [dictionary](#dictionary) section of notes.
 A [priority queue](https://en.wikipedia.org/wiki/Priority_queue) is an abstract data type similar to a regular queue or stack data structure in which each element additionally has a "priority" associated with it.
 
 The items in the queue must be able to be assigned a priority.
+
+#### Double Ended Queue
+
+A double-ended queue, or deque, has the feature of adding and removing elements from either end. The Deque module is a part of collections library.
 
 ### Heaps
 A [heap](https://en.wikipedia.org/wiki/Heap_(data_structure)) is a specialized tree-based data structure which is essentially an almost complete tree that satisfies the heap property:

@@ -462,7 +462,7 @@ Recall from the [strings](#strings) section, a raw string is prefixed by an `r`.
 
 Some common regex functions are:
 * `re.match(pattern, string)`: Searches the regular expression pattern and returns the first occurrence. Only searches the beginning of the string.
-* `re.search(pattern, string)`: Searches the regular expression pattern and returns the first occurrence. Unlike Python `re.match()`, it will check all lines of the input string.
+* `re.search(pattern, string)`: Searches the regular expression pattern and returns the first occurrence as a match object. Unlike Python `re.match()`, it will check all lines of the input string.
 * `re.findall(pattern, string)`: search for “all” occurrences that match a given pattern.
 * `re.sub(pattern, replacement, string, [count])`: replace the `string` with the replacement for all (or optionally number of `count`) occurances of `pattern`.
 

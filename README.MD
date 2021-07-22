@@ -485,7 +485,7 @@ Regular expression patterns include:
 * `\D`: Anything but a decimal digit (a non-digit).
 * `\s`: Whitespace characters (tab, space, newline etc.). Same as `[ \t\n\r\f\v]`.
 * `\S`: Anything but whitespace characters. Same as `[^ \t\n\r\f\v]`
-* `\w`: Matches alphanumeric characters, including letters, numbers, and underscore.
+* `\w`: Matches alphanumeric characters, including letters, numbers, and underscores.
 * `\W`: Anything but alphanumeric characters.
 * `.`: Matches any character except a newline.
 

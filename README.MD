@@ -1030,7 +1030,7 @@ Example: DFS of a binary tree
 
 Given n, the size of the input to the algorithm, Big O notation represents the relationship between n and the number of steps the algorithm takes to find a solution.
 
-We have: 
+We have (in increasing complexity): 
 * O(1): Constant
 * O(logn): Logarithmic
 * O(n): Linear

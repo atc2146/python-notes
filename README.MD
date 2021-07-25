@@ -87,8 +87,8 @@ A "raw" string literal is prefixed by an 'r' and passes all the chars through wi
 * `s.count()`: In simple words, `count()` method searches the substring in the given string and returns how many times the substring is present in it.
   * The syntax is: `string.count(substring, [start=...], [end=...])`
 * `s.isdigit()`: Checks whether the string consists of digits only.
-* `s.startswith()`: Returns True if a string starts with the specified prefix(string). If not, it returns False.
-* `s.find()`: The find method finds the first occurrence of the specified value.
+* `s.startswith()`: Returns True if a string starts with the specified prefix. If not, it returns False.
+* `s.find()`: The find method returns the index of first occurrence of the substring (if found). If not found, it returns -1.
 
 ### String Slices
 The "slice" syntax is a handy way to refer to sub-parts of sequences -- typically strings and lists. The slice `s[start:end]` is the elements beginning at start and extending up to but **not** including the end.

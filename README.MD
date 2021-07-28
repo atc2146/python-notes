@@ -874,6 +874,8 @@ def greeting(name: str) -> str:
 
 Use spaces around the = sign when combining an argument annotation with a default value `(align: bool = True)`.
 
+Note: these are just hints, and do not actually force any type since Python is dynamically typed.
+
 ## Bitwise Operators
 In Python, bitwise operators are used to perform bitwise calculations on integers. The integers are first converted into binary and then operations are performed on bit by bit, hence the name bitwise operators. Then the result is returned in decimal format.
 

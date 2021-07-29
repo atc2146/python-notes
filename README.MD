@@ -834,6 +834,7 @@ print("The largest key:", key1)    # 2
 
 # the key whose value is the largest
 key2 = max(square, key = lambda k: square[k])
+key2 = max(square, key = square.get)
 
 print("The key with the largest value:", key2)    # -3
 

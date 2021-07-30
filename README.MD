@@ -830,16 +830,16 @@ square = {2: 4, -3: 9, -1: 1, -2: 4}
 
 # the largest key
 key1 = max(square)
-print("The largest key:", key1)    # 2
+print("The largest key:", key1) # 2
 
 # the key whose value is the largest
 key2 = max(square, key = lambda k: square[k])
 key2 = max(square, key = square.get)
 
-print("The key with the largest value:", key2)    # -3
+print("The key with the largest value:", key2) # -3
 
 # getting the largest value
-print("The largest value:", square[key2])    # 9
+print("The largest value:", square[key2]) # 9
 ```
 
 ### Zip
@@ -853,7 +853,7 @@ b = ["Jenny", "Christy", "Monica", "Vicky"]
 x = zip(a, b)
 
 for i in x:
-    print(i) # i is type tuple
+    print(i) # i is of type tuple
 
 # ('John', 'Jenny')
 # ('Charles', 'Christy')
@@ -873,7 +873,7 @@ def greeting(name: str) -> str:
     return 'Hello ' + name
 ```
 
-Use spaces around the = sign when combining an argument annotation with a default value `(align: bool = True)`.
+Use spaces around the `=` sign when combining an argument annotation with a default value `(align: bool = True)`.
 
 Note: these are just hints, and do not actually force any type since Python is dynamically typed.
 
@@ -884,6 +884,7 @@ If you XOR the same number together, it cancels out:
 
 ```
 nums = [2,4,5,4,3,5,2]
+
 XORing everything together
 = 2 ^ 4 ^ 5 ^ 4 ^ 3 ^ 5 ^ 2
 = (2^2) ^ (4^4) ^ (5^5) ^ 3

@@ -895,7 +895,7 @@ XORing everything together
 Example leetcode question [(136. Single Number)](https://leetcode.com/problems/single-number/).
 
 ## Sorting
-A simple ascending sort is very easy: just call the `sorted()` function. It returns a new sorted list.  The original list is not changed. 
+A simple ascending sort is very easy; just call the `sorted()` function. It returns a new sorted list.  The original list is not changed. 
 
 ```python
 sorted([5, 2, 3, 1, 4]) # [1, 2, 3, 4, 5]

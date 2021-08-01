@@ -278,6 +278,7 @@ my_dict['obama']
 ```python
 x = {1: 2, 3: 4, 4: 3, 2: 1, 0: 0}
 
+# Sort by dictionary value
 sorted_list = sorted(x.items(), key = lambda i: i[1])
 #  [(0, 0), (2, 1), (1, 2), (4, 3), (3, 4)]
 

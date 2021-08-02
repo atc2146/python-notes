@@ -157,6 +157,8 @@ my_list = [1, 2, 3, 4]
     * If a list contains duplicate elements, the `remove()` method only removes the first matching element.
 * The `count()` method returns the number of times the specified element appears in the list.
 * The `index()` method returns the index of the specified element in the list.
+* The `append()` method adds an item to the end of the list.
+* The `extend()` method adds all the elements of an iterable (list, tuple, string etc.) to the end of the list.
 
 ```python
 my_list = [1,2,3,4]

@@ -1095,7 +1095,7 @@ print(p1.human) # True
 print(Person.human) # will also be True, don't need to instantiate a class to access a class variable
 
 ```
-There are also functions like `repr()` or `str()` that you can override.
+There are also [built-in](https://docs.python.org/3/library/functions.html) functions like `repr()` or `str()` that you can override for a class.
 
 ## Pandas
 

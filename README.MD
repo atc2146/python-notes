@@ -1033,6 +1033,37 @@ Example: DFS of a binary tree
 
 ## Recursion
 
+Recursion is a method of solving a problem where the solution depends on solutions to smaller instances of the same problem.
+
+This can be used to solve problems such as [(509. Fibonnaci Number)](https://leetcode.com/problems/fibonacci-number/).
+
+```python
+def fib(n: int) -> int:
+	if n <= 1:
+        return n
+	return fib(n-1) + fib(n-2)
+# Time complexity: O(C)^n
+
+
+
+# Here is an iterative approach (faster)
+def fib(n: int) -> int:
+    if n <= 1:
+        return n
+    
+    a = 0
+    b = 1
+    result = a + b
+    
+    for i in range(1, n):
+        result = a + b
+        
+        a, b = b, result
+    
+    return result
+# Time complexity: O(n)
+```
+
 ## Time Complexity
 
 ### Big O Notation

@@ -1042,9 +1042,7 @@ def fib(n: int) -> int:
 	if n <= 1:
         return n
 	return fib(n-1) + fib(n-2)
-# Time complexity: O(C)^n
-
-
+# Time complexity: O(C)^n, exponential
 
 # Here is an iterative approach (faster)
 def fib(n: int) -> int:
@@ -1057,7 +1055,6 @@ def fib(n: int) -> int:
     
     for i in range(1, n):
         result = a + b
-        
         a, b = b, result
     
     return result

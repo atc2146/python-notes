@@ -1039,10 +1039,11 @@ This can be used to solve problems such as [(509. Fibonnaci Number)](https://lee
 
 ```python
 def fib(n: int) -> int:
-	if n <= 1:
+    if n <= 1:
         return n
-	return fib(n-1) + fib(n-2)
+    return fib(n-1) + fib(n-2)
 # Time complexity: O(C)^n, exponential
+
 
 # Here is an iterative approach (faster)
 def fib(n: int) -> int:

@@ -132,7 +132,13 @@ To iterate using `range()`:
 some_list = [4, 7, 8, 9, 22, 11]
 
 for i in range(0, len(some_list), 1):
-    print(i)
+    print(some_list[i])
+
+
+# Iterating backwards
+for i in range(len(some_list)-1, -1, -1):
+    print(some_list[i])
+
 ```
 This will iterate up to but **not** including the index at the 2nd argument in `range()`.
 

@@ -91,7 +91,7 @@ A "raw" string literal is prefixed by an 'r' and passes all the chars through wi
 * `s.find()`: The `find()` method returns the index of first occurrence of the substring (if found). If not found, it returns -1.
 
 ### String Slices
-The "slice" syntax is a handy way to refer to sub-parts of sequences -- typically strings and lists. The slice `s[start:end]` is the elements beginning at start and extending up to but **not** including the end.
+The "slice" syntax is a handy way to refer to sub-parts of sequences - typically strings and lists. The slice `s[start:end]` is the elements beginning at start and extending up to but **not** including the end.
 
 String slices can also take a 3rd argument, the stride, `str_[start:stop:stride]`
 
@@ -220,17 +220,19 @@ The actual implementation is pretty interesting - read about it [here](https://d
 ```python
 my_dict = {'bob': 20, 'james': 33, 'mary': 18}
 
+# list keys
+my_dict.keys() # dict_keys(['bob', 'james', 'mary'])
+
+# list values
+my_dict.values()  # dict_values([20, 33, 18])
+
 # delete a key
 del my_dict['bob]
 
 # clear dictionary
 my_dict.clear()
 
-# list keys
-my_dict.keys()
 
-# list values
-my_dict.values()
 
 ```
 

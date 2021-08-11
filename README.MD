@@ -227,12 +227,10 @@ my_dict.keys() # dict_keys(['bob', 'james', 'mary'])
 my_dict.values()  # dict_values([20, 33, 18])
 
 # delete a key
-del my_dict['bob]
+del my_dict['bob']
 
 # clear dictionary
 my_dict.clear()
-
-
 
 ```
 

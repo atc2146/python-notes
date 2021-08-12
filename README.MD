@@ -765,6 +765,12 @@ bin(2) # 0b10
 bin(33) # 0b100001
 ```
 
+To convert a binary (base 2) number to decimal (base 10), you can do this:
+
+```python
+int('11000', 2) # 24
+```
+
 ### Try Except
 
 * `try`: Try to run this code.

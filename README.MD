@@ -763,6 +763,8 @@ Modulus operator is given using `%`.  This gives the remainder.
 bin(2) # 0b10
 
 bin(33) # 0b100001
+
+int(bin(33)[2:]) # 100001
 ```
 
 To convert a binary (base 2) number to decimal (base 10), you can do this:

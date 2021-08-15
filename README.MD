@@ -372,17 +372,17 @@ Using the `+` or `*` operator on a tuple creates a **new** tuple.
 
 ```python
 # Concatenation
-# Output: (1, 2, 3, 4, 5, 6)
 print((1, 2, 3) + (4, 5, 6))
+# Output: (1, 2, 3, 4, 5, 6)
 
 # Repeat
-# Output: ('Repeat', 'Repeat', 'Repeat')
 print(("Repeat",) * 3)
+# Output: ('Repeat', 'Repeat', 'Repeat')
 ```
 
 ### Tuple Methods
 
-Tuples has the `count()` and `index()` method.
+Tuples have the `count()` and `index()` method.
 
 Methods that add items or remove items are not available with tuple.
 
@@ -1069,19 +1069,15 @@ def fib(n: int) -> int:
 
 
 # Here is an iterative approach (faster)
+# This actually is a form of dynamic programming.
 def fib(n: int) -> int:
-    if n <= 1:
-        return n
-    
-    a = 0
-    b = 1
-    result = a + b
-    
-    for i in range(1, n):
+    a, b = 0, 1
+
+    for i in range(n):
         result = a + b
         a, b = b, result
     
-    return result
+    return a
 # Time complexity: O(n)
 ```
 

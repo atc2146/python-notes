@@ -76,6 +76,9 @@ Notes and references on Python. Taken from various places on the internet.
 
  
 ## Strings
+
+Python strings are immutable.
+
 A "raw" string literal is prefixed by an 'r' and passes all the chars through without special treatment of backslashes, so `r'x\nx'` evaluates to the length-4 string 'x\nx'.
 
 ### String Methods

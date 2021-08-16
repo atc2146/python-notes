@@ -51,6 +51,7 @@ Notes and references on Python. Taken from various places on the internet.
 * [Data Structures and Types](#data-structures-and-types)
     * [Linked Lists](#linked-lists)
     * [Hash Tables](#hash-tables)
+    * [Stacks](#stacks)
     * [Queues](#queues)
         * [Priority Queues](#priority-queues)
         * [Double Ended Queue](#double-ended-queue)
@@ -965,6 +966,10 @@ Linked Lists can be used to implement queues or stacks as well as graphs.
 
 ### Hash tables
 See [dictionary](#dictionary) section of notes.
+
+### Stacks
+
+A stack in python can be implement with a `list`.
 
 ### Queues
 

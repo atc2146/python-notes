@@ -969,7 +969,7 @@ See [dictionary](#dictionary) section of notes.
 
 ### Stacks
 
-A stack in python can be implement with a `list`.
+A stack in python can be implemented with a `list`.
 
 ### Queues
 

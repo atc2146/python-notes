@@ -968,9 +968,10 @@ Linked Lists can be used to implement queues or stacks as well as graphs.
 See [dictionary](#dictionary) section of notes.
 
 ### Stacks
+A stack is a data structure that stores items in an Last-In/First-Out (LIFO) manner.
 
 A stack in python can be implemented with:
-* `list`
+* `list`: Can run into speed issues as it grows.
 * `Collections.deque`: Deque is preferred over the list in the cases where we need quicker append and pop operations from both the ends of the container, as deque provides an O(1) time complexity for append and pop operations as compared to list which provides O(n) time complexity. 
 * `queue.LifoQueue`
 
@@ -987,6 +988,7 @@ stack.pop()
 ```
 
 ### Queues
+A queue stores items in a First-In/First-Out (FIFO) manner.
 
 #### Priority Queues
 A [priority queue](https://en.wikipedia.org/wiki/Priority_queue) is an abstract data type similar to a regular queue or stack data structure in which each element additionally has a "priority" associated with it.

@@ -394,7 +394,7 @@ Methods that add items or remove items are not available with tuple.
 ## Sets
 A set is an **unordered** collection with no duplicate elements. Basic uses include membership testing and eliminating duplicate entries. Set objects also support mathematical operations like union, intersection, difference, and symmetric difference.  
 
-Curly braces or the `set()` function can be used to create sets.  
+Curly braces `{}` or the `set()` function can be used to create sets.  
 
 Note: to create an empty set you have to use `set()`, not `{}`.  The latter creates an empty dictionary.
 
@@ -969,7 +969,22 @@ See [dictionary](#dictionary) section of notes.
 
 ### Stacks
 
-A stack in python can be implemented with a `list`.
+A stack in python can be implemented with:
+* `list`
+* `Collections.deque`: Deque is preferred over the list in the cases where we need quicker append and pop operations from both the ends of the container, as deque provides an O(1) time complexity for append and pop operations as compared to list which provides O(n) time complexity. 
+* `queue.LifoQueue`
+
+
+
+```python
+from Collections import deque
+ 
+stack = deque()
+stack.append('a')
+stack.append('b')
+stack.pop()
+
+```
 
 ### Queues
 

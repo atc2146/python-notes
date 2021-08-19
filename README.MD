@@ -973,9 +973,7 @@ A stack is a data structure that stores items in an Last-In/First-Out (LIFO) man
 A stack in python can be implemented with:
 * `list`: Can run into speed issues as it grows.
 * `Collections.deque`: Deque is preferred over the list in the cases where we need quicker append and pop operations from both the ends of the container, as deque provides an O(1) time complexity for append and pop operations as compared to list which provides O(n) time complexity. 
-* `queue.LifoQueue`
-
-
+* `queue.LifoQueue`: Usually used for thread communication operations.
 
 ```python
 from Collections import deque
@@ -984,8 +982,9 @@ stack = deque()
 stack.append('a')
 stack.append('b')
 stack.pop()
-
 ```
+
+Note: deque stands for Doubly Ended Queue.
 
 ### Queues
 A queue stores items in a First-In/First-Out (FIFO) manner.

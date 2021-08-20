@@ -599,6 +599,10 @@ def example2(arg_1, arg_2, *args, kw_1="shark", kw_2="blobfish", **kwargs):
 ## Lambda Functions
 Lambda functions are known as anonymous functions.
 
+```python
+x = lambda a : a + 10
+print(x(5)) # 15
+``
 
 ### reduce(), filter(), map()
 

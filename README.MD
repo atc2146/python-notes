@@ -854,7 +854,7 @@ The Python `max()` function returns the largest item in an iterable. It can also
 
 `max(iterable, *iterables, key, default)`
 
-* iterable - an iterable such as list, tuple, set, dictionary, etc.
+* iterable - an iterable such as a list, tuple, set, dictionary, etc.
 * *iterables (optional) - any number of iterables; can be more than one
 * key (optional) - key function where the iterables are passed and comparison is performed based on its return value
 * default (optional) - default value if the given iterable is empty
@@ -987,8 +987,6 @@ stack.append('a')
 stack.append('b')
 stack.pop()
 ```
-
-Note: deque stands for Doubly Ended Queue.
 
 ### Queues
 A queue stores items in a First-In/First-Out (FIFO) manner.

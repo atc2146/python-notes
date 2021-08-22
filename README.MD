@@ -94,6 +94,12 @@ A "raw" string literal is prefixed by an 'r' and passes all the chars through wi
 * `s.startswith()`: Returns True if a string starts with the specified prefix. If not, it returns False.
 * `s.find()`: The `find()` method returns the index of first occurrence of the substring (if found). If not found, it returns -1.
 * `s.isalnum()`: The `isalnum()` method returns True if all characters in the string are alphanumeric (either alphabets or numbers). If not, it returns False.
+* `s.index(element, start, end)`: returns the index of a substring inside the string (if found). If the substring is not found, it raises an exception.
+  * start and end(optional) - substring is searched within str[start:end]
+* `s.replace(old, new [, count])`: replaces each matching occurrence of the old character/text in the string with the new character/text.
+  * Takes optional count argument which is the maximum number of times you want to replace the old substring with the new subsctring.
+
+Example
 
 ### String Slices
 The "slice" syntax is a handy way to refer to sub-parts of sequences - typically strings and lists. The slice `s[start:end]` is the elements beginning at start and extending up to but **not** including the end.

@@ -148,7 +148,7 @@ for i in range(len(some_list)-1, -1, -1):
     print(some_list[i])
 
 ```
-This will iterate up to but **not** including the index at the 2nd argument in `range()`.
+This will iterate up to but **not** including the index at the **2nd argument** in `range()`.
 
 ### List Comprehension
 The syntax is: *[expr for var in list {optional if expr}]*

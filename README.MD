@@ -703,7 +703,7 @@ print(next(my_iter))
 print(next(my_iter))
 ```
 
-or you can use a `for` loop.
+Or you can use a `for` loop.
 
 ```python
 for elem in my_list:

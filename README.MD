@@ -717,7 +717,7 @@ A generator is a function that returns an object (iterator) which we can iterate
 
 A generator is simply a normal function, but with a yield statement instead of a return statement.
 
-The difference is that while a `return` statement terminates a function entirely, `yield` statement pauses the function saving all its states and later continues from there on successive calls.
+The difference is that while a `return` statement terminates a function entirely, a `yield` statement pauses the function saving all its states and later continues from there on successive calls.
 
 ```python
 def rev_str(my_str):

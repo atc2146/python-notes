@@ -730,7 +730,7 @@ for char in rev_str("hello"):
     print(char)
 ```
 
-Generators have lazy execution ( producing items only when asked for ). For this reason, a generator expression is much more memory efficient than an equivalent list comprehension.
+Generators have lazy execution (producing items only when asked for). For this reason, a generator expression is much more memory efficient than an equivalent list comprehension.
 
 ```python
 generator = (x**2 for x in my_list)

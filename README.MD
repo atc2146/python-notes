@@ -610,7 +610,7 @@ print(x(5)) # 15
 
 ### reduce(), filter(), map()
 
-Functional programming is commonly used with lambda functions. For some functions in Python 3, you need to use the `functools` module.
+Functional programming is commonly used with lambda functions. For some functions in Python 3, you need to import the `functools` module.
 
 
 #### reduce()

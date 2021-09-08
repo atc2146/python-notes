@@ -606,11 +606,11 @@ Lambda functions are known as anonymous functions.
 ```python
 x = lambda a : a + 10
 print(x(5)) # 15
-``
+```
 
 ### reduce(), filter(), map()
 
-Functional programming is commonly used with lambda functions. In Python 3, you need to `import functools`.
+Functional programming is commonly used with lambda functions. For some functions in Python 3, you need to use the `functools` module.
 
 
 #### reduce()
@@ -620,21 +620,23 @@ Functional programming is commonly used with lambda functions. In Python 3, you 
 * Code outline: `functools.reduce(function, iterable[, initializer])`
 
 ```python
-import functools 
+from functools import reduce
 
 print(reduce(lambda x, y: x + y, [1, 2, 3, 4]))
 # 1 + 2 + 3 + 4 = 10
+
+print(reduce(lambda x, y: x * y, [1, 2, 3, 4]))
+# 1 * 2 * 3 * 4 = 24
+
 ```
 
 #### filter()
 
 The `filter()` method constructs an iterator from elements of an iterable for which a function returns true.
 
-* Code outline: `functools.filter(function, iterable)`
+* Code outline: `filter(function, iterable)`
 
 ```python
-import functools 
-
 # list of letters
 letters = ['a', 'b', 'd', 'e', 'i', 'j', 'o']
 
@@ -658,10 +660,9 @@ for vowel in filtered_vowels:
 #### map()
 The `map()` function applies a given function to each item of an iterable (list, tuple etc.) and returns a list of the results.
 
-* Code outline: `functools.map(function, iterable)`
+* Code outline: `map(function, iterable)`
 
 ```python
-import functools 
 
 # function that filters vowels
 def calculateSquare(n):

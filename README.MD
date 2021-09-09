@@ -769,7 +769,7 @@ A decorator takes in a function, adds some functionality and returns it.  This i
 
 ### Math
 
-Integer division can be done using `//`, i.e. the floor.
+Integer division can be done using the `//` operator, i.e. the floor.
 
 ```python
 22 // 7 

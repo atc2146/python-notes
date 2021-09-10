@@ -1085,6 +1085,8 @@ Example: DFS of a binary tree
 
 ## Dynamic Programming
 
+Dynamic Programming is mainly an optimization over plain recursion. Wherever we see a recursive solution that has repeated calls for same inputs, we can optimize it using Dynamic Programming. The idea is to simply store the results of subproblems, so that we do not have to re-compute them when needed later.
+
 ## Recursion
 
 Recursion is a method of solving a problem where the solution depends on solutions to smaller instances of the same problem.

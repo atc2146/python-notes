@@ -199,7 +199,7 @@ my_list[::-1]
 If you want to create a list.
 
 ```python
-my_list = ['bob']*3 # can't be an empty list
+my_list = ['bob']*3 # can't be an empty list (can put None)
 # ['bob', 'bob', 'bob']
 
 [1,2] * 2

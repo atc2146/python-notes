@@ -100,7 +100,7 @@ A "raw" string literal is prefixed by an 'r' and passes all the chars through wi
   * Takes optional count argument which is the maximum number of times you want to replace the old substring with the new subsctring.
 
 ### String Slices
-The "slice" syntax is a handy way to refer to sub-parts of sequences - typically strings and lists. The slice `s[start:end]` is the elements beginning at start and extending up to but **not** including the end.
+The "slice" syntax is a handy way to refer to sub-parts of sequences - typically strings and lists. The slice `s[start:end]` slices the elements beginning at start and extending up to but **not** including the end.
 
 String slices can also take a 3rd argument, the stride, `str_[start:stop:stride]`
 

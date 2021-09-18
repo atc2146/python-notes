@@ -468,9 +468,8 @@ person = { 'name': 'Sam',
 
 del person['profession']
 
-# Output: {'name': 'Sam', 'age': 25}
 print(person)
-
+# Output: {'name': 'Sam', 'age': 25}
 ```
 
 ## Regex
@@ -481,7 +480,7 @@ Recall from the [strings](#strings) section, a raw string is prefixed by an `r`.
 Some common regex functions are:
 * `re.match(pattern, string)`: Searches the regular expression pattern and returns the first occurrence. Only searches the beginning of the string.
 * `re.search(pattern, string)`: Searches the regular expression pattern and returns the first occurrence as a match object. Unlike Python `re.match()`, it will check all lines of the input string.
-* `re.findall(pattern, string)`: search for “all” occurrences that match a given pattern.
+* `re.findall(pattern, string)`: search for all occurrences that match a given pattern.
 * `re.sub(pattern, replacement, string, [count])`: replace the `string` with the replacement for all (or optionally number of `count`) occurances of `pattern`.
 
 ```python
@@ -859,9 +858,9 @@ The Python `max()` function returns the largest item in an iterable. It can also
 `max(iterable, *iterables, key, default)`
 
 * iterable - an iterable such as a list, tuple, set, dictionary, etc.
-* *iterables (optional) - any number of iterables; can be more than one
-* key (optional) - key function where the iterables are passed and comparison is performed based on its return value
-* default (optional) - default value if the given iterable is empty
+* *iterables (optional) - any number of iterables; can be more than one.
+* key (optional) - key function where the iterables are passed and comparison is performed based on its return value.
+* default (optional) - default value if the given iterable is empty.
 
 ```python
 square = {2: 4, -3: 9, -1: 1, -2: 4}

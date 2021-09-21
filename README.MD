@@ -775,6 +775,9 @@ Integer division can be done using the `//` operator, i.e. the floor.
 
 30 // 4
 # 7
+
+x += 1 # same as x = x + 1
+x -= 1
 ```
 Modulus operator is given using `%`.  This gives the remainder.
 

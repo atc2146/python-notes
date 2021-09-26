@@ -192,7 +192,7 @@ my_list[:-1]
 my_list[::-1]
 # [4, 3, 2, 1]
 ```
- Slicing creates a shallow copy of the original list.
+Note: Slicing creates a shallow copy of the original list.
 
 ### Creating Lists
 If you want to create a list.

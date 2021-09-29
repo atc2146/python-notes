@@ -212,7 +212,7 @@ my_list = list(range(2,20,3)) # last argument is stride
 ```
 
 ### Adding Lists
-Adding lists in Python is **not** done element wise.
+Adding lists using the plus operator in Python is **not** done element wise.  
 
 ```python
 [1,2] + [1,1]

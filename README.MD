@@ -1146,6 +1146,7 @@ The O(n) worst case for sets and dicts is very uncommon, but it can happen if `_
 * Python's built-in `sorted()` has a time complexity of O(nlogn)
 * Python's built-in `.count()` on lists has a time complexity of O(n)
 * Python's built-in `.reverse()` on lists has a time complexity of O(n)
+* Python's built-in `.min()` and `.max()` on lists has a time complexity of O(n)
 * Python's built-in `.split()` on strings has a time complexity of O(n), if splitting on whitespace.
 
 ## Space Complexity

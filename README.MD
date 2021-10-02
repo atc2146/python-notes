@@ -1101,8 +1101,7 @@ def fib(n: int) -> int:
     return fib(n-1) + fib(n-2)
 # Time complexity: O(C)^n, exponential
 
-
-# Here is an iterative approach (faster)
+# Here is an iterative approach (faster).
 # This actually is a form of dynamic programming.
 def fib(n: int) -> int:
     a, b = 0, 1

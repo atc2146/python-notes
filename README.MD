@@ -801,6 +801,15 @@ The `divmod()` method takes two numbers and returns a pair of numbers (a tuple) 
 
 `divmod(numerator, denomator)` 
 
+
+```python
+q, r = divmod(22, 3)
+# q = 7
+# r = 1
+
+
+```
+
 ### Try Except
 
 * `try`: Try to run this code.

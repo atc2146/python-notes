@@ -797,17 +797,13 @@ To convert a binary (base 2) number to decimal (base 10), you can do this:
 int('11000', 2) # 24
 ```
 
-The `divmod()` method takes two numbers and returns a pair of numbers (a tuple) consisting of their quotient and remainder.
-
-`divmod(numerator, denomator)` 
+The `divmod()` method takes two numbers and returns a pair of numbers (a tuple) consisting of their quotient and remainder: `divmod(numerator, denomator)`.
 
 
 ```python
 q, r = divmod(22, 3)
 # q = 7
 # r = 1
-
-
 ```
 
 ### Try Except

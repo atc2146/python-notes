@@ -265,7 +265,7 @@ if key in my_dict:
     print(str(key) + ' exists')
 ```
 
-Don't iterate using `if key in my_dict.keys()`. This is `O(n)`, compared to `O(1)` above.
+**Do not** iterate using `if key in my_dict.keys()`!. This is `O(n)`, compared to `O(1)` above.
 
 
 There is also the `get()` method.  This method returns a value for the given key. If the key is not available, then returns default value `None`.
@@ -412,7 +412,7 @@ x = set(<iter>)
 
 ```
 
-A set has a significantly faster `in` search than lists.  This is because sets finds the element by computing a hash from the key - whereas, in general, the whole list needs to be searched.  Both have O(1) time complexity, however.
+A set has a significantly faster `in` search than lists.  This is because sets finds the element by computing a hash from the key - whereas, in general, the whole list needs to be searched.  Both have `O(1)` time complexity, however.
 
 Lists are faster (in general) when you are iterating over values, however.  This performance increases if you sort the list.
 
@@ -796,6 +796,10 @@ To convert a binary (base 2) number to decimal (base 10), you can do this:
 ```python
 int('11000', 2) # 24
 ```
+
+The `divmod()` method takes two numbers and returns a pair of numbers (a tuple) consisting of their quotient and remainder.
+
+`divmod(numerator, denomator)` 
 
 ### Try Except
 

@@ -1223,7 +1223,7 @@ d[['col1', 'col2]]
 
 A library (`numpy`) in Python that is useful for mathematical operations (particularly vector operations).  
 
-The core functionality of NumPy is its "ndarray", for n-dimensional array, data structure. These arrays are strided views on memory. In contrast to Python's built-in list data structure, these arrays are homogeneously typed: all elements of a single array must be of the same type. 
+The core functionality of NumPy is its "ndarray", for n-dimensional array, data structure. These arrays are strided views on memory. In contrast to Python's built-in `list` data structure, these arrays are homogeneously typed: all elements of a single array must be of the same type. 
 
 ## References
 

@@ -668,14 +668,13 @@ def calculateSquare(n):
 
 numbers = (1, 2, 3, 4)
 result = map(calculateSquare, numbers)
-print(result)
 
-# converting map object to set
-numbersSquare = set(result)
+# converting map object to list
+numbersSquare = list(result)
 print(numbersSquare)
 
 # <map object at 0x7f722da129e8>
-# {16, 1, 4, 9}
+# [1, 4, 9, 16]
 ```
 
 

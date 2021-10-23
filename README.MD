@@ -94,6 +94,7 @@ A "raw" string literal is prefixed by an 'r' and passes all the characters throu
 * `s.index(element, start, end)`: returns the index of a substring inside the string (if found). If the substring is not found, it raises an exception.
   * start and end(optional) - substring is searched within str[start:end]
 * `s.isdigit()`: Checks whether the string consists of digits only.  Returns True or False.
+  * There is also `isnumeric()` and `isdecimal()`
 * `s.isalnum()`: The `isalnum()` method returns True if all characters in the string are alphanumeric (either alphabets or numbers). If not, it returns False.
 * `s.replace(old, new [, count])`: replaces each matching occurrence of the old character/text in the string with the new character/text.
   * Takes an optional count argument which is the maximum number of times you want to replace the old substring with the new substring.

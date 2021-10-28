@@ -929,6 +929,7 @@ Note: these are just hints, and do not actually force any type since Python is a
 
 ### Walrus Operator
 
+The `:=` operator gives you a new syntax for assigning variables in the middle of expressions. This operator is colloquially known as the walrus operator.
 
 ## Bitwise Operators
 In Python, bitwise operators are used to perform bitwise calculations on integers. The integers are first converted into binary and then operations are performed on bit by bit, hence the name bitwise operators. Then the result is returned in decimal format.
@@ -1238,6 +1239,7 @@ The core functionality of NumPy is its "ndarray", for n-dimensional array, data 
 * [Real Python](https://realpython.com/)
     * [Sets](https://realpython.com/python-sets/)
     * [map](https://www.programiz.com/python-programming/methods/built-in/map)
+    * [Walrus Operator](https://realpython.com/python-walrus-operator/)
 * [Geeks For Geeks](https://www.geeksforgeeks.org/)
     * [Try Except](https://www.geeksforgeeks.org/try-except-else-and-finally-in-python/)
 * [Base N conversions](https://www.dcode.fr/base-n-convert)

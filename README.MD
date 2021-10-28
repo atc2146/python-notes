@@ -47,6 +47,7 @@ Notes and references on Python. Taken from various places on the internet.
     * [Max And Min](#max-and-min)
     * [Zip](#zip)
     * [Type Hinting](#type-hinting)
+    * [Walrus Operator](#walrus-operator)
 * [Sorting](#Sorting)
 * [Data Structures and Types](#data-structures-and-types)
     * [Linked Lists](#linked-lists)

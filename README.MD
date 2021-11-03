@@ -1162,6 +1162,8 @@ The O(n) worst case for sets and dicts is very uncommon, but it can happen if `_
 * Python's built-in `.min()` and `.max()` on lists has a time complexity of O(n)
 * Python's built-in `.split()` on strings has a time complexity of O(n), if splitting on whitespace.
 
+Note Python's set is implemented as a hash table so lookup/insert/delete is `O(1)` average and `O(n)` worst.
+
 ## Space Complexity
 
 The [space complexity](https://en.wikipedia.org/wiki/Space_complexity) of an algorithm or a computer program is the amount of memory space required to solve an instance of the computational problem as a function of characteristics of the input. It is the memory required by an algorithm to execute a program and produce output.

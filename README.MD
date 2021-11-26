@@ -42,6 +42,7 @@ Notes and references on Python. Taken from various places on the internet.
     * [Decorators](#decorators)
 * [Syntatic Sugar and Other](#syntatic-sugar-and-other)
     * [Math](#math)
+      * [Permutations and Combinations](#permutations-and-combinations)
     * [Try Except](#try-except)
     * [Any and All](#any-and-all)
     * [Max And Min](#max-and-min)
@@ -805,6 +806,34 @@ The `divmod()` method takes two numbers and returns a pair of numbers (a tuple) 
 q, r = divmod(22, 3)
 # q = 7
 # r = 1
+```
+
+#### Permutations and Combinations
+
+Order matters in permutation while it does in a combinations.
+
+```python
+from itertools import permutations
+from itertools import combinations
+
+perm = permutations([1, 2, 3], 2)
+for i in list(perm):
+    print (i)
+
+# (1, 2)
+# (1, 3)
+# (2, 1)
+# (2, 3)
+# (3, 1)
+# (3, 2)
+
+comb = combinations([1, 2, 3], 2)
+for i in list(comb):
+    print (i)
+
+# (1, 2)
+# (1, 3)
+# (2, 3)
 ```
 
 ### Try Except

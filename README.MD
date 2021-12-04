@@ -429,9 +429,9 @@ Set operations include
 * `.intersection_update()`
 * `.difference_update()`
 * `.symmetric_difference_update()`
-* `.union()`
-* `.intersection()`
-* `.symmetric_difference()`
+* `.union()` or `|`
+* `.intersection()` or `&`
+* `.symmetric_difference()` or `^`
 * `.isdisjoint()`
 * `.issubset()`
 * `.issuperset()`

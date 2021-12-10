@@ -402,7 +402,7 @@ A set is an **unordered** collection with no duplicate elements. Basic uses incl
 
 Curly braces `{}` or the `set()` function can be used to create sets.  
 
-Note: to create an empty set you have to use `set()`, not `{}`.  The latter creates an empty dictionary.
+Note: to create an empty set you **have** to use `set()`, not `{}`.  The latter creates an empty dictionary.
 
 ```python
 ages = {1, 22, 38}

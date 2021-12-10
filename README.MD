@@ -364,7 +364,7 @@ print(ice_cream['Joe'])
 A tuple is a collection of objects which are ordered and **immutable**.
 
 ```python
-some_tuple = (1, )
+a_tuple = (1, )
 another_tuple = ('a', 'b', 2)
 
 empty_tuple = ()

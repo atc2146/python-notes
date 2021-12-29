@@ -1282,5 +1282,6 @@ The core functionality of NumPy is its "ndarray", for n-dimensional array, data 
   * [StackOverFlow how does collections defaultdict work](https://stackoverflow.com/questions/5900578/how-does-collections-defaultdict-work)
 * [DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-use-args-and-kwargs-in-python-3)
 * [GCoder: 3 Python practice interview questions](https://gdcoder.com/interview-coding-problems-1-implement-trie-prefix-tree-2-longest-substring-with-at-most-k-distinct-characters-3-3sum/)
+* Fluent Python
 
 Materials taken from other websites too used only for educational purposes.

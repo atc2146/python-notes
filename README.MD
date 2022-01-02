@@ -1008,6 +1008,15 @@ print(sorted(lst, key=lambda x: x[1], reverse=True))
 
 Timsort is the sorting algorithm used by Python.
 
+`sorted()` on a string returns the list of characters of a string sorted. You will need to call `join` if you want a string again.
+
+```python
+''.join(sorted('string to sort alphabetically'))
+
+# aaabceghiilllnooprrsstttty
+
+```
+
 ## Data Structures and Types
 The [official](https://docs.python.org/3/tutorial/datastructures.html) Python documentation has good notes on this. A brief summary is provided below.
 

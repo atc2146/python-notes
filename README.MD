@@ -100,6 +100,8 @@ A "raw" string literal is prefixed by an 'r' and passes all the characters throu
 * `s.isalnum()`: The `isalnum()` method returns True if all characters in the string are alphanumeric (either alphabets or numbers). If not, it returns False.
 * `s.replace(old, new [, count])`: replaces each matching occurrence of the old character/text in the string with the new character/text.
   * Takes an optional count argument which is the maximum number of times you want to replace the old substring with the new substring.
+* `s.lower()` and `s.upper()`: changes to lowercase or uppercase, respectively.
+
 
 ### String Slices
 The "slice" syntax is a handy way to refer to sub-parts of sequences - typically strings and lists. The slice `s[start:end]` slices the elements beginning at start and extending up to but **not** including the end.

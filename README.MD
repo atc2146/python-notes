@@ -362,7 +362,23 @@ print(ice_cream['Sarah'])
 
 print(ice_cream['Joe'])
 # Vanilla
+```
 
+Similarly, with an integer type
+
+```python
+from collections import defaultdict
+
+hm = defaultdict(int)
+
+hm['b']
+# does not throw an error
+
+print(hm['b])
+# 0
+
+# If want 1 as the default value
+hm = defaultdict(lambda: 1)
 ```
 
 ## Tuples

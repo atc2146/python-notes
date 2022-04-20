@@ -201,6 +201,17 @@ my_list[::-1]
 ```
 Note: Slicing creates a shallow copy of the original list.
 
+Comparing lists of lists with functions like `max()` will compare element wise.
+
+```python
+my_list = [[1, 2], [1, 4], [-2, 6]]
+max(my_list) # [1, 4]
+
+
+
+# min() compares 1,1,-2 first, then 2,4
+```
+
 ### Creating Lists
 If you want to create a list.
 

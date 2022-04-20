@@ -13,6 +13,7 @@ Notes and references on Python. Taken from various places on the internet.
     * [List Methods](#list-methods)
     * [Creating Lists](#creating-lists)
     * [Adding Lists](#adding-lists)
+    * [Comparing Lists](#comparing-lists)
 * [Dictionaries](#dictionaries)
     * [Iterating](#iterating)
     * [Searching for a key](#searching-for-a-key)

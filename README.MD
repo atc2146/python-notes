@@ -1,6 +1,6 @@
 # Python Notes
 
-Notes and references on Python. Taken from various places on the internet.
+Notes and references on Python. Taken from various sources. For educational use only.
 
 ## Table of Contents
 * [Strings](#strings)

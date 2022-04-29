@@ -847,7 +847,7 @@ q, r = divmod(22, 3)
 
 #### Permutations and Combinations
 
-Order matters in permutation while it does in a combinations.
+Order matters in permutation while it does not in a combination.
 
 ```python
 from itertools import permutations

@@ -109,7 +109,7 @@ A "raw" string literal is prefixed by an 'r' and passes all the characters throu
 ### String Slices
 The "slice" syntax is a handy way to refer to sub-parts of sequences - typically strings and lists. The slice `s[start:end]` slices the elements beginning at start and extending up to but **not** including the end.
 
-String slices can also take a 3rd argument, the stride -  `str_[start:stop:stride]`.
+String slices can also take a 3rd argument, the stride - `s[start:stop:stride]`.
 
 Example:
 ```python

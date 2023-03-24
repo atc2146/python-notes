@@ -1281,6 +1281,8 @@ There are also [built-in](https://docs.python.org/3/library/functions.html) func
 
 ## Pandas
 
+A library in python that is useful for displaying tabular data.
+
 Remember to `import pandas as pd`
 
 ### Creating DataFrames
@@ -1319,7 +1321,7 @@ d[['col1', 'col2]]
 
 A library (`numpy`) in Python that is useful for mathematical operations (particularly vector operations).  
 
-The core functionality of NumPy is its "ndarray", for n-dimensional array, data structure. These arrays are strided views on memory. In contrast to Python's built-in `list` data structure, these arrays are homogeneously typed: all elements of a single array must be of the same type. 
+The core functionality of NumPy is its "ndarray", n-dimensional array, data structure. These arrays are strided views on memory. In contrast to Python's built-in `list` data structure, these arrays are homogeneously typed: all elements of a single array must be of the same type. 
 
 ## References
 

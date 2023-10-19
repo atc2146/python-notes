@@ -84,11 +84,11 @@ Notes and references on Python. Taken from various sources. For educational use 
 
 Python strings are immutable.
 
-A "raw" string literal is prefixed by an 'r' and passes all the characters through without special treatment of backslashes, so `r'x\nx'` evaluates to the length-4 string 'x\nx'.
+A "raw" string literal is prefixed by an 'r' and passes all the characters through without special treatment of backslashes, so `r'x\nx'` evaluates to the length-4 string `'x\nx'`.
 
 ### String Methods
 * `s.split('delim')`: Returns a list of substrings separated by the given delimiter. The delimiter is not a regular expression, it's just text.
-  * `'aaa,bbb,ccc'.split(',')` -> `['aaa', 'bbb', 'ccc']`.
+  * Example: `'aaa,bbb,ccc'.split(',')` -> `['aaa', 'bbb', 'ccc']`.
   * As a convenient special case `s.split()` (with no arguments) splits on all whitespace characters.
 * `s.join(list)`: Opposite of `split()`, joins the elements in the given list together using the string as the delimiter.
   * Example: `'---'.join(['aaa', 'bbb', 'ccc'])` -> `aaa---bbb---ccc`
@@ -96,7 +96,7 @@ A "raw" string literal is prefixed by an 'r' and passes all the characters throu
 * `s.startswith()`: Returns True if a string starts with the specified prefix. If not, it returns False.
 * `s.find()`: The `find()` method returns the index of first occurrence of the substring (if found). If not found, it returns -1.
 * `s.index(element, start, end)`: returns the index of a substring inside the string (if found). If the substring is not found, it raises an exception.
-  * start and end(optional) - substring is searched within str[start:end]
+  * start and end (optional): substring is searched within str[start:end]
 * `s.isdigit()`: Checks whether the string consists of digits only.  Returns True or False.
   * There is also `isnumeric()` and `isdecimal()`
 * `s.isalnum()`: The `isalnum()` method returns True if all characters in the string are alphanumeric (either alphabets or numbers). If not, it returns False.
@@ -115,6 +115,9 @@ Example:
 ```python
 # Reverse a string
 my_string = 'Hello world'
+
+my_string[0:2] # 'He'
+
 my_string[::-1] # 'dlrow olleH'
 
 my_string[-2:] # 'ld'
@@ -140,6 +143,10 @@ my_list = ['Team A', 'Team Bobcats', 'Team XYZ']
 
 for ind, val in enumerate(my_list):
     print(ind, val)
+    
+# 0 Team A
+# 1 Team Bobcats
+# 2 Team XYZ
 ```
 
 To iterate using `range()`:
@@ -211,13 +218,13 @@ If you want to create a list.
 my_list = ['bob']*3 # can't be an empty list (can put None)
 # ['bob', 'bob', 'bob']
 
-[1,2] * 2
-# [1,2,1,2]
+[1, 2] * 2
+# [1, 2, 1, 2]
 
 [[1,2] for i in range(0, 2)]
 # [[1, 2], [1, 2]]
 
-my_list = list(range(2,20,3)) # last argument is stride
+my_list = list(range(2, 20, 3)) # last argument is stride
 # [2, 5, 8, 11, 14, 17]
 ```
 
@@ -225,22 +232,22 @@ my_list = list(range(2,20,3)) # last argument is stride
 Adding lists using the plus operator in Python is **not** done element wise.  
 
 ```python
-[1,2] + [1,1]
+[1, 2] + [1, 1]
 # [1, 2, 1, 1]
 ```
 
 ### Comparing Lists
 
-Comparing lists of lists with functions like `max()` will compare element wise.
+[Comparing lists of lists](https://dbader.org/blog/python-min-max-and-nested-lists) with functions like `max()` will compare element wise.
 
 ```python
 my_list = [[1, 2], [1, 4], [-2, 6]]
 
 max(my_list) # [1, 4]
 
-min(my_list) # [1, 2]
+min(my_list) # [-2, 6]
 
-# min() compares 1,1,-2 first, then 2,4
+# max() compares 1,1,-2 first, then 2,4
 ```
 
 ## Dictionaries

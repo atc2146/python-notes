@@ -263,7 +263,7 @@ my_dict = {'bob': 20, 'james': 33, 'mary': 18}
 my_dict.keys() # dict_keys(['bob', 'james', 'mary'])
 
 # list values
-my_dict.values()  # dict_values([20, 33, 18])
+my_dict.values() # dict_values([20, 33, 18])
 
 # delete a key
 del my_dict['bob']
@@ -285,6 +285,10 @@ my_dict = {'bob': 20, 'james': 33, 'mary': 18}
 
 for k, v in my_dict.items():
     print(k, v)
+
+# bob 20
+# james 33
+# mary 18
 ```
 ### Searching for a key
 Searching for a key:
@@ -294,17 +298,21 @@ key = 'bob'
 
 if key in my_dict:
     print(str(key) + ' exists')
+
+# bob exists
 ```
 
-**Do not** iterate using `if key in my_dict.keys()`!. This is `O(n)`, compared to `O(1)` above.
+**Do not** iterate using `if key in my_dict.keys()`! This is `O(n)`, compared to `O(1)` above.
 
 
-There is also the `get()` method.  This method returns a value for the given key. If the key is not available, then returns default value `None`.
+There is also the `get()` method.  This method returns a value for the given key. If the key is not available, then it returns default value `None`.
 ```python
 my_dict = {'bob': 20, 'james': 33, 'mary': 18}
 key = 'bob'
 
-my_dict.get(key):
+print(my_dict.get(key))
+
+# 20
 
 # if you want to specify a default value if key cannot be found
 my_dict.get(key, 'DEFAULT_VAL')
@@ -317,6 +325,10 @@ my_dict = {'bob': 20, 'james': 33, 'mary': 18}
 
 my_dict['obama']
 # Will throw an error
+# ERROR!
+# Traceback (most recent call last):
+#   File "<string>", line 3, in <module>
+# KeyError: 'obama'
 ```
 
 ### Sorting a dictionary

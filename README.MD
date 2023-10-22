@@ -325,6 +325,7 @@ my_dict = {'bob': 20, 'james': 33, 'mary': 18}
 
 my_dict['obama']
 # Will throw an error
+
 # ERROR!
 # Traceback (most recent call last):
 #   File "<string>", line 3, in <module>

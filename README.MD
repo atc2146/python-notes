@@ -254,7 +254,7 @@ min(my_list) # [-2, 6]
 
 This is essentially Python's version of a Hash Table (associative array).  Dictionaries have key value pairs.  The keys in the dictionary need to be **hashable**.  For example, lists cannot be used as keys as they are not hashable.  There is no restriction on the value type.
 
-The actual implementation is pretty interesting - read about it [here](https://docs.python.org/3/faq/design.html#how-are-dictionaries-implemented-in-cpython).
+The actual implementation is pretty interesting - read about on [Python.org](https://docs.python.org/3/faq/design.html#how-are-dictionaries-implemented-in-cpython).
 
 ```python
 my_dict = {'bob': 20, 'james': 33, 'mary': 18}

@@ -419,7 +419,7 @@ hm = defaultdict(lambda: 1)
 ```
 
 ## Tuples
-A tuple is a collection of objects which are ordered and **immutable**.
+A tuple is a collection of objects which are **ordered** and **immutable**.
 
 ```python
 a_tuple = (1, )
@@ -452,7 +452,7 @@ print(("Repeat",) * 3)
 
 Tuples have the `count()` and `index()` method.
 
-Methods that add items or remove items are not available with tuple.
+Methods that add items or remove items are not available with tuples.
 
 
 ## Sets

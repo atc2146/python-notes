@@ -516,8 +516,7 @@ print(my_list) # [1, 6, 7, 8, 9]
 # deleting all elements
 del my_list[:]
 
-# Output: []
-print(my_list)
+print(my_list) # []
 
 # Removing a key-value pair from a dict
 person = { 

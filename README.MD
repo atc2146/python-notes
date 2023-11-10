@@ -506,14 +506,12 @@ my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 # deleting the third item
 del my_list[2]
 
-# Output: [1, 2, 4, 5, 6, 7, 8, 9]
-print(my_list)
+print(my_list) # [1, 2, 4, 5, 6, 7, 8, 9]
 
 # deleting items from 2nd to 4th
 del my_list[1:4]
 
-# Output: [1, 6, 7, 8, 9]
-print(my_list)
+print(my_list) # [1, 6, 7, 8, 9]
 
 # deleting all elements
 del my_list[:]
@@ -522,15 +520,15 @@ del my_list[:]
 print(my_list)
 
 # Removing a key-value pair from a dict
-person = { 'name': 'Sam',
+person = { 
+  'name': 'Sam',
   'age': 25,
-  'profession': 'Programmer'
+  'profession': 'Programmer',
 }
 
 del person['profession']
 
-print(person)
-# Output: {'name': 'Sam', 'age': 25}
+print(person) # {'name': 'Sam', 'age': 25}
 ```
 
 ## Regex

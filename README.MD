@@ -583,8 +583,6 @@ Modifiers include:
 * `[]`: Used to indicate a set of characters.
 
 
-
-
 ## Functions
 
 ### Arguments
@@ -657,7 +655,7 @@ def example2(arg_1, arg_2, *args, kw_1="shark", kw_2="blobfish", **kwargs):
 ```
 
 ## Lambda Functions
-Lambda functions are known as anonymous functions.
+Lambda functions are also known as anonymous functions.
 
 ```python
 x = lambda a : a + 10
@@ -700,7 +698,7 @@ letters = ['a', 'b', 'd', 'e', 'i', 'j', 'o']
 def filter_vowels(letter):
     vowels = ['a', 'e', 'i', 'o', 'u']
 
-    if(letter in vowels):
+    if letter in vowels:
         return True
     else:
         return False
@@ -710,6 +708,12 @@ filtered_vowels = filter(filter_vowels, letters)
 print('The filtered vowels are:')
 for vowel in filtered_vowels:
     print(vowel)
+    
+# The filtered vowels are:
+# a
+# e
+# i
+# o
 ```
 
 

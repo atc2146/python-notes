@@ -743,7 +743,7 @@ print(numbersSquare)
 ## Iterators, Generators, and Decorators
 
 ### Iterators
-An iterator is just any object that you can iterate over.
+An iterator is simply any object that you can iterate over.
 
 Iterators implement the `__next__()` and `__iter__()` methods.
 
@@ -766,8 +766,8 @@ print(next(my_iter))
 Or you can use a `for` loop.
 
 ```python
-for elem in my_list:
-    print(elem)
+for element in my_list:
+    print(element)
 ```
 
 ### Generators

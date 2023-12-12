@@ -771,11 +771,11 @@ for element in my_list:
 ```
 
 ### Generators
-Python generators are a simple way of creating iterators.
+Python generators are a way of creating iterators.
 
 A generator is a function that returns an object (iterator) which we can iterate over (one value at a time).
 
-A generator is simply a normal function, but with a `yield` statement instead of a `return` statement.
+A generator is like a normal function, but with a `yield` statement instead of a `return` statement.
 
 The difference is that while a `return` statement terminates a function entirely, a `yield` statement pauses the function saving all its states and later continues from there on successive calls.
 
@@ -788,13 +788,25 @@ def rev_str(my_str):
 # For loop to reverse the string
 for char in rev_str("hello"):
     print(char)
+    
+# o
+# l
+# l
+# e
+# h    
 ```
 
 Generators have lazy execution (producing items only when asked for). For this reason, a generator expression is much more memory efficient than an equivalent list comprehension.
 
 ```python
+my_list = [2, 5, 9]
+
 generator = (x**2 for x in my_list)
-print(next(a))
+print(next(generator))
+print(next(generator))
+
+# 4
+# 25
 ```
 
 Why Implement Generators?
@@ -815,6 +827,8 @@ def square(nums):
         yield num**2
 
 print(sum(square(fibonacci_numbers(10))))
+
+# 4895
 ```
 
 ### Decorators

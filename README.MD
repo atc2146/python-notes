@@ -827,7 +827,6 @@ def square(nums):
         yield num**2
 
 print(sum(square(fibonacci_numbers(10))))
-
 # 4895
 ```
 
@@ -835,7 +834,7 @@ print(sum(square(fibonacci_numbers(10))))
 
 A decorator takes in a function, adds some functionality and returns it.  This is also called metaprogramming because a part of the program tries to modify another part of the program at compile time.
 
-
+Decorators are commonly used in areas such as authorization, logging, and test performance.
 
 
 ## Syntatic Sugar and Other

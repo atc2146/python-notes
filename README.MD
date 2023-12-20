@@ -45,6 +45,7 @@ Notes and references on Python. Taken from various sources. For educational use 
     * [Math](#math)
       * [Permutations and Combinations](#permutations-and-combinations)
     * [Try Except](#try-except)
+    * [Assert](#assert)
     * [Any and All](#any-and-all)
     * [Max And Min](#max-and-min)
     * [Zip](#zip)
@@ -942,6 +943,8 @@ divide(3, 0)
 
 You can also raise exceptions and catch specific exceptions.
 
+### Assert
+
 The `assert` statement enables you to verify if a certain condition is met and will throw an exception if it isn’t.
 
 ```python
@@ -952,8 +955,11 @@ assert x == "hello"
 
 # if condition returns False, AssertionError is raised:
 assert x == "goodbye"
-```
 
+# Traceback (most recent call last):
+#   File "<string>", line 7, in <module>
+# AssertionError
+```
 
 ### Any and All
 The `any(iterable)` and `all(iterable)` are built-in functions in Python.  They are equivalent to writing a series of `or` and `and` operators respectively between each of the elements of the passed iterable.

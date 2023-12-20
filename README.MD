@@ -841,7 +841,7 @@ Decorators are commonly used in areas such as authorization, logging, and test p
 
 ### Math
 
-Integer division can be done using the `//` operator, i.e. the floor.
+Integer division can be done using the `//` operator, i.e. the floor operator.
 
 ```python
 22 // 7 
@@ -853,7 +853,7 @@ Integer division can be done using the `//` operator, i.e. the floor.
 x += 1 # same as x = x + 1
 x -= 1
 ```
-Modulus operator is given using `%`.  This gives the remainder.
+Modulus operator is denoted by `%`.  This gives the remainder.
 
 `bin()` will convert a base 10 number into its binary representation (as a string). Note, this will be prefixed with a '0b'.
 
@@ -890,7 +890,7 @@ from itertools import combinations
 
 perm = permutations([1, 2, 3], 2)
 for i in list(perm):
-    print (i)
+    print(i)
 
 # (1, 2)
 # (1, 3)
@@ -901,7 +901,7 @@ for i in list(perm):
 
 comb = combinations([1, 2, 3], 2)
 for i in list(comb):
-    print (i)
+    print(i)
 
 # (1, 2)
 # (1, 3)

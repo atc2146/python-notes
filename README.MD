@@ -918,26 +918,26 @@ for i in list(comb):
 ```python
 def divide(x, y):
     try:
-        # Floor Division : Gives only Fractional
-        # Part as Answer
+        # Floor division : Gives only fractional
+        # part as answer
         result = x // y
     except ZeroDivisionError:
-        print("Sorry ! You are dividing by zero ")
+        print("Sorry! You are dividing by zero.")
     else:
-        print("Yeah ! Your answer is :", result)
+        print("Yeah! Your answer is:", result)
     finally: 
         # this block is always executed  
         # regardless of exception generation. 
-        print('This is always executed')  
+        print('This is always executed.')  
  
 # Look at parameters and note the working of Program
 divide(3, 2)
 divide(3, 0)
 
-# Yeah ! Your answer is : 1
-# This is always executed
-# Sorry ! You are dividing by zero 
-# This is always executed
+# Yeah! Your answer is: 1
+# This is always executed.
+# Sorry! You are dividing by zero.
+# This is always executed.
 ```
 
 You can also raise exceptions and catch specific exceptions.

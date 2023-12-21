@@ -1032,7 +1032,7 @@ def greeting(name: str) -> str:
 
 Use spaces around the `=` sign when combining an argument annotation with a default value `(align: bool = True)`.
 
-Note: these are just hints, and do not actually force any type since Python is a dynamically typed language.
+Note: these are just hints, and do **not** actually force any type since Python is a dynamically typed language.
 
 ### Walrus Operator
 

@@ -1038,6 +1038,8 @@ Note: these are just hints, and do **not** actually force any type since Python 
 
 The `:=` operator gives you a new syntax for assigning variables in the middle of expressions. This operator is colloquially known as the walrus operator.
 
+The walrus operator is only available in Python 3.8+.
+
 ## Bitwise Operators
 In Python, bitwise operators are used to perform bitwise calculations on integers. The integers are first converted into binary and then operations are performed on bit by bit, hence the name bitwise operators. Then the result is returned in decimal format.
 

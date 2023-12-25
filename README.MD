@@ -1055,7 +1055,7 @@ XORing everything together
 = 3
 ```
 
-Example leetcode question [(136. Single Number)](https://leetcode.com/problems/single-number/).
+Example leetcode question: [136. Single Number](https://leetcode.com/problems/single-number/).
 
 ## Sorting
 A simple ascending sort is very easy; just call the `sorted()` function. It returns a new sorted list.  The original list is not changed. 

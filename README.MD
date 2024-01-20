@@ -51,6 +51,7 @@ Notes and references on Python. Taken from various sources. For educational use 
     * [Zip](#zip)
     * [Type Hinting](#type-hinting)
     * [Walrus Operator](#walrus-operator)
+* [Bitwise Operators](#bitwise-operators)
 * [Sorting](#sorting)
 * [Reversing](#reversing)
 * [Data Structures and Types](#data-structures-and-types)

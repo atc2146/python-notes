@@ -1059,7 +1059,7 @@ XORing everything together
 Example leetcode question: [136. Single Number](https://leetcode.com/problems/single-number/).
 
 ## Sorting
-A simple ascending sort is very easy; just call the `sorted()` function. It returns a new sorted list.  The original list is not changed. 
+A simple ascending sort is easy; just call the `sorted()` function. It returns a new sorted list.  The original list is not changed. 
 
 ```python
 sorted([5, 2, 3, 1, 4]) # [1, 2, 3, 4, 5]
@@ -1085,9 +1085,10 @@ print(sorted(lst, key=lambda x: x[1]))
 # The below two are equivalent, will sort in reverse order
 print(sorted(lst, key=lambda x: -x[1]))
 print(sorted(lst, key=lambda x: x[1], reverse=True))
+# [('candy', 32, '100'), ('baby', 20, '300'), ('apple', 8, '200')]
 ```
 
-Timsort is the sorting algorithm used by Python.
+*Timsort* is the sorting algorithm used by Python.
 
 `sorted()` on a string returns the list of characters of a string sorted. You will need to call `join()` if you want a string again.
 

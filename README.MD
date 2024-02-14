@@ -1121,9 +1121,9 @@ See [dictionary](#dictionary) section of notes.
 ### Stacks
 A stack is a data structure that stores items in an Last-In/First-Out (LIFO) manner.
 
-A stack in python can be implemented with:
-* `list`: Can run into speed issues as it grows.
-* `Collections.deque`: Deque is preferred over the list in the cases where we need quicker append and pop operations from both the ends of the container, as deque provides an O(1) time complexity for append and pop operations as compared to list which provides O(n) time complexity. 
+A stack in Python can be implemented with:
+* `list`: However, can run into speed issues as it grows.
+* `Collections.deque`: Deque is preferred over the `list` in the cases where we need quicker append and pop operations from both the ends of the container, as deque provides an `O(1)` time complexity for append and pop operations as compared to list which provides `O(n)` time complexity. 
 * `queue.LifoQueue`: Usually used for thread communication operations.
 
 ```python

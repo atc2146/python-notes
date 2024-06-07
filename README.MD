@@ -167,6 +167,8 @@ for i in range(len(some_list)-1, -1, -1):
 This will iterate up to but **not** including the index at the **2nd argument** in `range()`.
 
 ### List Comprehension
+Use listcomps if you want to build lists.
+
 The syntax is: *[expr for var in list {optional if expr}]*
 
 ```python
@@ -1390,5 +1392,6 @@ The core functionality of NumPy is its "ndarray", n-dimensional array, data stru
 * [GCoder: 3 Python practice interview questions](https://gdcoder.com/interview-coding-problems-1-implement-trie-prefix-tree-2-longest-substring-with-at-most-k-distinct-characters-3-3sum/)
 * [Python Gotcha's](https://docs.python-guide.org/writing/gotchas/)
 * Fluent Python by Luciano Ramalho
+* [Python.org tutorial](https://docs.python.org/3/tutorial/)
 
 Materials taken from various other websites too (used only for educational purposes).

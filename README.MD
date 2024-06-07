@@ -423,7 +423,9 @@ hm = defaultdict(lambda: 1)
 ```
 
 ## Tuples
-A tuple is a collection of objects which are **ordered** and **immutable**.
+A tuple is a collection of objects which are **ordered** and **immutable**. Use tuples when the meaning of each field is given by its position in the tuple. For example, coordinates (lat. and long.).
+
+A tuple has a fixed length.
 
 ```python
 a_tuple = (1, )
@@ -451,6 +453,8 @@ print((1, 2, 3) + (4, 5, 6))
 print(("Repeat",) * 3)
 # Output: ('Repeat', 'Repeat', 'Repeat')
 ```
+
+Note: A tuple uses less memory than a list of the same length. A tuple is [more efficient](https://stackoverflow.com/questions/68630/are-tuples-more-efficient-than-lists-in-python/22140115#22140115) than lists in most ways, so use a tuple over a list, if appropiate.
 
 ### Tuple Methods
 

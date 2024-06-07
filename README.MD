@@ -66,6 +66,7 @@ Notes and references on Python. Taken from various sources. For educational use 
 * [Algorithms](#algorithms)
     * [Depth First Search](#depth-first-search)
     * [Breadth First Search](#breadth-first-search)
+    * [Binary Search](#binary-search)
 * [Dynamic Programming](#dynamic-programming)
 * [Recursion](#recursion)
 * [Time Complexity](#time-complexity)
@@ -1230,6 +1231,10 @@ Example: DFS of a binary tree
 
 ### Breadth First Search
 
+
+### Binary Search
+
+This is provided by the `bisect` module.
 
 ## Dynamic Programming
 

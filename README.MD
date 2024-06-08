@@ -51,7 +51,7 @@ Notes and references on Python. Taken from various sources. For educational use 
     * [Zip](#zip)
     * [Type Hinting](#type-hinting)
     * [Walrus Operator](#walrus-operator)
-    * [collections.Counter()](#collections.Counter())
+    * [collections.Counter()](#collectionscounter)
 * [Bitwise Operators](#bitwise-operators)
 * [Sorting](#sorting)
 * [Reversing](#reversing)
@@ -1073,9 +1073,9 @@ The walrus operator is only available in Python 3.8+.
 ### collections.Counter()
 
 ```python
->>> ct = collections.Counter('abracadabra')
->>> ct
-Counter({'a': 5, 'b': 2, 'r': 2, 'c': 1, 'd': 1})
+ct = collections.Counter('abracadabra')
+print(ct)
+# Counter({'a': 5, 'b': 2, 'r': 2, 'c': 1, 'd': 1})
 ```
 
 ## Bitwise Operators

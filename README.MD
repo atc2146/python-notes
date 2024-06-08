@@ -178,6 +178,8 @@ my_list = [1, 2, 3, 4]
 [i*i for i in my_list if i%2==0]
 ```
 
+There are also dictionary and set comprehensions.
+
 ### List Methods  
 
 * The `insert()` method inserts an element to the list at the specified index.
@@ -215,6 +217,7 @@ my_list[::-1]
 ```
 Note: Slicing creates a shallow copy of the original list.
 
+Also keep in mind that if you doing repeated `append()` and `pop(0)` calls, you may want to consider using a `deque`. For a `list` those calls require the entire list to be shifted in memory.
 
 ### Creating Lists
 If you want to create a list.
@@ -364,6 +367,8 @@ fruit_prices = {'apple': 0.40, 'orange': 0.35, 'pepper': .25}
 
 ```
 
+You can also use the `|` to merge dicts starting in Python 3.9.
+
 ### The setdefault() method
 The `setdefault()` method returns the value of the item with the specified key. If the key does not exist, insert the key, with the specified value: `dictionary.setdefault(keyname, value)`
 
@@ -386,6 +391,22 @@ print('age = ', age)
 # person =  {'name': 'Phill', 'age': 22, 'salary': None}
 # age =  22
 ```
+
+Also, consider this code:
+
+```python
+if key not in my_dict:
+    my_dict[key] = []
+my_dict[key].append(new_value)
+```
+
+Which can be replaced with the following:
+
+```python
+my_dict.setdefault(key, []).append(new_value)
+```
+
+The latter is much more efficient (everything done in a single lookup).
 
 ### The defaultdict collection
 
@@ -1152,7 +1173,7 @@ The items in the queue must be able to be assigned a priority.
 
 #### Double Ended Queue
 
-A double-ended queue, or deque, has the feature of adding and removing elements from either end. The Deque module is a part of collections library.
+A double-ended queue, or deque, has the feature of adding and removing elements from either end. The `deque` module is a part of collections library.
 
 ### Heaps
 A [heap](https://en.wikipedia.org/wiki/Heap_(data_structure)) is a specialized tree-based data structure which is essentially an almost complete tree that satisfies the heap property:

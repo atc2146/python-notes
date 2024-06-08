@@ -1075,6 +1075,8 @@ The walrus operator is only available in Python 3.8+.
 A mapping that holds an integer count for each key. Updating an existing key adds to its count.
 
 ```python
+import collections
+
 ct = collections.Counter('abracadabra')
 print(ct)
 # Counter({'a': 5, 'b': 2, 'r': 2, 'c': 1, 'd': 1})

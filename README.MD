@@ -51,6 +51,7 @@ Notes and references on Python. Taken from various sources. For educational use 
     * [Zip](#zip)
     * [Type Hinting](#type-hinting)
     * [Walrus Operator](#walrus-operator)
+    * [collections.Counter()](#collections.Counter())
 * [Bitwise Operators](#bitwise-operators)
 * [Sorting](#sorting)
 * [Reversing](#reversing)
@@ -1069,15 +1070,23 @@ The `:=` operator gives you a new syntax for assigning variables in the middle o
 
 The walrus operator is only available in Python 3.8+.
 
+### collections.Counter()
+
+```python
+>>> ct = collections.Counter('abracadabra')
+>>> ct
+Counter({'a': 5, 'b': 2, 'r': 2, 'c': 1, 'd': 1})
+```
+
 ## Bitwise Operators
 In Python, bitwise operators are used to perform bitwise calculations on integers. The integers are first converted into binary and then operations are performed on bit by bit, hence the name bitwise operators. Then the result is returned in decimal format.
 
 If you XOR the same number together, it cancels out:
 
-```
+```python
 nums = [2,4,5,4,3,5,2]
 
-XORing everything together
+# XORing everything together
 = 2 ^ 4 ^ 5 ^ 4 ^ 3 ^ 5 ^ 2
 = (2^2) ^ (4^4) ^ (5^5) ^ 3
 = 0 ^ 0 ^0 ^ 3

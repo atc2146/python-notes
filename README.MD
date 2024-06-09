@@ -158,6 +158,7 @@ To iterate using `range()`:
 ```python
 some_list = [4, 7, 8, 9, 22, 11]
 
+# Iterate over all items
 for i in range(0, len(some_list), 1):
     print(some_list[i])
 
@@ -167,6 +168,16 @@ for i in range(len(some_list)-1, -1, -1):
 
 ```
 This will iterate up to but **not** including the index at the **2nd argument** in `range()`.
+
+That is, the given end point is never part of the generated sequence.
+
+```python
+my_list = list(range(5, 10))
+print(my_list)
+
+# [5, 6, 7, 8, 9]
+```
+
 
 ### List Comprehension
 Use listcomps if you want to build lists.
@@ -972,6 +983,9 @@ divide(3, 0)
 ```
 
 You can also raise exceptions and catch specific exceptions.
+
+### 
+
 
 ### Assert
 

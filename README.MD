@@ -229,7 +229,9 @@ my_list[::-1]
 ```
 Note: Slicing creates a shallow copy of the original list.
 
-Also keep in mind that if you doing repeated `append()` and `pop(0)` calls, you may want to consider using a `deque`. For a `list` those calls require the entire list to be shifted in memory.
+A list is a natural data structure to be used as a stack (LIFO). You can use `append()` and `pop()` calls to achieve this.
+
+Also keep in mind that if you doing repeated `insert(0, x)` and `pop(0)` calls, you may want to consider using `collections.deque`. For a `list` those calls require the entire list to be shifted in memory.
 
 ### Creating Lists
 If you want to create a list.

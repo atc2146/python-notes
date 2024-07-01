@@ -194,11 +194,11 @@ There are also dictionary and set comprehensions.
 
 ### List Methods  
 
-* The `insert()` method inserts an element to the list at the specified index.
+* The `insert(index, x)` method inserts an element to the list at the specified index.
 * The `pop()` method removes the item at the given index from the list and returns the removed item.
     * You can also have an index at a negative value. This will count backwards from the list.
     * Pop without an index removes the last element of the list.
-* The `remove()` method removes the first matching element (which is passed as an argument) from the list.
+* The `remove()` method removes the **first** matching element (which is passed as an argument) from the list.
     * Returns `None`
     * If the element doesn't exist, it throws a `ValueError`.
     * If a list contains duplicate elements, the `remove()` method only removes the first matching element.
@@ -984,8 +984,24 @@ divide(3, 0)
 
 You can also raise exceptions and catch specific exceptions.
 
-### 
+### Match Statements
 
+A match statement takes an expression and compares its value to successive patterns given as one or more case blocks.
+
+```python
+# point is an (x, y) tuple
+match point:
+    case (0, 0):
+        print("Origin")
+    case (0, y):
+        print(f"Y={y}")
+    case (x, 0):
+        print(f"X={x}")
+    case (x, y):
+        print(f"X={x}, Y={y}")
+    case _:
+        raise ValueError("Not a point")
+```
 
 ### Assert
 

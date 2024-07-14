@@ -279,6 +279,7 @@ This is essentially Python's version of a Hash Table (associative array).  Dicti
 The actual implementation is pretty interesting - read about on [Python.org](https://docs.python.org/3/faq/design.html#how-are-dictionaries-implemented-in-cpython).
 
 ```python
+my_dict = dict(bob=20, james=33, mary=18)
 my_dict = {'bob': 20, 'james': 33, 'mary': 18}
 
 # list keys

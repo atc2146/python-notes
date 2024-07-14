@@ -182,7 +182,7 @@ print(my_list)
 ### List Comprehension
 Use listcomps if you want to build lists.
 
-The syntax is: *[expr for var in list {optional if expr}]*
+The general syntax is: *[expr for var in list {optional if expr}]*
 
 ```python
 my_list = [1, 2, 3, 4]

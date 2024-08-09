@@ -881,6 +881,8 @@ A decorator takes in a function, adds some functionality and returns it.  This i
 
 Decorators are commonly used in areas such as authorization, logging, and test performance.
 
+Instead of assigning the function call to a variable, you can decorate a function with the @ symbol in Python.
+
 
 ## Syntatic Sugar and Other
 

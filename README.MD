@@ -1340,8 +1340,7 @@ def fib(n: int) -> int:
 ### Big O Notation
 
 Given n, the size of the input to the algorithm, Big O notation represents the relationship between n and the number of steps the algorithm takes to find a solution.
-
-We have (in increasing complexity): 
+In increasing complexity:
 * O(1): Constant
 * O(logn): Logarithmic
 * O(n): Linear
@@ -1369,7 +1368,7 @@ The O(n) worst case for sets and dicts is very uncommon, but it can happen if `_
 * Python's built-in `.min()` and `.max()` on lists has a time complexity of O(n)
 * Python's built-in `.split()` on strings has a time complexity of O(n), if splitting on whitespace.
 
-Note Python's set is implemented as a hash table so lookup/insert/delete is `O(1)` average and `O(n)` worst.
+Note: Python's set is implemented as a hash table so lookup/insert/delete is `O(1)` average and `O(n)` worst.
 
 ## Space Complexity
 
@@ -1395,7 +1394,7 @@ class Person:
 
 
 p1 = Person("John", 36)
-p1.myfunc()
+p1.myfunc() # Hello my name is John
 print(p1.age) # 36
 print(p1.human) # True
 print(Person.human) # will also be True, don't need to instantiate a class to access a class variable
@@ -1405,7 +1404,7 @@ There are also [built-in](https://docs.python.org/3/library/functions.html) func
 
 ## Pandas
 
-A library in python that is useful for displaying tabular data.
+A library in Python that is useful for displaying tabular data.
 
 Remember to `import pandas as pd`
 

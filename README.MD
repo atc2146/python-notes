@@ -250,6 +250,8 @@ my_list = list(range(2, 20, 3)) # last argument is stride
 # [2, 5, 8, 11, 14, 17]
 ```
 
+Note creating a list using `[]` is faster than `list()` since `list()` is a function call.
+
 ### Adding Lists
 Adding lists using the plus operator in Python is **not** done element wise.  
 

@@ -52,6 +52,7 @@ Notes and references on Python. Taken from various sources. For educational use 
     * [Type Hinting](#type-hinting)
     * [Walrus Operator](#walrus-operator)
     * [collections.Counter()](#collectionscounter)
+    * [Formatting Strings](#formatting-strings)
 * [Bitwise Operators](#bitwise-operators)
 * [Sorting](#sorting)
 * [Reversing](#reversing)
@@ -1128,6 +1129,18 @@ ct = collections.Counter('abracadabra')
 print(ct)
 # Counter({'a': 5, 'b': 2, 'r': 2, 'c': 1, 'd': 1})
 ```
+
+### Formatting Strings
+There are some interesting ways to format strings. For example, there is the `str.format()` function.
+
+
+```python
+print('We are the {} who say "{}!"'.format('knights', 'Ni'))
+
+#We are the knights who say "Ni!"
+```
+
+See the Python Input Output [documentation](https://docs.python.org/3/tutorial/inputoutput.html) for more details.
 
 ## Bitwise Operators
 In Python, bitwise operators are used to perform bitwise calculations on integers. The integers are first converted into binary and then operations are performed on bit by bit, hence the name bitwise operators. Then the result is returned in decimal format.

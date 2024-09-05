@@ -136,6 +136,16 @@ age = 74
 print(f'Hello, {name}. You are {age}.') ## Hello, Eric. You are 74.
 ``` 
 
+You can also [format](https://docs.python.org/3/tutorial/inputoutput.html#formatted-string-literals) inside the f-string
+
+```python
+import math
+
+print(f'The value of pi is approximately {math.pi:.3f}.')
+
+# The value of pi is approximately 3.142.
+``` 
+
 ## Lists
 
 ### Iterating Lists

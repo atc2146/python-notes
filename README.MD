@@ -1133,11 +1133,10 @@ print(ct)
 ### Formatting Strings
 There are some interesting ways to format strings. For example, there is the `str.format()` function.
 
-
 ```python
 print('We are the {} who say "{}!"'.format('knights', 'Ni'))
 
-#We are the knights who say "Ni!"
+# We are the knights who say "Ni!"
 ```
 
 See the Python Input Output [documentation](https://docs.python.org/3/tutorial/inputoutput.html) for more details.

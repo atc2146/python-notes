@@ -1106,6 +1106,10 @@ For example, the function below takes and returns a string and is annotated as f
 ```python
 def greeting(name: str) -> str:
     return 'Hello ' + name
+    
+# Give a default value with type hints
+def greeting(name: str="John") -> str:
+    return 'Hello ' + name
 ```
 
 Use spaces around the `=` sign when combining an argument annotation with a default value `(align: bool = True)`.

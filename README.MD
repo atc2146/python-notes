@@ -1108,11 +1108,11 @@ def greeting(name: str) -> str:
     return 'Hello ' + name
     
 # Give a default value with type hints
-def greeting(name: str="John") -> str:
+def greeting(name: str = "John") -> str:
     return 'Hello ' + name
 ```
 
-Use spaces around the `=` sign when combining an argument annotation with a default value `(align: bool = True)`.
+Use spaces around the `=` sign (PEP8) when combining an argument annotation with a default value `(align: bool = True)`.
 
 Note: these are just hints, and do **not** actually force any type since Python is a dynamically typed language.
 

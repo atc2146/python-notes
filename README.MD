@@ -1135,6 +1135,7 @@ print(ct)
 ```
 
 ### Formatting Strings
+
 There are some interesting ways to format strings. For example, there is the `str.format()` function.
 
 ```python
@@ -1142,6 +1143,9 @@ print('We are the {} who say "{}!"'.format('knights', 'Ni'))
 
 # We are the knights who say "Ni!"
 ```
+
+Another common way is to use [f-strings](#f-strings).
+
 
 See the Python Input Output [documentation](https://docs.python.org/3/tutorial/inputoutput.html) for more details.
 

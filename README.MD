@@ -1438,7 +1438,7 @@ There are also [built-in](https://docs.python.org/3/library/functions.html) func
 
 A library in Python that is useful for displaying tabular data.
 
-Remember to `import pandas as pd`
+Remember to import the package: `import pandas as pd`
 
 ### Creating DataFrames
 ```python

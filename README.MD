@@ -946,7 +946,7 @@ Order matters in permutation while it does not in a combination.
 
 These functions returns an iteratable. You can also pass in:
 
-r (optional): The length of each permutation. If not specified, it defaults to the length of the iterable.
+`r (optional): The length of each permutation. If not specified, it defaults to the length of the iterable.`
 
 ```python
 from itertools import permutations

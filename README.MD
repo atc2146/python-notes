@@ -191,7 +191,7 @@ print(my_list)
 
 
 ### List Comprehension
-Use listcomps if you want to build lists.
+Using listcomps can be useful if you want to build lists.
 
 The general syntax is: *[expr for var in list {optional if expr}]*
 
@@ -199,6 +199,8 @@ The general syntax is: *[expr for var in list {optional if expr}]*
 my_list = [1, 2, 3, 4]
 
 [i*i for i in my_list if i%2==0]
+
+# [4, 16]
 ```
 
 There are also dictionary and set comprehensions.

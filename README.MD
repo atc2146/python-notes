@@ -263,7 +263,7 @@ my_list = list(range(2, 20, 3)) # last argument is stride
 # [2, 5, 8, 11, 14, 17]
 ```
 
-Note creating a list using `[]` is faster than `list()` since `list()` is a function call.
+Note: creating a list using `[]` is faster than `list()` since `list()` is a function call.
 
 ### Adding Lists
 Adding lists using the plus operator in Python is **not** done element wise.  
@@ -312,7 +312,7 @@ my_dict.clear()
 ```
 
 ### Iterating
-To iterate over a dictionary:
+To iterate over a dictionary, use the `.items()` method.
 
 ```python
 # creating an empty dict
@@ -330,6 +330,7 @@ for k, v in my_dict.items():
 ```
 ### Searching for a key
 Searching for a key:
+
 ```python
 my_dict = {'bob': 20, 'james': 33, 'mary': 18}
 key = 'bob'
@@ -344,6 +345,7 @@ if key in my_dict:
 
 
 There is also the `get()` method.  This method returns a value for the given key. If the key is not available, then it returns default value `None`.
+
 ```python
 my_dict = {'bob': 20, 'james': 33, 'mary': 18}
 key = 'bob'

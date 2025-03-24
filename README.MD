@@ -1343,7 +1343,7 @@ Breadth-First Search (BFS) is an algorithm that systematically explores a graph 
 
 ### Binary Search
 
-This is provided by the `bisect` module.
+This is provided by the `bisect` [module](https://docs.python.org/3/library/bisect.html).
 
 ## Dynamic Programming
 

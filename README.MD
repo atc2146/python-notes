@@ -986,6 +986,7 @@ import math
 math.comb(5, 2)  # Returns 10, since there are 10 ways to choose 2 items from 5
 ```
 
+There is also a similar `math.perm(n, k)` function.
 
 ### Try Except
 

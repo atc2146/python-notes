@@ -976,6 +976,17 @@ for i in list(comb):
 # (2, 3)
 ```
 
+
+`math.comb(n, k)` is a function in Python that returns the number of ways to choose k items from n items without repetition and without order (i.e., combinations). It computes the binomial coefficient, commonly written as C(n, k) or n choose k.
+
+
+```python
+import math
+
+math.comb(5, 2)  # Returns 10, since there are 10 ways to choose 2 items from 5
+```
+
+
 ### Try Except
 
 * `try`: Try to run this code.

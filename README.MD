@@ -198,7 +198,7 @@ The general syntax is: *[expr for var in list {optional if expr}]*
 ```python
 my_list = [1, 2, 3, 4]
 
-[i*i for i in my_list if i%2==0]
+[i*i for i in my_list if i%2 == 0]
 
 # [4, 16]
 ```
@@ -210,7 +210,7 @@ There are also dictionary and set comprehensions.
 * The `insert(index, x)` method inserts an element to the list at the specified index.
 * The `pop()` method removes the item at the given index from the list and returns the removed item.
     * You can also have an index at a negative value. This will count backwards from the list.
-    * Pop without an index removes the last element of the list.
+    * `pop()` without an index removes the last element of the list.
 * The `remove()` method removes the **first** matching element (which is passed as an argument) from the list.
     * Returns `None`
     * If the element doesn't exist, it throws a `ValueError`.
@@ -329,7 +329,6 @@ for k, v in my_dict.items():
 # mary 18
 ```
 ### Searching for a key
-Searching for a key:
 
 ```python
 my_dict = {'bob': 20, 'james': 33, 'mary': 18}
@@ -354,7 +353,7 @@ print(my_dict.get(key))
 
 # 20
 
-# if you want to specify a default value if key cannot be found
+#If you want to specify a default value if key cannot be found
 my_dict.get(key, 'DEFAULT_VAL')
 ```
 
@@ -472,7 +471,7 @@ hm['b']
 print(hm['b])
 # 0
 
-# If want 1 as the default value
+# If we want 1 as the default value
 hm = defaultdict(lambda: 1)
 ```
 

@@ -534,7 +534,7 @@ x = set(<iter>)
 
 ```
 
-A set has a significantly faster `in` search than lists.  This is because sets finds the element by computing a hash from the key - whereas, in general, the whole list needs to be searched.  Both have `O(1)` time complexity, however.
+A set has a significantly faster `in` search than lists.  This is because sets finds the element by computing a hash from the key - whereas, in general, the whole list needs to be searched.  Dict and set lookup both have `O(1)` time complexity, however.
 
 Lists are faster (in general) when you are iterating over values, however.  This performance increases if you sort the list.
 

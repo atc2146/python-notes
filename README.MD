@@ -340,7 +340,7 @@ if key in my_dict:
 # bob exists
 ```
 
-**Do not** iterate using `if key in my_dict.keys()`! This is `O(n)`, compared to `O(1)` above.
+**Do not** iterate using `if key in my_dict.keys()`! This is `O(n)`, compared to `O(1)` above. Note technically for Python 3, `dict.keys()` returns a view, and `key in my_dict.keys()` actually calls the dict's hash lookup under the hood (`O(1)`), not a list scan.
 
 
 There is also the `get()` method.  This method returns a value for the given key. If the key is not available, then it returns default value `None`.

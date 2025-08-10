@@ -629,7 +629,7 @@ Regular expression patterns include:
 ```python
 # Keep only alphanumeric characters
 
-pattern = r'[^a-zA-Zo-9]+'
+pattern = r'[^a-zA-Z0-9]+'
 s = re.sub(pattern, '', s)
 
 ```

@@ -706,13 +706,27 @@ intro(Firstname="John", Lastname="Wood", Email="johnwood@nomail.com", Country="W
 
 #### Ordering
 When defining a function, the order is as follows
-1. positional arguments
+1. positional or keyword arguments
 2. `*args`
+3. keyword only arguments: must be passed by name
 3. `**kwargs`
 
 ```python
-def example2(arg_1, arg_2, *args, kw_1="shark", kw_2="blobfish", **kwargs):
-    pass
+def example2(a, b, *args, kw1="default1", kw2="default2", **kwargs):
+    print(f"a = {a}")
+    print(f"b = {b}")
+    print(f"args = {args}")
+    print(f"kw1 = {kw1}")
+    print(f"kw2 = {kw2}")
+    print(f"kwargs = {kwargs}")
+
+example2(1, 2, 3, 4, kw2="fish", x=10)
+# a = 1
+# b = 2
+# args = (3, 4)
+# kw1 = default1
+# kw2 = fish
+# kwargs = {'x': 10}
 ```
 
 ## Lambda Functions
@@ -757,12 +771,7 @@ letters = ['a', 'b', 'd', 'e', 'i', 'j', 'o']
 
 # function that filters vowels
 def filter_vowels(letter):
-    vowels = ['a', 'e', 'i', 'o', 'u']
-
-    if letter in vowels:
-        return True
-    else:
-        return False
+    return letter in 'aeiou'
 
 filtered_vowels = filter(filter_vowels, letters)
 
@@ -779,7 +788,7 @@ for vowel in filtered_vowels:
 
 
 #### map()
-The `map()` function applies a given function to each item of an iterable (list, tuple etc.) and returns a list of the results.
+The `map()` function applies a given function to each item of an iterable (list, tuple etc.) and returns an iterator of the results.
 
 * Code outline: `map(function, iterable)`
 

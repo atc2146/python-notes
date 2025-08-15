@@ -815,7 +815,12 @@ print(numbersSquare)
 ### Iterators
 An iterator is simply any object that you can iterate over.
 
-Iterators implement the `__next__()` and `__iter__()` methods.
+More formally, an iterator is an object that implements the iterator protocol:
+  * `__iter__()` returns the iterator object itself.
+  * `__next__()` returns the next element or raises `StopIteration` when exhausted.
+ 
+  
+That is, iterators implement the `__next__()` and `__iter__()` methods.
 
 ```python
 # define a list

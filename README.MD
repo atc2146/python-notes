@@ -846,9 +846,9 @@ for element in my_list:
 ```
 
 ### Generators
-Python generators are a way of creating iterators.
+Python generators are a way of creating iterators. In other words, a generator is a special kind of iterator created either with a generator function (using `yield`) or a generator expression (`(x for x in y)`).
 
-A generator is a function that returns an object (iterator) which we can iterate over (one value at a time).
+A generator is a function that returns a generator object (iterator) which we can iterate over (one value at a time).
 
 A generator is like a normal function, but with a `yield` statement instead of a `return` statement.
 
@@ -885,10 +885,10 @@ print(next(generator))
 ```
 
 Why Implement Generators?
-  1. Easy to implement
-  2. Memory Efficient
-  3. Represent Infinite Stream
-  4. Pipelining Generators
+  1. Easy to implement - less code than creating an iterator class
+  2. Memory Efficient - only one item is in memory at a time
+  3. Represent Infinite Stream - e.g., reading endless sensor data
+  4. Pipelining Generators - chaining multiple generators without creating intermediate lists
 
 ```python
 def fibonacci_numbers(nums):
@@ -909,9 +909,48 @@ print(sum(square(fibonacci_numbers(10))))
 
 A decorator takes in a function, adds some functionality and returns it.  This is also called metaprogramming because a part of the program tries to modify another part of the program at compile time.
 
-Decorators are commonly used in areas such as authorization, logging, and test performance.
+Note, technically, they don’t actually modify code at compile time (Python is interpreted). They wrap functions at runtime when the function is defined.
+
+Decorators are commonly used in areas such as authorization, logging, timing, authentication, caching, retry logic, and test performance.
 
 Instead of assigning the function call to a variable, you can decorate a function with the @ symbol in Python.
+
+The `@decorator_name` syntax is shorthand for:
+
+```python
+func = decorator_name(func)
+```
+
+```python
+import time
+
+# Decorator definition
+def timer_decorator(func):
+    def wrapper(*args, **kwargs):
+        start_time = time.time()
+        print(f"Calling function: {func.__name__}")
+        
+        result = func(*args, **kwargs)
+        
+        end_time = time.time()
+        print(f"{func.__name__} finished in {end_time - start_time:.4f} seconds")
+        
+        return result
+    return wrapper
+
+# Apply decorator using @ syntax
+@timer_decorator
+def slow_add(a, b):
+    time.sleep(1)  # simulate a slow operation
+    return a + b
+
+# Using the decorated function
+print(slow_add(5, 3))
+```
+
+1. When Python sees `@timer_decorator` above `slow_add`, it runs: `slow_add = timer_decorator(slow_add)`
+2. `timer_decorator` returns the wrapper function, which adds timing logs around the original `slow_add`.
+3. Calling `slow_add(5, 3)` actually calls `wrapper(5, 3)`, which logs the start, calls the original function, then logs the end.
 
 
 ## Syntatic Sugar and Other

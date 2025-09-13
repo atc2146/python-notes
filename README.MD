@@ -95,19 +95,22 @@ A "raw" string literal is prefixed by an 'r' and passes all the characters throu
 * `s.split('delim')`: Returns a list of substrings separated by the given delimiter. The delimiter is not a regular expression, it's just text.
   * Example: `'aaa,bbb,ccc'.split(',')` -> `['aaa', 'bbb', 'ccc']`.
   * As a convenient special case `s.split()` (with no arguments) splits on all whitespace characters.
-* `s.join(list)`: Opposite of `split()`, joins the elements in the given list together using the string as the delimiter.
+* `s.join(list)`: The opposite of `split()`, joins the elements in the given list together using the string as the delimiter.
   * Example: `'---'.join(['aaa', 'bbb', 'ccc'])` -> `aaa---bbb---ccc`
-* `string.count(substring, [start=...], [end=...])`: The `count()` method searches the substring in the given string and returns how many times the substring is present in it.
+* `string.count(substring, [start=...], [end=...])`: The `count()` method searches the substring in the given string and returns how many times the non-overlapping substring is present in it.
 * `s.startswith()`: Returns True if a string starts with the specified prefix. If not, it returns False.
-* `s.find()`: The `find()` method returns the index of first occurrence of the substring (if found). If not found, it returns -1.
-* `s.index(element, start, end)`: returns the index of a substring inside the string (if found). If the substring is not found, it raises an exception.
+  * There is also the `endswith()` function.
+* `s.find(substring, [start=...], [end=...])`: The `find()` method returns the index of first occurrence of the substring (if found). If not found, it returns -1.
+* `s.index(substring, [start=...], [end=...])`: returns the index of a substring inside the string (if found). If the substring is not found, it raises an exception.
   * start and end (optional): substring is searched within str[start:end]
+  * There is also `rindex()` which searches from the end
 * `s.isdigit()`: Checks whether the string consists of digits only.  Returns True or False.
   * There is also `isnumeric()` and `isdecimal()`
 * `s.isalnum()`: The `isalnum()` method returns True if all characters in the string are alphanumeric (either alphabets or numbers). If not, it returns False.
 * `s.replace(old, new [, count])`: replaces each matching occurrence of the old character/text in the string with the new character/text.
   * Takes an optional count argument which is the maximum number of times you want to replace the old substring with the new substring.
-* `s.lower()` and `s.upper()`: changes to lowercase or uppercase, respectively.  There is also `s.capitalize()` which capitilizes the first character of a word.
+* `s.lower()` and `s.upper()`: changes to lowercase or uppercase, respectively.
+  * There is also `s.capitalize()` which capitalizes the first character of the first word only in a sentence and lowercases the rest of the words. `s.title()` capitalizes the first character of all words in a sentence.
 * `s.islower()` and `s.isupper()`: returns whether or not **all** characters in a string are lowercased or uppercased, respectively.
 
 
